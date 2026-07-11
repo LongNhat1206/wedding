@@ -53,7 +53,7 @@ a{color:inherit;}
 /* ══ NAVBAR ══ */
 #navbar{position:fixed;top:3px;left:0;right:0;z-index:450;height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(20px,5vw,56px);transition:all .35s cubic-bezier(.16,1,.3,1);}
 #navbar.scrolled{background:rgba(250,249,247,.22);backdrop-filter:blur(10px) saturate(140%);box-shadow:0 1px 0 rgba(30,27,24,.05);height:68px;}
-.nav-logo{font-family:var(--ff-head);font-style:italic;font-weight:600;font-size:19px;color:#fff;transition:color .3s;}
+.nav-logo{text-decoration: none;font-family:var(--ff-head);font-style:italic;font-weight:600;font-size:19px;color:#fff;transition:color .3s;}
 #navbar.scrolled .nav-logo{color:var(--ink);}
 .nav-links{display:flex;gap:8px;align-items:center;}
 .nav-link{font-family:var(--ff-body);font-size:13px;font-weight:500;color:rgba(255,255,255,.78);text-decoration:none;padding:9px 14px;border-radius:8px;transition:all .25s;}
@@ -229,7 +229,7 @@ section.tight-top{padding-top:100px;}
 .g-brick:hover::after{opacity:1;}
 @media(max-width:760px){.gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px;}.gal-grid .g-brick:nth-child(1){grid-column:span 2;}.gal-grid .g-brick:nth-child(6){grid-column:span 1;}}
 
-#lightbox{display:none;position:fixed;inset:0;z-index:600;background:rgba(15,13,11,.96);flex-direction:column;align-items:center;justify-content:center;}
+#lightbox{display:none;position:fixed;inset:0;z-index:950;background:rgba(15,13,11,.96);flex-direction:column;align-items:center;justify-content:center;}
 #lightbox.open{display:flex;}
 #lb-img{max-width:88vw;max-height:70vh;object-fit:contain;border-radius:10px;opacity:0;transition:opacity .35s;}
 #lb-img.show{opacity:1;}
@@ -467,7 +467,7 @@ section.tight-top{padding-top:100px;}
 </div>
 
 <nav id="navbar">
-  <div class="nav-logo">Long Nhật &amp; Ngọc Minh</div>
+  <a class="nav-logo" href="#hero">Long Nhật &amp; Ngọc Minh</a>
   <div class="nav-links">
     <a class="nav-link" href="#programme">Nghi lễ</a>
     <a class="nav-link" href="#couple">Cô dâu &amp; Chú rể</a>
@@ -544,8 +544,9 @@ section.tight-top{padding-top:100px;}
     </div>
     <div class="intro-text" data-reveal="right">
       <div class="eyebrow"><span class="dot"></span>Lời ngỏ</div>
-      <p>Hà Nội đang vào thu, trời se lạnh và nắng vàng như mật. Chúng tôi muốn chia sẻ với bạn một tin vui: sau những năm tháng cùng nhau đi qua bao mùa, Long Nhật và Ngọc Minh sẽ về chung một nhà.</p>
-      <p>Sự hiện diện của bạn trong ngày trọng đại ấy chính là món quà ý nghĩa nhất mà chúng tôi có thể nhận được.</p>
+      <p>Người ta nói, hạnh phúc không phải là một điểm đến, mà là một hành trình. Và hành trình của tụi mình sẽ không thể trọn vẹn nếu thiếu đi sự đồng hành, chứng kiến của những người bạn thân thương.</p>
+      <p>Một buổi tiệc nhỏ, vài ly rượu mừng và thật nhiều tiếng cười. Tụi mình chính thức mở lời mời bạn đến dự đám cưới của hai đứa. Sự có mặt của bạn chính là món quà tuyệt vời nhất đối với tụi mình.</p>
+	  <p>Hẹn gặp bạn vào ngày 18 tháng 10 năm 2026</p>
       <div class="intro-sig">Long Nhật &amp; Ngọc Minh</div>
     </div>
   </div>
@@ -562,7 +563,7 @@ section.tight-top{padding-top:100px;}
     <div class="stepper" data-reveal="up">
       <div class="stepper-line"><div class="stepper-line-fill" id="stepper-fill"></div></div>
       <div class="stepper-track">
-        <div class="step active"><div class="step-dot">🎋</div><div class="step-card"><div class="step-date">15 · 10</div><div class="step-name">Dạm Ngõ</div><div class="step-time">08:00 sáng</div><div class="step-desc">Ngỏ lời xin phép hai bên gia đình</div></div></div>
+        <div class="step active"><div class="step-dot">🎋</div><div class="step-card"><div class="step-date">15 · 07</div><div class="step-name">Dạm Ngõ</div><div class="step-time">08:00 sáng</div><div class="step-desc">Ngỏ lời xin phép hai bên gia đình</div></div></div>
         <div class="step active"><div class="step-dot">🧧</div><div class="step-card"><div class="step-date">17 · 10</div><div class="step-name">Ăn Hỏi</div><div class="step-time">07:30 sáng</div><div class="step-desc">Tráp lễ trầu cau, bánh cốm, phu thê</div></div></div>
         <div class="step active"><div class="step-dot">🚗</div><div class="step-card"><div class="step-date">18 · 10</div><div class="step-name">Rước Dâu</div><div class="step-time">10:00 sáng</div><div class="step-desc">Rước dâu về nhà chồng, lạy gia tiên</div></div></div>
         <div class="step active"><div class="step-dot">💒</div><div class="step-card"><div class="step-date">18 · 10</div><div class="step-name">Vu Quy</div><div class="step-time">11:30 sáng</div><div class="step-desc">Lễ tơ hồng, rượu giao bôi</div></div></div>
@@ -588,7 +589,7 @@ section.tight-top{padding-top:100px;}
         </div>
         <div class="couple-role">🤵 Chú Rể</div>
         <div class="couple-name">Nguyễn Long Nhật</div>
-        <div class="couple-meta">Con trai ông Nguyễn Thế Gỉao &amp; bà Hà Thị Thu Hương</div>
+        <div class="couple-meta">Con trai ông Nguyễn Thế Giảo &amp; bà Hà Thị Thu Hương</div>
         <div class="couple-desc">Yêu công nghệ, thích nấu ăn cuối tuần và luôn tin rằng hạnh phúc là những điều giản dị được sẻ chia mỗi ngày.</div>
       </div>
       <div class="couple-divider" data-reveal="scale">
@@ -604,7 +605,7 @@ section.tight-top{padding-top:100px;}
         <div class="couple-role">👰 Cô Dâu</div>
         <div class="couple-name">Vũ Ngọc Minh</div>
         <div class="couple-meta">Con gái ông Vũ Đăng Hòa &amp; bà Lê Thị Đào</div>
-        <div class="couple-desc">Yêu hoa, yêu thơ và những chuyến đi. Tin rằng một mái ấm đẹp được xây từ sự lắng nghe và bao dung.</div>
+        <div class="couple-desc">Cô gái mang năng lượng ấm áp, yêu thích sự tự do và là "trạm sạc" tinh thần không thể thiếu của chú rể. Người luôn biến những điều bình thường mỗi ngày thành những niềm vui nhỏ lấp lánh</div>
       </div>
     </div>
   </div>
@@ -620,22 +621,45 @@ section.tight-top{padding-top:100px;}
     </div>
 
     <div class="story-timeline">
-    <div class="story-row" data-reveal="up">
-      <div class="story-media"><img src="https://i.pinimg.com/1200x/8b/ef/9f/8bef9fb9367f2a56f64e138937adcaae.jpg" alt="Gặp gỡ"></div>
-      <div><div class="story-tag">Xuân 2020 · Hà Nội</div><div class="story-name">Lần Đầu Gặp Gỡ</div><div class="story-desc">Một chiều mưa Hà Nội tại quán trà nhỏ trên phố Đinh Lễ. Ánh mắt tình cờ chạm nhau, mở ra một câu chuyện chưa ai kể trước đó.</div></div>
-    </div>
-    <div class="story-row" data-reveal="up">
-      <div class="story-media"><img src="https://i.pinimg.com/1200x/b9/8e/c4/b98ec4245f192261c9589dc1ce6109dd.jpg" alt="Yêu nhau"></div>
-      <div><div class="story-tag">Hè 2021 · Hồ Tây</div><div class="story-name">Chính Thức Yêu Nhau</div><div class="story-desc">Sau những tháng ngày rụt rè, Long Nhật thổ lộ tình cảm bên mặt hồ Tây lúc hoàng hôn. Từ đó mỗi ngày bên nhau là một trang mới.</div></div>
-    </div>
-    <div class="story-row" data-reveal="up">
-      <div class="story-media"><img src="https://i.pinimg.com/1200x/0f/68/cb/0f68cb9be13da990949966fea3f624da.jpg" alt="Đà Lạt"></div>
-      <div><div class="story-tag">Đông 2022 · Đà Lạt</div><div class="story-name">Chuyến Du Lịch Đà Lạt</div><div class="story-desc">Lang thang giữa rừng thông, thưởng trà bên lò sưởi ấm, ngắm sương sớm — khoảnh khắc cả hai biết đây là người đồng hành mãi mãi.</div></div>
-    </div>
-    <div class="story-row" data-reveal="up">
-      <div class="story-media"><img src="https://i.pinimg.com/1200x/55/6f/73/556f73b8505cc92c6200050e9ba7dd3f.jpg" alt="Hội An"></div>
-      <div><div class="story-tag">Xuân 2024 · Hội An</div><div class="story-name">Pre-Wedding Hội An</div><div class="story-desc">Những ngày chụp ảnh cưới dưới ánh đèn lồng phố cổ. Từng khoảnh khắc ngập tràn tiếng cười, trở thành ký ức khó phai.</div></div>
-    </div>
+      <!-- Mốc 1: Gặp nhau -->
+      <div class="story-row" data-reveal="up">
+        <div class="story-media"><img src="https://i.pinimg.com/1200x/8b/ef/9f/8bef9fb9367f2a56f64e138937adcaae.jpg" alt="Lần đầu gặp gỡ"></div>
+        <div>
+          <div class="story-tag">10.11.2022 · Thế giới ảo, tình yêu thật</div>
+          <div class="story-name">Duyên Số Từ Không Gian Mạng</div>
+          <div class="story-desc">Vào một ngày mùa đông chớm lạnh, hai tâm hồn xa lạ vô tình tìm thấy nhau qua màn hình nhỏ của mạng xã hội. Lời chào đầu tiên giản đơn nhưng lại là khởi đầu cho một sợi dây duyên phận định mệnh.</div>
+        </div>
+      </div>
+
+      <!-- Mốc 2: Yêu nhau -->
+      <div class="story-row" data-reveal="up">
+        <div class="story-media"><img src="https://i.pinimg.com/1200x/b9/8e/c4/b98ec4245f192261c9589dc1ce6109dd.jpg" alt="Chính thức yêu nhau"></div>
+        <div>
+          <div class="story-tag">18.12.2022 · Ngày bình yên hóa đặc biệt</div>
+          <div class="story-name">Giai Điệu Tình Yêu Cất Lời</div>
+          <div class="story-desc">Chỉ sau một tháng trò chuyện và thấu hiểu, chúng mình nhận ra đối phương chính là mảnh ghép còn thiếu. Ngày 18/12, hai cái tên chính thức đứng cạnh nhau, mở ra một hành trình yêu thương đầy ấm áp giữa mùa đông.</div>
+        </div>
+      </div>
+
+      <!-- Mốc 3: Đồng hành bên nhau -->
+      <div class="story-row" data-reveal="up">
+        <div class="story-media"><img src="https://i.pinimg.com/1200x/0f/68/cb/0f68cb9be13da990949966fea3f624da.jpg" alt="Bên nhau thăng trầm"></div>
+        <div>
+          <div class="story-tag">2022 - Hiện tại · Đồng hành và Sẻ chia</div>
+          <div class="story-name">Vui Buồn Có Nhau</div>
+          <div class="story-desc">Suốt những năm tháng qua, cuộc sống có lúc thăng lúc trầm, có những ngày ngập tràn tiếng cười và cả những lúc lo toan. Nhưng dẫu thế nào, cái nắm tay vẫn chưa từng nới lỏng, mỗi khoảnh khắc đi qua đều giúp tụi mình trân trọng nhau hơn.</div>
+        </div>
+      </div>
+
+      <!-- Mốc 4: Đám cưới -->
+      <div class="story-row" data-reveal="up">
+        <div class="story-media"><img src="https://i.pinimg.com/1200x/55/6f/73/556f73b8505cc92c6200050e9ba7dd3f.jpg" alt="Trái ngọt hôn nhân"></div>
+        <div>
+          <div class="story-tag">Mùa cưới 2026 · Trái ngọt tình yêu</div>
+          <div class="story-name">Chương Mới: Về Chung Một Nhà</div>
+          <div class="story-desc">Trải qua bao sóng gió và thử thách, tình yêu của chúng mình đã đủ lớn để đơm hoa kết trái. Một đám cưới trọn vẹn chính là lời khẳng định vững chắc nhất, khép lại một chặng đường yêu để mở ra hành trình làm bạn đời của nhau suốt đời.</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -768,10 +792,10 @@ section.tight-top{padding-top:100px;}
 <!-- THANKS -->
 <section id="thanks">
   <div class="container">
-    <div class="thanks-sig" data-reveal="up">Với tất cả tình yêu thương</div>
-    <div class="thanks-quote" data-reveal="up">"Bước vào cuộc sống hôn nhân, chúng tôi mang theo tình yêu, sự ủng hộ và những lời chúc phúc của tất cả mọi người. Cảm ơn vì đã là một phần đẹp đẽ trong hành trình tươi sáng này."</div>
+    <div class="thanks-sig" data-reveal="up">Gửi trọn niềm trân quý</div>
+    <div class="thanks-quote" data-reveal="up">"Hành trình hạnh phúc của chúng tôi sẽ không thể vẹn tròn nếu thiếu đi tình yêu thương, sự đồng hành và những lời chúc phúc từ mọi người. Cảm ơn bạn vì đã luôn là một phần thật đẹp trong chương mới ý nghĩa này của cuộc đời chúng tôi."</div>
     <div class="thanks-names" data-reveal="up">Long Nhật &amp; Ngọc Minh</div>
-    <div class="thanks-footer" data-reveal="up">Thiệp cưới trực tuyến · 18 · 10 · 2026 · Hà Nội, Việt Nam</div>
+    <div class="thanks-footer" data-reveal="up">Thiệp cưới trực tuyến Long Nhật · 18 · 10 · 2026 · Hà Nội, Việt Nam</div>
   </div>
 </section>
 
@@ -820,15 +844,58 @@ function tick(){
 tick();setInterval(tick,1000);
 
 // ── MUSIC ──
-const aud=document.getElementById('audio');
-const musicBtn=document.getElementById('music-btn');
-const iPlay=document.getElementById('ico-play'),iPause=document.getElementById('ico-pause');
-let playing=false;
-musicBtn.onclick=()=>{
-  playing=!playing;
-  if(playing){aud.play().catch(()=>{});iPlay.style.display='none';iPause.style.display='';musicBtn.classList.add('playing');}
-  else{aud.pause();iPlay.style.display='';iPause.style.display='none';musicBtn.classList.remove('playing');}
-};
+const aud = document.getElementById('audio');
+const musicBtn = document.getElementById('music-btn');
+const iPlay = document.getElementById('ico-play');
+const iPause = document.getElementById('ico-pause');
+
+let playing = false;
+
+// 1. Hàm đồng bộ giao diện (UI) với trạng thái nhạc
+function updateMusicUI() {
+  if (playing) {
+    iPlay.style.display = 'none';
+    iPause.style.display = '';
+    musicBtn.classList.add('playing');
+  } else {
+    iPlay.style.display = '';
+    iPause.style.display = 'none';
+    musicBtn.classList.remove('playing');
+  }
+}
+
+// 2. Xử lý khi click TRỰC TIẾP vào nút bật/tắt nhạc
+musicBtn.addEventListener('click', (event) => {
+  // Ngăn chặn sự kiện click này lan ra ngoài toàn trang (tránh xung đột với hàm bên dưới)
+  event.stopPropagation(); 
+  
+  playing = !playing;
+  if (playing) {
+    aud.play().catch(() => {});
+  } else {
+    aud.pause();
+  }
+  updateMusicUI();
+});
+
+// 3. Xử lý khi click/chạm BẤT KỲ ĐÂU trên trang (Chỉ gọi 1 lần duy nhất)
+function playOnFirstInteraction() {
+  // Chỉ phát nếu nhạc chưa được bật
+  if (!playing) {
+    aud.play().then(() => {
+      playing = true;
+      updateMusicUI(); // Cập nhật icon sang trạng thái đang phát
+    }).catch((error) => {
+      console.warn('Lỗi phát nhạc:', error);
+    });
+  }
+}
+
+// Lắng nghe sự kiện click (máy tính) và touchstart (điện thoại) trên toàn bộ tài liệu
+// { once: true } đảm bảo nó chỉ chạy đúng 1 lần rồi tự hủy, không gây gánh nặng cho web
+document.addEventListener('click', playOnFirstInteraction, { once: true });
+document.addEventListener('touchstart', playOnFirstInteraction, { once: true });
+
 
 // ── SCROLL REVEAL ──
 const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('revealed');io.unobserve(e.target);}});},{threshold:.12});
@@ -1114,6 +1181,22 @@ function sendWish(){
   }
   setTimeout(loop,900);
 })();
+</script>
+
+<style>
+#weatherBox{position:fixed;top:85px;right:5px;background:rgba(255,255,255,.35);backdrop-filter:blur(8px);padding:10px 14px;border-radius:12px;z-index:949;font-size:11px}
+#loaderOverlay{position:fixed;inset:0;background:#fff;display:flex;align-items:center;justify-content:center;z-index:10000;transition:opacity .8s}
+#loaderOverlay.hide{opacity:0;pointer-events:none}
+.loaderRing{width:70px;height:70px;border:4px solid #eee;border-top-color:#c8a96a;border-radius:50%;animation:spin 1s linear infinite}
+.music-playing{animation:spin 6s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+</style>
+<div id="loaderOverlay"><div class="loaderRing"></div></div>
+<div id="weatherBox">Đang tải thời tiết...</div>
+<script>
+window.addEventListener('load',()=>setTimeout(()=>loaderOverlay.classList.add('hide'),900));
+fetch('https://api.open-meteo.com/v1/forecast?latitude=21.0285&longitude=105.8542&current=temperature_2m')
+.then(r=>r.json()).then(d=>weatherBox.innerHTML='🌤️ Hà Nội<br>'+d.current.temperature_2m+'°C').catch(()=>weatherBox.innerHTML='🌤️ Hà Nội');
 </script>
 </body>
 </html>
