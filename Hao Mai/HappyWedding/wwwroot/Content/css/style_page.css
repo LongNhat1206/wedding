@@ -1,0 +1,32 @@
+body {
+    direction: ltr;
+    font-family: Prata, serif;
+}
+
+@media (min-width: 768px) {
+    .ladi-section .ladi-container {
+        width: 960px;
+    }
+}
+
+@media (max-width: 767px) {
+    .ladi-section .ladi-container {
+        width: 420px;
+    }
+}
+
+@font-face {
+    font-family: "VkJIDIIExvdmUudHRm";
+    src: url("https://w.ladicdn.com/5c728619c417ab07e5194baa/vni-24-love-20240502170958-gghl8.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "VVZOTWpSGuZyUVEY";
+    src: url("https://w.ladicdn.com/5c728619c417ab07e5194baa/uvnmoihong-20240502170800-ouaqa.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "VVZORGluaEhvbiUVEY";
+    src: url("https://w.ladicdn.com/5c728619c417ab07e5194baa/uvndinhhon-20240502170745-gov6r.ttf") format("truetype");
+}
+

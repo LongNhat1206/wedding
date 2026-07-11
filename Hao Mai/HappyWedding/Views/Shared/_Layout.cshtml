@@ -1,0 +1,2141 @@
+﻿@{
+    // Lấy giờ Việt Nam hiện tại
+    var vnZone = TimeZoneInfo.FindSystemTimeZoneById("SE Asia Standard Time");
+    var nowVN = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, vnZone);
+
+    // Thời điểm mục tiêu (ví dụ: 09:30 sáng 09/11/2025)
+    var target = new DateTime(2025, 11, 9, 9, 30, 0);
+
+    // Tính số phút còn lại
+    var minutesLeft = (target - nowVN).TotalMinutes;
+    if (minutesLeft < 0) minutesLeft = 0;
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <title>Happy Wedding - Văn Hào & Ngọc Mai</title>
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="Expires" content="-1">
+        <meta name="keywords" content="tạo thiệp cưới miễn phí, mehappy, Thiệp cưới online, Thiệp cưới điện tử, website đám cưới, weddingme, đám cưới online">
+        <meta name="description" content="Sử dụng Full các tính năng nâng cao, tính năng đặc biệt của thiệp, sử dụng trọn đời.">
+        <meta name='viewport' content='width=device-width, initial-scale=1'/>
+        <script type='text/javascript'>
+            window.ladi_viewport = function(b) {
+                var a = document;
+                b = b ? b : 'innerWidth';
+                var c = window[b];
+                var d = c < 768;
+                if (typeof window.ladi_is_desktop == "undefined" || window.ladi_is_desktop == undefined) {
+                    window.ladi_is_desktop = !d;
+                }
+                var e = 960;
+                var f = 420;
+                var g = '';
+                if (!d) {
+                    g = "width=" + e + ",user-scalable=no,initial-scale=1.0";
+                } else {
+                    var h = 1;
+                    var i = f;
+                    if (i != c) {
+                        h = c / i;
+                    }
+                    g = "width=" + i + ",user-scalable=no,initial-scale=" + h + ",minimum-scale=" + h + ",maximum-scale=" + h;
+                }
+                var j = a.getElementById("viewport");
+                if (!j) {
+                    j = a.createElement("meta");
+                    j.id = "viewport";
+                    j.name = "viewport";
+                    a.head.appendChild(j);
+                }
+                j.setAttribute("content", g);
+            }
+            ;
+            window.ladi_viewport();
+            window.ladi_fbq_data = [];
+            window.ladi_fbq = function() {
+                window.ladi_fbq_data.push(arguments);
+            }
+            ;
+            window.ladi_ttq_data = [];
+            window.ladi_ttq = function() {
+                window.ladi_ttq_data.push(arguments);
+            }
+            ;
+        </script>
+        <link rel="canonical" href=""/>
+        <meta property="og:url" content=""/>
+        <meta property="og:title" content="Thiệp cưới Hào &amp; Mai" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:image" content="https://wedup.io.vn/cdn/img/HTH04755.jpg?v=@DateTime.Now.Ticks" />
+        <meta property="og:description" content="Sử dụng Full các tính năng nâng cao, tính năng đặc biệt của thiệp, sử dụng trọn đời."/>
+        <meta name="format-detection" content="telephone=no"/>
+        <link rel="icon" type="image/x-icon" href="Content/images/logo_weeding.ico"/>
+        <link rel="shortcut icon" href="/Content/images/logo_weeding.ico" />
+        <link rel="apple-touch-icon" href="/Content/images/logo_weeding.ico"/>
+        <link rel="apple-touch-icon-precomposed" href="/Content/images/logo_weeding.ico"/>
+        <meta name="msapplication-TileImage" content="/Content/images/logo_weeding.ico"/>
+        <meta name="revisit-after" content="days"/>
+        <link rel="dns-prefetch">
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Prata&family=Muli:wght@400;700&family=Dancing+Script:wght@400;700&family=Mulish:wght@400;700&family=Philosopher:wght@400;700&family=Judson:wght@400;700&family=Cormorant+Upright:wght@400;700&family=Exo:wght@400;700&family=Roboto:wght@400;700&family=Baloo+Bhaina+2:wght@400;700&family=Roboto+Slab:wght@400;700&family=Play:wght@400;700&family=Quicksand:wght@400;700&family=Montserrat:wght@400;700&family=Niramit:wght@400;700&family=Open+Sans:wght@400;700&family=Sriracha&display=swap" as="style" onload="this.onload = null; this.rel = 'stylesheet';">
+        <link rel="preload" href="Content/js/ladipagev3.js?v=@DateTime.Now.Ticks" as="script">
+        <link rel="stylesheet" href="Content/css/ladi.css?v=@DateTime.Now.Ticks">
+        <link rel="stylesheet" href="Content/css/style_animation.css?v=@DateTime.Now.Ticks" id="style_animation">
+        <link rel="stylesheet" href="Content/css/style_page.css?v=@DateTime.Now.Ticks" id="style_page">
+        <link rel="stylesheet" href="Content/css/style_element.css?v=@DateTime.Now.Ticks" id="style_element">
+        <link rel="stylesheet" href="Content/css/style_lazyload.css?v=@DateTime.Now.Ticks" id="style_lazyload">
+        <link rel="stylesheet" href="Content/css/style.css?v=@DateTime.Now.Ticks">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CL9TF5MXF3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-CL9TF5MXF3", {
+                allow_enhanced_conversions: true
+            });
+            </script>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Play Music</title>
+        <audio id="background-music" loop="">
+            <source src="/Content/music/music_bg.mp3">
+        </audio>
+        <!-- Nút toggle nhạc -->
+        <div id="music-toggle" title="Bật / Tắt nhạc">
+            <img id="play-icon" src="Content/images/play_music.jpg" alt="Play Icon">
+            <img id="pause-icon" src="Content/images/pause-music.png" alt="Pause Icon" style="display: none;">
+        </div>
+        <script src="Content/js/toggle_music.js?v=@DateTime.Now.Ticks"></script>
+        <p style="display: none;">
+            Icon by <a href="https://www.flaticon.com/authors/freepik" title="NhatNL">NhatNL</a>
+        </p>
+    </head>
+    <body class="lazyload">
+        <svg xmlns="http://www.w3.org/2000/svg" style="width: 0px; height: 0px; position: absolute; overflow: hidden; display: none;">
+            <symbol id="shape_FHkOhViqXd" viewBox="0 0 1152 1896.0833">
+                <path d="M1075 736q0 13-10 23l-466 466q-10 10-23 10t-23-10L87 759q-10-10-10-23t10-23l50-50q10-10 23-10t23 10l393 393 393-393q10-10 23-10t23 10l50 50q10 10 10 23z"></path>
+            </symbol>
+            <symbol id="shape_nnrjWxulHM" viewBox="0 0 152.09 115.41">
+                <path d="M58.1,0l-.05,9Q38.31,19.22,29.91,30.33a40.08,40.08,0,0,0-8.48,24.45c0,5.12.66,8.68,2.1,10.68s3,3,4.82,3A26.62,26.62,0,0,0,36,66.88a29.07,29.07,0,0,1,9-1.62A22.13,22.13,0,0,1,61.16,72.2,22.51,22.51,0,0,1,67.9,88.74a24.7,24.7,0,0,1-2.23,10.15,24.06,24.06,0,0,1-6.22,8.3,32.69,32.69,0,0,1-9.37,5.61,29.81,29.81,0,0,1-11.35,2.1,31.72,31.72,0,0,1-14.31-3.59A42.77,42.77,0,0,1,12,101.73,47.08,47.08,0,0,1,0,69.66a64.62,64.62,0,0,1,4-22A68.78,68.78,0,0,1,15.26,27.91,81.41,81.41,0,0,1,33.53,11.52,94.2,94.2,0,0,1,58.1,0Z"></path>
+                <path d="M142,1.18l-.06,8.33A156.52,156.52,0,0,0,123,21.73a59.08,59.08,0,0,0-11.23,11.1A33.66,33.66,0,0,0,106.19,44a49.26,49.26,0,0,0-1.58,12.66q0,6.66,2.44,9.68t5.15,3a23,23,0,0,0,7.51-1.79,27.81,27.81,0,0,1,9.85-1.77,22.5,22.5,0,0,1,15.63,6.6,21.16,21.16,0,0,1,6.9,16.21,23.12,23.12,0,0,1-2.4,10.15,29.75,29.75,0,0,1-6.39,8.63,29.41,29.41,0,0,1-9.37,5.95,30.67,30.67,0,0,1-11.68,2.09A32,32,0,0,1,108.1,112,39.23,39.23,0,0,1,96,102.58a49.65,49.65,0,0,1-8.58-14,45.67,45.67,0,0,1-3.23-17.69,68.52,68.52,0,0,1,4-22.65,67.76,67.76,0,0,1,11.29-20.1A76.75,76.75,0,0,1,117.55,12,90.21,90.21,0,0,1,142,1.18Z"></path>
+            </symbol>
+            <symbol id="shape_PPDwjUEhiU" viewBox="0 0 100 100">
+                <g>
+                    <rect x="-192" width="185" height="99"></rect>
+                    <rect y="-36" width="100" height="30"></rect>
+                    <text transform="matrix(1 0 0 1 66 -19.5)" font-family="'Helvetica'" font-size="2.4">http://thenounproject.com</text>
+                    <text transform="matrix(1 0 0 1 7.166 -24.5)" font-family="'Helvetica-Bold'" font-size="6.1578">The Noun Project</text>
+                    <text transform="matrix(1 0 0 1 8.2861 -19.7002)" font-family="'Helvetica-Bold'" font-size="4">Icon Template</text>
+                    <text transform="matrix(1 0 0 1 -178.5 10.5)" font-family="'Helvetica-Bold'" font-size="6.1578">Reminders</text>
+                    <line stroke="#FFFFFF" stroke-miterlimit="10" x1="8" y1="-14.5" x2="18" y2="-14.5"></line>
+                    <line stroke="#FFFFFF" stroke-miterlimit="10" x1="-179" y1="16.5" x2="-162" y2="16.5"></line>
+                    <g>
+                        <g>
+                            <g>
+                                <rect x="-170.802" y="31.318" width="8.721" height="8.642"></rect>
+                                <path d="M-164.455,42.312h4.747v-4.703h-4.747V42.312z M-159.266,42.749h-5.63V37.17h5.63V42.749      L-159.266,42.749z M-166.221,44.062h8.279v-8.203h-8.279V44.062L-166.221,44.062z M-157.5,44.5h-9.163v-9.079h9.163V44.5      L-157.5,44.5z"></path>
+                                <polygon points="-166.149,44.133 -166.292,43.991 -158.013,35.787 -157.871,35.929     "></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <rect x="-179" y="58" width="35" height="32.5"></rect>
+                    <text transform="matrix(1 0 0 1 -179 60.1572)" font-family="'Helvetica-Bold'" font-size="3">Strokes</text>
+                    <text transform="matrix(1 0 0 1 -179 65.1572)" font-family="'Helvetica'" font-size="2.4">Try to keep strokes at 4px</text>
+                    <text transform="matrix(1 0 0 1 -179 70.1572)" font-family="'Helvetica'" font-size="2.4">Minimum stroke weight is 2px</text>
+                    <text transform="matrix(1 0 0 1 -179 74.6572)" font-family="'Helvetica'" font-size="2.4">For thicker strokes use even </text>
+                    <text transform="matrix(1 0 0 1 -179 77.6572)" font-family="'Helvetica'" font-size="2.4">numbers: 6px, 8px etc.</text>
+                    <text transform="matrix(1 0 0 1 -179 82.1572)" font-family="'Helvetica-Bold'" font-size="2.4">Remember to expand strokes </text>
+                    <text transform="matrix(1 0 0 1 -179 85.1572)" font-family="'Helvetica-Bold'" font-size="2.4">before saving as an SVG </text>
+                    <rect x="-136.5" y="58" width="35" height="32.5"></rect>
+                    <text transform="matrix(1 0 0 1 -136.5 60.1572)" font-family="'Helvetica-Bold'" font-size="3">Size</text>
+                    <text transform="matrix(1 0 0 1 -136.5 65.1572)" font-family="'Helvetica'" font-size="2.4">Cannot be wider or taller than </text>
+                    <text transform="matrix(1 0 0 1 -136.5 68.6572)" font-family="'Helvetica'" font-size="2.4">100px (artboard size)</text>
+                    <text transform="matrix(1 0 0 1 -136.5 73.6572)" font-family="'Helvetica'" font-size="2.4">Scale your icon to fill as much of </text>
+                    <text transform="matrix(1 0 0 1 -136.5 76.6572)" font-family="'Helvetica'" font-size="2.4">the artboard as possible</text>
+                    <rect x="-94" y="58" width="35" height="32.5"></rect>
+                    <text transform="matrix(1 0 0 1 -94 60.1572)" font-family="'Helvetica-Bold'" font-size="3">Ungroup</text>
+                    <text transform="matrix(1 0 0 1 -94 65.1572)" font-family="'Helvetica'" font-size="2.4">If your design has more than one </text>
+                    <text transform="matrix(1 0 0 1 -94 68.1572)" font-family="'Helvetica'" font-size="2.4">shape, make sure to ungroup</text>
+                    <rect x="-50" y="58" width="35" height="32.5"></rect>
+                    <text transform="matrix(1 0 0 1 -50 60.1572)" font-family="'Helvetica-Bold'" font-size="3">Save as</text>
+                    <text transform="matrix(1 0 0 1 -50 65.1572)" font-family="'Helvetica'" font-size="2.4">Save as .SVG and make sure </text>
+                    <text transform="matrix(1 0 0 1 -50 68.1572)" font-family="'Helvetica'" font-size="2.4">“Use Artboards” is checked</text>
+                    <text transform="matrix(1.0074 0 0 1 -125.542 30.5938)" font-family="'Helvetica'" font-size="2.5731">100px</text>
+                    <text transform="matrix(1.0074 0 0 1 -41 39)" font-family="'Helvetica-Bold'" font-size="5.1462">.SVG</text>
+                    <rect x="-126.514" y="34.815" width="10.261" height="10.185"></rect>
+                    <rect x="-126.477" y="31.766" width="0.522" height="2.337"></rect>
+                    <rect x="-116.812" y="31.766" width="0.523" height="2.337"></rect>
+                    <rect x="-127" y="32.337" width="11.233" height="0.572"></rect>
+                    <g>
+                        <rect x="-83.805" y="33.844" width="10.305" height="10.156"></rect>
+                        <rect x="-76.809" y="28.707" width="3.308" height="3.261"></rect>
+                    </g>
+                    <rect x="-178.5" y="22.5" stroke="#FFFFFF" stroke-miterlimit="10" width="30" height="30"></rect>
+                    <rect x="-136.5" y="22.5" stroke="#FFFFFF" stroke-miterlimit="10" width="30" height="30"></rect>
+                    <rect x="-93.5" y="22.5" stroke="#FFFFFF" stroke-miterlimit="10" width="30" height="30"></rect>
+                    <rect x="-49.5" y="22.5" stroke="#FFFFFF" stroke-miterlimit="10" width="30" height="30"></rect>
+                </g>
+                <path d="M50,84.025c-18.772,0-34.043-15.27-34.043-34.04c0-18.769,15.271-34.04,34.043-34.04c18.771,0,34.043,15.271,34.043,34.04  C84.043,68.756,68.771,84.025,50,84.025z M50,20.445c-16.291,0-29.543,13.251-29.543,29.54S33.709,79.525,50,79.525  c16.289,0,29.543-13.251,29.543-29.54S66.289,20.445,50,20.445z"></path>
+                <path d="M50,56.551c-0.756,0-1.479-0.384-1.9-1.046l-9.05-14.269c-0.665-1.05-0.354-2.44,0.694-3.105  c1.052-0.667,2.442-0.354,3.105,0.694l4.9,7.727V31.751c0-1.242,1.008-2.25,2.25-2.25s2.25,1.008,2.25,2.25v22.55  c0,1.002-0.66,1.881-1.623,2.162C50.419,56.521,50.208,56.551,50,56.551z"></path>
+                <path d="M81.242,52.235h-3.896c-1.242,0-2.25-1.008-2.25-2.25s1.008-2.25,2.25-2.25h3.896c1.242,0,2.25,1.008,2.25,2.25  S82.484,52.235,81.242,52.235z"></path>
+                <path d="M22.25,52.235h-3.896c-1.242,0-2.25-1.008-2.25-2.25s1.008-2.25,2.25-2.25h3.896c1.242,0,2.25,1.008,2.25,2.25  S23.492,52.235,22.25,52.235z"></path>
+                <path d="M49.786,84.055c-1.242,0-2.25-1.008-2.25-2.25v-3.891c0-1.242,1.008-2.25,2.25-2.25s2.25,1.008,2.25,2.25v3.891  C52.036,83.047,51.028,84.055,49.786,84.055z"></path>
+                <path d="M50,25.37c-1.242,0-2.25-1.008-2.25-2.25v-3.899c0-1.242,1.008-2.25,2.25-2.25s2.25,1.008,2.25,2.25v3.899  C52.25,24.362,51.242,25.37,50,25.37z"></path>
+            </symbol>
+            <symbol id="shape_cYUOiHuHjz" viewBox="0 0 100 100">
+                <path d="M79.7,63.4c-0.4-0.7-1.1-1.1-1.9-1.1H63.5c6.2-9.1,12.4-20.1,12.4-27.3c0-14.3-11.6-26-26-26  C35.7,9,24,20.7,24,35c0,7.1,6.3,18.2,12.4,27.3H22.3c-0.8,0-1.6,0.4-1.9,1.1L6.9,87.7c-0.4,0.7-0.4,1.5,0,2.2  C7.4,90.6,8.1,91,8.9,91h82.2h0c1.2,0,2.2-1,2.2-2.2c0-0.5-0.2-1-0.5-1.4L79.7,63.4z M28.5,35c0-11.8,9.6-21.5,21.5-21.5  c11.9,0,21.5,9.6,21.5,21.5c0,6.4-6.8,17.8-13.4,27.3c-1.1,1.5-2.2,3-3.2,4.5c-1.8,2.4-3.5,4.6-4.9,6.4c-1.4-1.8-3.1-3.9-4.9-6.4  c-1-1.4-2.1-2.9-3.2-4.5C35.3,52.8,28.5,41.4,28.5,35z M12.7,86.5l10.9-19.8h16c4.5,6.3,8.3,10.9,8.7,11.3c0.4,0.5,1.1,0.8,1.7,0.8  c0.7,0,1.3-0.3,1.7-0.8c0.4-0.5,4.2-5.1,8.7-11.3h16l10.9,19.8H12.7z"></path>
+                <path d="M61.1,35.7c0-6.1-5-11.1-11.1-11.1c-6.1,0-11.1,5-11.1,11.1c0,6.1,5,11.1,11.1,11.1  C56.1,46.7,61.1,41.8,61.1,35.7z M43.4,35.7c0-3.7,3-6.6,6.6-6.6c3.7,0,6.6,3,6.6,6.6c0,3.6-3,6.6-6.6,6.6  C46.3,42.3,43.4,39.3,43.4,35.7z"></path>
+            </symbol>
+            <symbol id="shape_HfQeetkwdn" viewBox="0 0 1792 1896.0833">
+                <path d="M896 1664q-26 0-44-18l-624-602q-10-8-27.5-26T145 952.5 77 855 23.5 734 0 596q0-220 127-344t351-124q62 0 126.5 21.5t120 58T820 276t76 68q36-36 76-68t95.5-68.5 120-58T1314 128q224 0 351 124t127 344q0 221-229 450l-623 600q-18 18-44 18z"></path>
+            </symbol>
+            <symbol id="shape_EmEhkykXrL" viewBox="0 0 408.7 408.7">
+                <polygon fill="#fff" points="163.5 296.3 286.1 204.3 163.5 112.4 163.5 296.3"></polygon>
+                <path d="M204.3,0C91.5,0,0,91.5,0,204.3S91.5,408.7,204.3,408.7s204.3-91.5,204.3-204.3S316.7,0,204.3,0ZM163.5,296.3V112.4l122.6,91.9Z" transform="translate(0 0)"></path>
+            </symbol>
+            <symbol id="shape_dUJKkzBPOe" viewBox="0 0 1792 1896.0833">
+                <path d="M1664 596q0-81-21.5-143t-55-98.5T1506 295t-94-31-98-8-112 25.5-110.5 64-86.5 72-60 61.5q-18 22-49 22t-49-22q-24-28-60-61.5t-86.5-72-110.5-64T478 256t-98 8-94 31-81.5 59.5-55 98.5T128 596q0 168 187 355l581 560 580-559q188-188 188-356zm128 0q0 221-229 450l-623 600q-18 18-44 18t-44-18l-624-602q-10-8-27.5-26T145 952.5 77 855 23.5 734 0 596q0-220 127-344t351-124q62 0 126.5 21.5t120 58T820 276t76 68q36-36 76-68t95.5-68.5 120-58T1314 128q224 0 351 124t127 344z"></path>
+            </symbol>
+            <symbol id="shape_wxkXfLlBhb" viewBox="0 0 32 32">
+                <image href="https://w.ladicdn.com/ladiui/icons/social/facebook.svg" height="32" width="32"></image>
+            </symbol>
+            <symbol id="shape_fFZHkzKTwN" viewBox="0 0 32 32">
+                <image href="https://w.ladicdn.com/ladiui/icons/social/zalo.svg" height="32" width="32"></image>
+            </symbol>
+            <symbol id="shape_vUXQNhYdHb" viewBox="0 0 32 32">
+                <image href="https://w.ladicdn.com/ladiui/icons/social/phone-call.svg" height="32" width="32"></image>
+            </symbol>
+            <symbol id="shape_NuetGjONuk" viewBox="0 0 356.13 42.62">
+                <path d="M349,20.45C303.49-22.75,16.68,15.66,4.5,17.31a5.2,5.2,0,1,0,1.4,10.3c8.66-1.18,18.88-2.47,30.26-3.81C132.05,12.56,310.74-1.54,341.85,28c2.91,2.75,4.13,5.62,3.85,9,0,.07,0,.13,0,.2a5.19,5.19,0,0,0,4.75,5.4,3.1,3.1,0,0,0,.43,0,5.2,5.2,0,0,0,5.18-4.77C356.59,31.35,354.16,25.34,349,20.45Z"></path>
+            </symbol>
+            <symbol id="shape_IgdcjCEouk" viewBox="0 0 100 100">
+                <g>
+                    <path d="M98.971,40.035c-0.012-0.39-0.095-0.854-0.028-1.208c0.069-0.361,0.059-0.627-0.041-1.076   c-0.232-1.016-0.464-2.074-0.867-3.149c-0.205-0.56-0.545-1.102-0.809-1.668c-0.271-0.585-0.477-1.172-0.856-1.733   c-0.326-0.49-0.695-0.959-1.095-1.364c-0.86-0.86-1.81-1.33-2.697-1.365c-0.551-0.021-1.222,0.113-1.664,0.378   c-0.302,0.181-0.607,0.396-0.875,0.654c-0.105,0.103-0.203,0.216-0.295,0.333c-1.021,1.272-2.465,2.885-2.757,4.923   c-0.215,1.488-1.035,3.828-1.033,3.833c0.001-0.01-5.011-4.297-7.105-5.465c-0.404-0.229-0.816-0.423-1.24-0.555   c-0.748-0.224-1.503-0.588-2.273-0.358c-0.343,0.101-0.622,0.393-0.951,0.525c-0.219,0.085-0.385,0.095-0.583,0.262   c-0.484,0.401-0.934,0.967-1.21,1.637c-0.466,1.12-0.555,2.386-0.472,3.592c0.046,0.685,0.038,1.382,0.144,2.051   c0.053,0.338,0.156,0.622,0.259,0.93c0.112,0.325,0.164,0.683,0.278,1.011c0.152,0.438,0.321,0.861,0.51,1.272   c0.249,0.539,0.534,1.047,0.83,1.544c0.123,0.206,0.224,0.453,0.35,0.651c0.138,0.219,0.344,0.354,0.492,0.573   c0.42,0.6,0.887,1.208,1.324,1.824c0.281,0.397,0.497,0.868,0.832,1.179c0.341,0.328,0.667,0.688,0.954,1.098   c0.402,0.581,0.935,0.989,1.401,1.47c0.475,0.492,0.956,0.96,1.445,1.422c0.362,0.347,0.656,0.802,1.018,1.13   c0.4,0.356,0.845,0.616,1.252,0.961c0.463,0.406,0.916,0.817,1.403,1.17c0.618,0.459,1.193,0.959,1.783,1.445   c0.647,0.531,1.34,0.983,1.938,1.561c0.314,0.312,0.59,0.483,0.949,0.679c0.86,0.47,1.437,1.327,2.269,1.786   c0.312,0.178,0.618,0.382,0.892,0.618c0.236,0.206,0.735,0.501,0.956,0.03c0.089-0.188,0.072-0.494,0.107-0.689   c0.069-0.356,0.162-0.709,0.255-1.056c0.353-1.337,0.809-2.621,1.063-3.93c0.152-0.785,0.639-1.458,0.889-2.179   c0.121-0.343,0.273-0.63,0.371-0.982c0.129-0.441,0.27-0.874,0.421-1.301c0.378-1.069,0.706-2.183,1.022-3.249   c0.267-0.886,0.512-1.739,0.702-2.629c0.216-1.006,0.34-2.038,0.568-3.009C99.054,42.54,99.009,41.222,98.971,40.035z"></path>
+                    <path d="M23.514,38.734c-0.141-0.409-0.329-0.824-0.565-1.218c-0.512-0.838-1.226-1.501-2.012-1.877   c-0.485-0.234-1.124-0.417-1.595-0.423c-0.322-0.001-0.658,0.019-0.97,0.085c-0.123,0.028-0.243,0.062-0.359,0.106   c-1.286,0.452-2.994,1.05-3.85,2.452c-0.634,1.009-2.005,2.53-2.005,2.54c0.002,0.015-2.771-5.052-4.071-6.832   c-0.251-0.338-0.519-0.658-0.811-0.931c-0.517-0.48-0.999-1.08-1.65-1.223c-0.291-0.063-0.583,0.053-0.869,0.021   c-0.188-0.023-0.316-0.086-0.512-0.035c-0.474,0.121-0.963,0.397-1.349,0.836C2.249,32.973,1.844,34,1.58,35.044   c-0.149,0.593-0.343,1.18-0.445,1.781c-0.053,0.307-0.055,0.585-0.062,0.882c-0.005,0.318-0.064,0.636-0.069,0.956   c-0.008,0.422,0.001,0.838,0.028,1.252c0.036,0.542,0.107,1.069,0.19,1.591c0.033,0.216,0.04,0.456,0.079,0.67   c0.04,0.231,0.155,0.412,0.205,0.65c0.145,0.646,0.324,1.316,0.477,1.982c0.1,0.429,0.129,0.897,0.292,1.271   c0.164,0.388,0.306,0.804,0.406,1.242c0.138,0.625,0.421,1.146,0.635,1.71c0.217,0.573,0.446,1.13,0.683,1.688   c0.175,0.42,0.266,0.906,0.443,1.307c0.2,0.44,0.459,0.815,0.667,1.251c0.231,0.507,0.455,1.021,0.718,1.493   c0.331,0.611,0.616,1.247,0.916,1.881c0.329,0.693,0.714,1.342,0.988,2.07c0.141,0.392,0.293,0.648,0.502,0.953   c0.499,0.734,0.661,1.734,1.128,2.472c0.173,0.285,0.333,0.589,0.459,0.918c0.107,0.282,0.375,0.756,0.688,0.387   c0.126-0.143,0.213-0.442,0.301-0.617c0.168-0.312,0.352-0.614,0.533-0.911c0.699-1.145,1.469-2.208,2.101-3.349   c0.38-0.686,0.984-1.164,1.426-1.76c0.211-0.283,0.432-0.503,0.629-0.797c0.254-0.369,0.517-0.724,0.788-1.071   c0.675-0.867,1.337-1.776,1.981-2.632c0.538-0.705,1.053-1.378,1.54-2.08c0.55-0.788,1.035-1.597,1.592-2.307   c0.622-0.785,1.066-1.784,1.461-2.646c0.129-0.282,0.22-0.628,0.41-0.858c0.195-0.232,0.28-0.418,0.349-0.747   c0.146-0.747,0.302-1.501,0.296-2.302c0-0.414-0.133-0.858-0.186-1.294C23.674,39.631,23.68,39.208,23.514,38.734z"></path>
+                    <path d="M67.836,33.637c-0.076-0.429-0.079-0.868-0.179-1.286c-0.141-0.621-0.329-1.232-0.548-1.814   c-0.247-0.665-0.561-1.246-0.889-1.837c-0.692-1.263-1.794-2.313-2.831-2.396c-0.668-0.051-1.289-0.098-1.944,0.046   c-0.432,0.094-0.864,0.224-1.3,0.33c-0.418,0.1-0.779,0.139-1.16,0.378c-0.419,0.26-0.823,0.56-1.218,0.891   c-0.714,0.604-1.439,1.051-1.952,2.026c-0.239,0.461-0.591,0.814-0.869,1.231c-0.428,0.643-0.826,1.322-1.2,2.033   c-0.176,0.333-0.369,0.669-0.531,1.014c-0.183,0.393-0.269,0.893-0.43,1.312c-0.141,0.352-0.328,0.656-0.488,0.988   c-0.23,0.469-0.366,0.991-0.515,1.534c-0.284,1.008-0.679,1.936-0.934,2.947c-0.266,1.051-0.492,2.128-0.682,3.227   c0.035-0.204-0.265-0.941-0.328-1.163c-0.52-1.786-0.944-3.681-1.63-5.378c-0.549-1.355-1.431-2.905-2.167-4.069   c-0.335-0.529-0.702-1.019-1.004-1.584c-0.256-0.476-0.532-0.923-0.813-1.364c-0.262-0.414-0.524-0.939-0.841-1.256   c-0.687-0.692-1.329-1.484-2.048-2.118c-0.435-0.384-0.883-0.674-1.33-0.999c-0.048-0.036-0.1-0.071-0.147-0.106   c-0.59-0.447-1.178-0.961-1.814-1.175c-0.379-0.129-0.762-0.099-1.14-0.139c-0.356-0.031-0.711-0.061-1.062-0.056   c-0.27,0.001-0.431,0.123-0.664,0.247c-0.474,0.246-0.948,0.386-1.39,0.728c-0.82,0.635-1.494,1.601-1.989,2.757   c-0.495,1.156-0.978,2.677-0.918,4.164c0.032,0.79-0.188,1.581-0.233,2.358c-0.05,0.854-0.015,1.731,0.166,2.594   c0.207,0.998,0.445,1.992,0.773,2.938c0.154,0.444,0.354,0.852,0.519,1.287c0.149,0.385,0.259,0.815,0.394,1.211   c0.593,1.736,1.19,3.438,1.976,5.039c0.383,0.782,0.768,1.558,1.152,2.334c0.333,0.678,0.638,1.424,1.059,1.978   c0.443,0.581,0.807,1.388,1.199,2.051c0.704,1.185,1.506,2.184,2.294,3.254c0.175,0.242,0.357,0.499,0.484,0.801   c0.106,0.25,0.123,0.51,0.24,0.745c0.347,0.682,0.86,1.293,1.268,1.894c0.779,1.153,1.548,2.358,2.363,3.437   c0.51,0.671,1.023,1.334,1.513,2.035c0.45,0.643,0.814,1.36,1.254,2.013c0.974,1.44,1.938,2.896,2.871,4.391   c0.354,0.563,0.748,1.125,1.026,1.767c0.176,0.412,0.37,0.295,0.578,0.055c0.399-0.464,0.63-1.161,0.942-1.743   c0.159-0.298,0.32-0.597,0.482-0.895c0.146-0.271,0.369-0.544,0.478-0.854c0.069-0.209,0.094-0.431,0.187-0.633   c0.095-0.204,0.212-0.385,0.294-0.604c0.276-0.769,0.53-1.496,0.999-2.022c0.41-0.466,0.645-1.124,1.004-1.657   c0.352-0.525,0.764-1.025,1.196-1.401c0.346-0.302,0.607-0.771,0.859-1.223c0.229-0.409,0.527-0.699,0.731-1.134   c0.526-1.128,1.088-2.217,1.677-3.275c0.224-0.402,0.432-0.887,0.704-1.222c0.895-1.098,1.694-2.353,2.263-3.889   c0.152-0.414,0.327-0.805,0.514-1.18c0.143-0.283,0.295-0.557,0.442-0.835c0.333-0.629,0.528-1.395,0.827-2.049   c0.69-1.54,1.185-3.26,1.705-4.954c0.29-0.943,0.414-1.917,0.597-2.92c0.208-1.154,0.369-2.334,0.465-3.544   c0.095-1.168,0.038-2.46-0.066-3.67C68.032,34.692,67.928,34.164,67.836,33.637z"></path>
+                </g>
+            </symbol>
+            <symbol id="shape_ztvFMEuHOg" viewBox="0 0 100 100">
+                <path d="M65.675,30.5h-2.997V28c0-0.829-0.672-1.5-1.5-1.5H57.46c-0.828,0-1.5,0.671-1.5,1.5v2.5H42.561V28  c0-0.829-0.671-1.5-1.5-1.5h-3.717c-0.829,0-1.5,0.671-1.5,1.5v2.5h-2.997c-3.953,0-7.169,3.216-7.169,7.169v28.329  c0,3.953,3.216,7.169,7.169,7.169h32.828c3.953,0,7.169-3.216,7.169-7.169V37.669C72.844,33.716,69.628,30.5,65.675,30.5z   M69.844,65.998c0,2.299-1.87,4.169-4.169,4.169H32.847c-2.299,0-4.169-1.87-4.169-4.169V42.333h41.167V65.998z M48.371,65.489  c0.269,0.15,0.577,0.23,0.89,0.23s0.622-0.08,0.882-0.226c1.744-0.962,10.447-6.049,10.447-11.758c0-4.024-2.893-7.06-6.728-7.06  c-1.646,0-3.331,0.773-4.602,1.73c-1.271-0.958-2.956-1.73-4.602-1.73c-3.835,0-6.727,3.036-6.727,7.06  C37.932,59.445,46.635,64.532,48.371,65.489z"></path>
+            </symbol>
+        </svg>
+        @RenderBody()
+        <div id="backdrop-popup" class="backdrop-popup"></div>
+        <div id="backdrop-dropbox" class="backdrop-dropbox"></div>
+        <div id="lightbox-screen" class="lightbox-screen"></div>
+        <script id="script_lazyload" type="text/javascript" src="Content/js/script_lazyload.js?v=@DateTime.Now.Ticks"></script>
+        <!--[if lt IE 9]><script src="https://w.ladicdn.com/v5/source/html5shiv.min.js?v=1752746419968"></script><script src="https://w.ladicdn.com/v5/source/respond.min.js?v=1752746419968"></script><![endif]-->
+        <link href="https://fonts.googleapis.com/css2?family=Prata&family=Muli:wght@400;700&family=Dancing+Script:wght@400;700&family=Mulish:wght@400;700&family=Philosopher:wght@400;700&family=Judson:wght@400;700&family=Cormorant+Upright:wght@400;700&family=Exo:wght@400;700&family=Roboto:wght@400;700&family=Baloo+Bhaina+2:wght@400;700&family=Roboto+Slab:wght@400;700&family=Play:wght@400;700&family=Quicksand:wght@400;700&family=Montserrat:wght@400;700&family=Niramit:wght@400;700&family=Open+Sans:wght@400;700&family=Sriracha&display=swap" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="Content/css/style_keyframe.css">
+        <!-- <script src="https://w.ladicdn.com/v5/source/ladipagev3.min.js?v=1752746419968" type="text/javascript"></script> -->
+        <script type="text/javascript" src="Content/js/ladipagev3.js?v=@DateTime.Now.Ticks"></script>
+        <script id="script_event_data" type="application/json">
+            {
+                "HEADLINE8": {
+                    "a": "headline",
+                    "F": "fadeInUp",
+                    "C": "0s"
+                },
+                "HEADLINE10": {
+                    "a": "headline",
+                    "F": "fadeInRight",
+                    "C": "0s"
+                },
+                "IMAGE12": {
+                    "a": "image",
+                    "F": "fadeInLeft",
+                    "C": "0s"
+                },
+                "IMAGE40": {
+                    "a": "image",
+                    "cs": [
+                        {
+                            "dr": "action",
+                            "dC": "/Content/images/medium/SECTION5/ALS_7440.jpg",
+                            "dF": "image",
+                            "a": "lightbox"
+                        }
+                    ],
+                    "F": "fadeInLeft",
+                    "C": "1s"
+                },
+                "IMAGE42": {
+                    "a": "image",
+                    "cs": [
+                        {
+                            "dr": "action",
+                            "dC": "/Content/images/medium/SECTION5/HTH04619.jpg",
+                            "dF": "image",
+                            "a": "lightbox"
+                        }
+                    ],
+                    "F": "fadeInDown",
+                    "C": "1s"
+                },
+                "IMAGE43": {
+                    "a": "image",
+                    "cs": [
+                        {
+                            "dr": "action",
+                            "dC": "/Content/images/medium/SECTION5/ALS_7463.jpg",
+                            "dF": "image",
+                            "a": "lightbox"
+                        }
+                    ],
+                    "F": "fadeInLeft",
+                    "C": "0s"
+                },
+                "IMAGE44": {
+                    "a": "image",
+                    "cs": [{
+                        "dr": "action",
+                        "dC": "/Content/images/medium/SECTION5/ALS_7398.jpg",
+                        "dF": "image",
+                        "a": "lightbox"
+                    }
+                ],
+                "F": "fadeInLeft",
+                "C": "0s"
+            },
+            "IMAGE45": {
+                "a": "image",
+                "cs": [
+                    {"dr": "action",
+                    "dC": "/Content/images/medium/SECTION5/HTH04845.jpg",
+                    "dF": "image",
+                    "a": "lightbox"
+                }
+            ],
+            "F": "fadeInUp",
+            "C": "0s"
+        },
+        "IMAGE46": {
+            "a": "image",
+            "cs": [
+                {
+                    "dr": "action",
+                    "dC": "/Content/images/medium/SECTION5/HTH05129.jpg",
+                    "dF": "image",
+                    "a": "lightbox"
+                }
+            ],
+            "F": "fadeInRight",
+            "C": "0s"
+        },
+        "IMAGE47": {
+            "a": "image",
+            "cs": [
+                {
+                    "dr": "action",
+                    "dC": "/Content/images/medium/SECTION5/ALS_7435.jpg",
+                    "dF": "image",
+                    "a": "lightbox"
+                }
+            ],
+            "F": "fadeInRight",
+            "C": "0s"
+        },
+        "BOX48": {
+            "a": "box",
+            "F": "bounceIn",
+            "C": "1s"
+        },
+        "BOX50": {
+            "a": "box",
+            "F": "fadeInUp",
+            "C": "0s"
+        },
+        "IMAGE53": {
+            "a": "image",
+            "cs": [
+                {
+                    "dr": "action",
+                    "dC": "/Content/images/medium/SECTION5/HTH04755.jpg",
+                    "dF": "image",
+                    "a": "lightbox"
+                }
+            ],
+            "F": "fadeInRight",
+            "C": "1s"
+        },
+        "IMAGE105": {
+            "a": "image",
+            "F": "fadeInRight",
+            "C": "0s"
+        },
+        "SHAPE144": {
+            "a": "shape",
+            "F": "fadeInDown",
+            "C": "1s"
+        },
+        "GROUP147": {
+            "a": "group",
+            "F": "fadeInDown",
+            "C": "0s"
+        },
+        "POPUP247": {
+            "a": "popup",
+            "X": "default",
+            "U": "background-color: rgba(0, 0, 0, 0.5);"
+        },
+        "BUTTON262": {
+            "a": "button",
+            "cs": [
+                {
+                    "dr": "action",
+                    "dw": "THIEPMOI",
+                    "a": "popup"
+                }
+            ]
+        },
+        "BUTTON264": {
+            "a": "button",
+            "cs": [
+                {
+                    "dw": "SECTION3",
+                    "dr": "action",
+                    "a": "section"
+                }
+            ]
+        },
+        "BUTTON266": {
+            "a": "button",
+            "cs": [
+                {
+                    "dw": "SECTION78",
+                    "dr": "action",
+                    "a": "section"
+                }
+            ]
+        },
+        "BUTTON268": {
+            "a": "button",
+            "cs": [
+                {
+                    "dw": "SECTION5",
+                    "dr": "action",
+                    "a": "section"
+                }
+            ]
+        },
+        "POPUP260": {
+            "a": "popup",
+            "X": "top_right",
+            "U": ""
+        },
+        "BUTTON270": {
+            "a": "button",
+            "cs": [
+                {
+                    "dw": "SECTION315",
+                    "dr": "action",
+                    "a": "section"
+                }
+            ]
+        },
+        "IMAGE95": {
+            "a": "image",
+            "F": "fadeInLeft",
+            "C": "0s"
+        },
+        "GROUP274": {
+            "a": "group",
+            "E": "fadeInRight",
+            "B": "1s",
+            "D": "fadeInLeft",
+            "A": "0s"
+        },
+        "GROUP277": {
+            "a": "group",
+            "B": "1s",
+            "A": "0s",
+            "F": "fadeInLeft"
+        },
+        "GROUP142": {
+            "a": "group",
+            "cs": [
+                {
+                    "dE": [
+                        "SECTION79",
+                        "GROUP142",
+                        "GROUP286"
+                    ],
+                    "dD": [
+                        "SECTION103",
+                        "GROUP298",
+                        "GROUP290"
+                    ],
+                    "dr": "action",
+                    "a": "hidden_show"
+                }
+            ]
+        },
+        "SHAPE288": {
+            "a": "shape",
+            "F": "fadeInDown",
+            "C": "1s"
+        },
+        "GROUP286": {
+            "a": "group",
+            "cs": [
+                {
+                    "dr": "action",
+                    "a": "hidden_show"
+                }
+            ]
+        },
+        "SHAPE292": {
+            "a": "shape",
+            "F": "fadeInDown",
+            "C": "1s"
+        },
+        "GROUP290": {
+            "a": "group",
+            "cs": [
+                {
+                    "dD": [
+                        "GROUP286",
+                        "GROUP142",
+                        "SECTION79"
+                    ],
+                    "dE": [
+                        "GROUP290",
+                        "GROUP298",
+                        "SECTION103"
+                    ],
+                    "dr": "action",
+                    "a": "hidden_show"
+                }
+            ]
+        },
+        "SHAPE300": {
+            "a": "shape",
+            "F": "fadeInDown",
+            "C": "1s"
+        },
+        "GROUP316": {
+            "a": "group",
+            "F": "fadeInUp",
+            "C": "0.2s"
+        },
+        "BUTTON336": {
+            "a": "button",
+            "cs": [
+                {
+                    "dr": "action",
+                    "dw": "SECTION344",
+                    "a": "section"
+                }
+            ],
+            "F": "slideInLeft",
+            "C": "1s"
+        },
+        "BUTTON339": {
+            "a": "button",
+            "cs": [
+                {
+                    "dr": "action",
+                    "dw": "POPUP346",
+                    "a": "popup"
+                }
+            ],
+            "F": "slideInRight",
+            "C": "1s"
+        },
+        "BUTTON340": {
+            "a": "button",
+            "cs": [
+                {
+                    "dr": "action",
+                    "dw": "SECTION350",
+                    "a": "section"
+                }
+            ],
+            "F": "fadeInUpBig",
+            "C": "1s"
+        },
+        "IMAGE30": {
+            "a": "image",
+            "F": "fadeInDown",
+            "C": "1s"
+        },
+        "HEADLINE23": {
+            "a": "headline",
+            "F": "fadeInDown",
+            "C": "0s"
+        },
+        "GROUP256": {
+            "a": "group",
+            "E": "fadeInLeft",
+            "B": "0.2s",
+            "D": "fadeInUp",
+            "A": "1s"
+        },
+        "SECTION336": {
+            "a": "section",
+            "cf": "#",
+            "ce": "direct",
+            "d": "video"
+        },
+        "HEADLINE337": {
+            "a": "headline",
+            "F": "bounceInUp",
+            "C": "1s"
+        },
+        "VIDEO335": {
+            "a": "video",
+            "ch": "youtube",
+            "cg": true,
+            "F": "fadeInUp",
+            "C": "1s"
+        },
+        "PARAGRAPH335": {
+            "a": "paragraph",
+            "F": "bounceInUp",
+            "C": "1s"
+        },
+        "SECTION339": {
+            "a": "section",
+            "F": "shake",
+            "C": "1s"
+        },
+        "HEADLINE339": {
+            "a": "headline",
+            "cs": [
+                {
+                    "dr": "action",
+                    "a": null
+                }
+            ],
+            "F": "fadeInDown",
+            "C": "1s"
+        },
+        "PARAGRAPH345": {
+            "a": "paragraph",
+            "F": "fadeInDown",
+            "C": "0s"
+        },
+        "HEADLINE340": {
+            "a": "headline",
+            "F": "fadeInUp",
+            "C": "1s"
+        },
+        "SHAPE337": {
+            "a": "shape",
+            "F": "fadeInDown",
+            "C": "1s"
+        },
+        "GROUP339": {
+            "a": "group",
+            "cs": [{
+                "dr": "action",
+                "a": "hidden_show"
+            }
+        ]
+    },
+    "BOX337": {
+        "a": "box",
+        "cs": [
+            {
+                "dr": "action"
+            }
+        ]
+    },
+    "SHAPE338": {"a": "shape",
+    "F": "fadeInDown",
+    "C": "1s"
+},
+"GROUP340": {
+    "a": "group",
+    "cs": [
+        {
+            "dD": [
+                "GROUP339",
+                "GROUP142",
+                "SECTION79"
+            ],
+            "dE": [
+                "GROUP340",
+                "GROUP298",
+                "SECTION103"
+            ],
+            "dr": "action",
+            "a": "hidden_show"
+        }
+    ]
+},
+"GROUP338": {
+    "a": "group",
+    "cs": [
+        {
+            "dr": "action",
+            "dE": [
+                "GROUP340",
+                "SECTION337",
+                "GROUP345"
+            ],
+            "dD": [
+                "GROUP339",
+                "SECTION340",
+                "GROUP346"
+            ],
+            "a": "hidden_show"
+        }
+    ]
+},
+"SHAPE342": {
+    "a": "shape",
+    "F": "fadeInDown",
+    "C": "1s"
+},
+"GROUP346": {
+    "a": "group",
+    "cs": [
+        {
+            "dD": [
+                "GROUP345",
+                "GROUP142",
+                "SECTION79"
+            ],
+            "dE": [
+                "GROUP346",
+                "GROUP298",
+                "SECTION103"
+            ],
+            "dr": "action",
+            "a": "hidden_show"
+        }
+    ]
+},
+"IMAGE340": {
+    "a": "image",
+    "cs": [
+        {
+            "dr": "action",
+            "dw": "CHURE",
+            "a": "popup"
+        }
+    ],
+    "F": "bounceInLeft",
+    "C": "1s"
+},
+"IMAGE341": {
+    "a": "image",
+    "cs": [
+        {
+            "dr": "action",
+            "dw": "CODAU",
+            "a": "popup"
+        }
+    ],
+    "F": "bounceInRight",
+    "C": "1s"
+},
+"GROUP348": {
+    "a": "group",
+    "B": "0s",
+    "A": "1s",
+    "F": "bounceInLeft"
+},
+"GROUP349": {
+    "a": "group",
+    "B": "0s",
+    "A": "1s",
+    "F": "bounceInRight"
+},
+"PARAGRAPH350": {
+    "a": "paragraph",
+    "F": "fadeInUp",
+    "C": "0s"
+},
+"PARAGRAPH355": {
+    "a": "paragraph",
+    "F": "fadeInUp",
+    "C": "0s"
+},
+"BUTTON344": {
+    "a": "button",
+    "cs": [
+        {
+            "dr": "action",
+            "dw": "SECTION350",
+            "a": "section"
+        }
+    ]
+},
+"BUTTON345": {
+    "a": "button",
+    "cs": [
+        {
+            "dr": "action",
+            "dv": "_blank",
+            "dw": "https://www.google.com/maps/place/QL37,+H%C6%B0%C6%A1ng+Mai,+Vi%E1%BB%87t+Y%C3%AAn,+B%E1%BA%AFc+Giang,+Vi%E1%BB%87t+Nam/@@21.3139999,106.0350025,18.75z/data=!4m6!3m5!1s0x313511a0a742dd2d:0x543ef04dd09b4707!8m2!3d21.3140406!4d106.0356399!16s%2Fg%2F11c673k27q?hl=vi-VN&#38;entry=ttu",
+            "a": "link"
+        }
+    ]
+},
+"GROUP355": {
+    "a": "group",
+    "E": "fadeInLeft",
+    "D": "fadeInUp",
+    "C": "0s"
+},
+"HEADLINE353": {
+    "a": "headline",
+    "F": "fadeInDown",
+    "C": "0s"
+},
+"PARAGRAPH359": {
+    "a": "paragraph",
+    "F": "fadeInDown",
+    "C": "0s"
+},
+"BOX345": {
+    "a": "box",
+    "F": "fadeInUp",
+    "C": "0s"
+},
+"IMAGE345": {
+    "a": "image",
+    "cs": [
+        {
+            "dr": "action",
+            "dC": "",
+            "dF": "image",
+            "a": "lightbox"
+        }
+    ],
+    "F": "bounceIn",
+    "C": "0s"
+},
+"SHAPE353": {
+    "a": "shape",
+    "F": "fadeInDown",
+    "C": "1s"
+},
+"GROUP359": {
+    "a": "group",
+    "cs": [
+        {
+            "dr": "action",
+            "dw": "POPUP353",
+            "a": "popup"
+        }
+    ],
+    "F": "fadeInDown",
+    "C": "0s"
+},
+"NOTIFY336": {
+    "a": "notify",
+    "cv": "12UEXxpUZrQbRrhMtE_w-z9Arm_QdDcTGqPH1qNxbQHA",
+    "cu": 4,
+    "ct": 2,
+    "aY": "default",
+    "j": "top_center"
+},
+"IMAGE354": {
+    "a": "image",
+    "F": "fadeInRight",
+    "C": "1s"
+},
+"IMAGE355": {
+    "a": "image",
+    "F": "fadeInRight",
+    "C": "0s"
+},
+"IMAGE356": {
+    "a": "image",
+    "F": "fadeInLeft",
+    "C": "1s"
+},
+"DROPBOX338": {
+    "a": "popup",
+    "cs": [
+        {
+            "dr": "open_popup"
+        }
+    ],
+    "X": "default"
+},
+"IMAGE361": {
+    "a": "image",
+    "F": "fadeInLeft",
+    "C": "1s"
+},
+"IMAGE362": {
+    "a": "image",
+    "cs": [
+        {
+            "dr": "action",
+            "dC": "/Content/images/medium/SECTION5/HTH05356.jpg",
+            "dF": "image",
+            "a": "lightbox"
+        }
+    ],
+    "F": "fadeInLeft",
+    "C": "0s"
+},
+"PARAGRAPH364": {
+    "a": "paragraph",
+    "F": "fadeInUp",
+    "C": "0s"
+},
+"SHAPE355": {
+    "a": "shape",
+    "F": "bounceInUp",
+    "C": "1s"
+},
+"IMAGE364": {
+    "a": "image",
+    "F": "fadeInDown",
+    "C": "1s"
+},
+"SHAPE356": {
+    "a": "shape",
+    "F": "swing",
+    "C": "1s"
+},
+"SHAPE357": {
+    "a": "shape",
+    "F": "swing",
+    "C": "1s"
+},
+"POPUP342": {
+    "a": "popup",
+    "X": "default",
+    "U": "background-color: rgba(0, 0, 0, 0.5);"
+},
+"BUTTON354": {
+    "a": "button",
+    "cs": [
+        {
+            "dr": "action",
+            "dw": "SECTION350",
+            "a": "section"
+        }
+    ]
+},
+"BUTTON355": {
+    "a": "button",
+    "cs": [
+        {
+            "dr": "action",
+            "dw": "POPUP346",
+            "a": "popup"
+        }
+    ]
+},
+"HEADLINE367": {
+    "a": "headline",
+    "F": "fadeInUp",
+    "C": "0s"
+},
+"PARAGRAPH366": {
+    "a": "paragraph",
+    "F": "fadeInUp",
+    "C": "0s"
+},
+"PARAGRAPH370": {
+    "a": "paragraph",
+    "F": "tada",
+    "C": "1s"
+},
+"SHAPE363": {
+    "a": "shape",
+    "F": "wobble",
+    "C": "1s"
+},
+"GROUP375": {
+    "a": "group",
+    "cs": [
+        {
+            "dr": "action",
+            "dv": "_blank",
+                    "dw": "https://docs.google.com/spreadsheets/d/12UEXxpUZrQbRrhMtE_w-z9Arm_QdDcTGqPH1qNxbQHA/edit?gid=0#gid=0",
+            "a": "link"
+        }
+    ],
+    "D": "fadeInUp",
+    "A": "1s"
+},
+"GROUP345": {
+    "a": "group",
+    "cs": [
+        {
+            "dr": "action",
+            "a": "hidden_show"
+        }
+    ]
+},
+"GROUP344": {
+    "a": "group",
+    "cs": [
+        {
+            "dr": "action",
+            "dE": [
+                "GROUP346",
+                "GROUP339",
+                "SECTION340"
+            ],
+            "dD": [
+                "GROUP345",
+                "GROUP340",
+                "SECTION337"
+            ],
+            "a": "hidden_show"
+        }
+    ]
+},
+"POPUP346": {
+    "a": "popup",
+    "X": "default",
+    "U": "background-color: rgba(0, 0, 0, 0.5);"
+},
+"IMAGE374": {
+    "a": "image",
+    "F": "tada",
+    "C": "1s"
+},
+"BUTTON359": {
+    "a": "button",
+    "cs": [
+        {
+            "dr": "action",
+            "dv": "_self",
+            "dw": "",
+            "a": "link"
+        }
+    ]
+},
+"PARAGRAPH373": {
+    "a": "paragraph",
+    "cs": [
+        {
+            "dr": "action",
+            "dv": "_blank",
+            "dw": "#",
+            "a": "link"
+        }
+    ]
+},
+"BUTTON361": {
+    "a": "button",
+    "cs": [
+        {
+            "dr": "action",
+            "dv": "_self",
+            "dw": "",
+            "a": "link"
+        }
+    ]
+},
+"BUTTON362": {
+    "a": "button",
+    "cs": [
+        {
+            "dr": "action",
+            "dL": "103872745557",
+            "a": "copy_clipboard"
+        }
+    ]
+},
+"PARAGRAPH375": {
+    "a": "paragraph",
+    "cs": [
+        {
+            "dr": "action",
+            "dv": "_blank",
+            "dw": "#",
+            "a": "link"
+        }
+    ]
+},
+"HOPMUNGCUOI": {
+    "a": "button",
+    "cs": [
+        {
+            "dr": "action",
+            "dw": "",
+                    "dL": "5699996869999",
+            "a": "copy_clipboard"
+        }
+    ]
+},
+@* "POPUP348": {
+    "a": "popup",
+    "cd": true,
+    "cc": 60,
+    "X": "default",
+    "U": "background-color: rgba(0, 0, 0, 0.5);",
+    "F": "pulse"
+}, *@
+"BUTTON364": {
+    "a": "button",
+    "cs": [
+        {
+            "dr": "action",
+            "dw": "SECTION350",
+            "a": "section"
+        }]
+    },
+    "GROUP394": {
+        "a": "group",
+        "cs": [
+            {
+                "dr": "action",
+                "dw": "THIEPMOI",
+                "a": "popup"
+            },
+            {
+                "dr": "hover",
+                "dO": {
+                    "ds": "fadeInRight",
+                    "dM": 1,
+                    "dt": "left_middle",
+                    "dN": 1
+                },
+                "dw": "THIEP",
+                "a": "dropbox"
+            },
+            {
+                "dr": "1st_click",
+                "dO": {
+                    "ds": "fadeInRight",
+                    "dM": 1,
+                    "dt": "left_middle",
+                    "dN": 1
+                },
+                "dw": "THIEP",
+                "a": "dropbox"
+            },
+            {
+                "dr": "2nd_click",
+                "dE": [
+                    "THIEP"
+                ],
+                "a": "hidden_show"
+            }
+        ],
+        "aC": true,
+        "ay": "bottom_right",
+        "av": "0px",
+        "as": "0px",
+        "ap": "110px",
+        "am": "26px",
+        "F": "fadeInUp",
+        "C": "1s"
+    },
+    "GROUP395": {
+        "a": "group",
+        "cs": [
+            {
+                "dr": "hover",
+                "dO": {
+                    "ds": "fadeInRight",
+                    "dM": 1,
+                    "dt": "left_middle",
+                    "dN": 1
+                },
+                "dw": "LOICHUC",
+                "a": "dropbox"
+            },
+            {
+                "dr": "action",
+                "dw": "SECTION344",
+                "a": "section"
+            },
+            {
+                "dr": "1st_click",
+                "dO": {
+                    "ds": "fadeInRight",
+                    "dM": 1,
+                    "dt": "left_middle",
+                    "dN": 1
+                },
+                "dw": "LOICHUC",
+                "a": "dropbox"
+            },
+            {
+                "dr": "2nd_click",
+                "dE": [
+                    "LOICHUC"
+                ],
+                "a": "hidden_show"
+            }
+        ],
+        "aC": true,
+        "ay": "bottom_right",
+        "av": "0px",
+        "as": "0px",
+        "ap": "320px",
+        "am": "26px",
+        "F": "fadeInUp",
+        "C": "1s"
+    },
+    "GROUP396": {
+        "a": "group",
+        "cs": [
+            {
+                "dr": "action",
+                "dw": "SECTION350",
+                "a": "section"
+            },
+            {
+                "dr": "hover",
+                "dO": {
+                    "ds": "fadeInRight",
+                    "dM": 1,
+                    "dt": "left_middle",
+                    "dN": 1
+                },
+                "dw": "XNTD",
+                "a": "dropbox"
+            },
+            {
+                "dr": "1st_click",
+                "dO": {
+                    "ds": "fadeInRight",
+                    "dM": 1,
+                    "dt": "left_middle",
+                    "dN": 1
+                },
+                "dw": "XNTD",
+                "a": "dropbox"
+            },
+            {
+                "dr": "2nd_click",
+                "dE": [
+                    "XNTD"
+                ],
+                "a": "hidden_show"
+            }
+        ],
+        "aC": true,
+        "ay": "bottom_right",
+        "av": "0px",
+        "as": "0px",
+        "ap": "250px",
+        "am": "25px",
+        "F": "fadeInUp",
+        "C": "1s"
+    },
+    "GROUP397": {
+        "a": "group",
+        "cs": [
+            {
+                "dr": "action",
+                "dw": "SECTION348",
+                "a": "section"
+            },
+            {
+                "dr": "hover",
+                "dO": {
+                    "ds": "fadeInRight",
+                    "dM": 1,
+                    "dt": "left_middle",
+                    "dN": 1
+                },
+                "dw": "MUNGCUOI",
+                "a": "dropbox"
+            },
+            {
+                "dr": "1st_click",
+                "dO": {
+                    "ds": "fadeInRight",
+                    "dM": 1,
+                    "dt": "left_middle",
+                    "dN": 1
+                },
+                "dw": "MUNGCUOI",
+                "a": "dropbox"
+            },
+            {
+                "dr": "2nd_click",
+                "dE": [
+                    "MUNGCUOI"
+                ],
+                "a": "hidden_show"
+            }
+        ],
+        "aC": true,
+        "ay": "bottom_right",
+        "av": "0px",
+        "as": "0px",
+        "ap": "180px",
+        "am": "26px",
+        "F": "fadeInUp",
+        "C": "1s"
+    },
+    "SHAPE377": {
+        "a": "shape",
+        "F": "pulse",
+        "C": "0.3s"
+    },
+    "GROUP398": {
+        "a": "group",
+        "cs": [
+            {
+                "dr": "action",
+                "dE": [
+                    "GROUP394",
+                    "GROUP395",
+                    "GROUP396",
+                    "GROUP397",
+                    "GROUP398"
+                ],
+                "dD": [
+                    "GROUP399",
+                    "GROUP400"
+                ],
+                "a": "hidden_show"
+            }
+        ],
+        "aC": true,
+        "ay": "bottom_right",
+        "av": "0px",
+        "as": "0px",
+        "ap": "45px",
+        "am": "30px"
+    },
+    "SHAPE378": {
+        "a": "shape",
+        "F": "pulse",
+        "C": "0.3s"
+    },
+    "GROUP399": {
+        "a": "group",
+        "cs": [
+            {
+                "dr": "action",
+                "dD": [
+                    "GROUP394",
+                    "GROUP395",
+                    "GROUP396",
+                    "GROUP397",
+                    "GROUP398"
+                ],
+                "dE": [
+                    "GROUP399",
+                    "GROUP400"
+                ],
+                "a": "hidden_show"
+            }
+        ],
+        "aC": true,
+        "ay": "bottom_right",
+        "av": "0px",
+        "as": "0px",
+        "ap": "45px",
+        "am": "30px"
+    },
+    "GROUP400": {
+        "a": "group",
+        "cs": [
+            {
+                "dr": "action",
+                "dw": "SECTION1",
+                "a": "section"
+            }
+        ],
+        "aC": true,
+        "ay": "bottom_right",
+        "av": "0px",
+        "as": "0px",
+        "ap": "110px",
+        "am": "30px",
+        "F": "bounce",
+        "C": "1s"
+    },
+    "GROUP391": {
+        "a": "group",
+        "aB": true,
+        "ax": "bottom_right",
+        "au": "0px",
+        "ar": "0px",
+        "ao": "20px",
+        "al": "15px"
+    },
+    "THIEP": {
+        "a": "popup",
+        "X": "default"
+    },
+    "MUNGCUOI": {
+        "a": "popup",
+        "X": "default"
+    },
+    "LOICHUC": {
+        "a": "popup",
+        "X": "default"
+    },
+    "XNTD": {
+        "a": "popup",
+        "cs": [
+            {
+                "dr": "open_popup"
+            }
+        ],
+        "X": "default"
+    },
+    "IMAGE378": {
+        "a": "image",
+        "cs": [
+            {
+                "dr": "action",
+                "dC": "https://w.ladicdn.com/5c728619c417ab07e5194baa/kinh-nghiem-chup-anh-cuoi-khi-mang-bau-05-20240602022741-lqhqx.jpg",
+                "dF": "image",
+                "a": "lightbox"
+            }
+        ],
+        "F": "fadeInUp",
+        "C": "0s"
+    },
+    "SHAPE258": {
+        "a": "shape",
+        "cs": [
+            {
+                "dw": "POPUP260",
+                "dr": "action",
+                "a": "popup"
+            }
+        ]
+    },
+    "IMAGE352": {
+        "a": "image",
+        "cs": [
+            {
+                "dr": "action",
+                "dC": "https://w.ladicdn.com/5c728619c417ab07e5194baa/th-20240112130749-9eb7u.png",
+                "dF": "image",
+                "a": "lightbox"
+            }
+        ]
+    },
+    "GROUP364": {
+        "a": "group",
+        "ay": "top",
+        "ax": "top_center",
+        "D": "fadeInDown",
+        "A": "1s",
+        "aD": true,
+        "aw": "0px",
+        "at": "0px",
+        "aq": "0px",
+        "an": "0px"
+    },
+    "PARAGRAPH395": {
+        "a": "paragraph",
+        "F": "fadeInUp",
+        "C": "0s"
+    },
+    "PARAGRAPH396": {
+        "a": "paragraph",
+        "F": "fadeInUp",
+        "C": "0s"
+    },
+    "HEADLINE386": {
+        "a": "headline",
+        "F": "fadeInDown",
+        "C": "0s"
+    },
+    "BOX373": {
+        "a": "box",
+        "F": "pulse",
+        "C": "1s"
+    },
+    "GROUP406": {
+        "a": "group",
+        "cs": [
+            {
+                "dr": "action",
+                "dv": "_blank",
+                        "dw": "https://www.facebook.com/long.nhat.984907/?locale=vi_VN",
+                "a": "link"
+            }
+        ],
+        "F": "bounceInLeft",
+        "C": "1s"
+    },
+    "BOX374": {
+        "a": "box",
+        "F": "pulse",
+        "C": "1s"
+    },
+    "GROUP407": {
+        "a": "group",
+        "cs": [
+            {
+                "dr": "action",
+                "dv": "_blank",
+                "dw": "https://zalo.me/0332955490",
+                "a": "link"
+            }
+        ],
+        "F": "bounceInLeft",
+        "C": "1s"
+    },
+    "BOX375": {
+        "a": "box",
+        "F": "pulse",
+        "C": "1s"
+    },
+    "GROUP408": {
+        "a": "group",
+        "cs": [
+            {
+                "dr": "action",
+                "dw": "0971271423",
+                "a": "phone"
+            }
+        ],
+        "F": "bounceInLeft",
+        "C": "1s"
+    },
+    "BOX376": {
+        "a": "box",
+        "F": "pulse",
+        "C": "1s"
+    },
+    "GROUP412": {
+        "a": "group",
+        "cs": [
+            {
+                "dr": "action",
+                "dv": "_blank",
+                        "dw": "https://www.facebook.com/long.nhat.984907/?locale=vi_VN",
+                "a": "link"
+            }
+        ],
+        "F": "bounceInRight",
+        "C": "1s"
+    },
+    "BOX377": {
+        "a": "box",
+        "F": "pulse",
+        "C": "1s"
+    },
+    "GROUP413": {
+        "a": "group",
+        "cs": [
+            {
+                "dr": "action",
+                "dv": "_blank",
+                "dw": "https://zalo.me/0332955490",
+                "a": "link"
+            }
+        ],
+        "F": "bounceInRight",
+        "C": "1s"
+    },
+    "BOX378": {
+        "a": "box",
+        "F": "pulse",
+        "C": "1s"
+    },
+    "GROUP414": {
+        "a": "group",
+        "cs": [
+            {
+                "dr": "action",
+                        "dw": "0971271423",
+                "a": "phone"
+            }
+        ],
+        "F": "bounceInRight",
+        "C": "1s"
+    },
+    "SHAPE386": {
+        "a": "shape",
+        "F": "bounceIn",
+        "C": "0s"
+    },
+    "GROUP416": {
+        "a": "group",
+        "F": "fadeInUp",
+        "C": "0.2s"
+    },
+    "BUTTON365": {
+        "a": "button",
+        "cs": [
+            {
+                "dr": "action",
+                "dw": "SECTION350",
+                "a": "section"
+            }
+        ]
+    },
+    "BUTTON366": {
+        "a": "button",
+        "cs": [
+            {
+                "dr": "action",
+                "dv": "_blank",
+                "dw": "https://www.google.com/maps/place/Di%E1%BB%85n+Th%C3%A1i,+Di%E1%BB%85n+Ch%C3%A2u,+Ngh%E1%BB%87+An,+Vi%E1%BB%87t+Nam/@@19.0161562,105.5176089,18.5z/data=!4m6!3m5!1s0x31376413fc4872ef:0x8781ae79c0f25c57!8m2!3d19.0163965!4d105.5185677!16s%2Fg%2F11h1krwmt6?hl=vi-VN&#38;entry=ttu",
+                "a": "link"
+            }
+        ]
+    },
+    "GROUP415": {
+        "a": "group",
+        "E": "fadeInRight",
+        "D": "fadeInUp",
+        "C": "0s"
+    },
+    "GROUP418": {
+        "a": "group",
+        "F": "fadeInUp",
+        "C": "0.2s"
+    },
+    "BUTTON367": {
+        "a": "button",
+        "cs": [
+            {
+                "dr": "action",
+                "dw": "SECTION350",
+                "a": "section"
+            }
+        ]
+    },
+    "BUTTON368": {
+        "a": "button",
+        "cs": [
+            {
+                "dr": "action",
+                "dv": "_blank",
+                "dw": "https://www.google.com/maps/place/Di%E1%BB%85n+Th%C3%A1i,+Di%E1%BB%85n+Ch%C3%A2u,+Ngh%E1%BB%87+An,+Vi%E1%BB%87t+Nam/@@19.0161562,105.5176089,18.5z/data=!4m6!3m5!1s0x31376413fc4872ef:0x8781ae79c0f25c57!8m2!3d19.0163965!4d105.5185677!16s%2Fg%2F11h1krwmt6?hl=vi-VN&#38;entry=ttu",
+                "a": "link"
+            }
+        ]
+    },
+    "GROUP417": {
+        "a": "group",
+        "F": "fadeInUp",
+        "C": "0s"
+    },
+    "GROUP421": {
+        "a": "group",
+        "cs": [
+            {
+                "dr": "action",
+                "dw": "POPUP346",
+                "a": "popup"
+            }
+        ],
+        "F": "tada",
+        "C": "1s"
+    },
+    "BOX382": {
+        "a": "box",
+        "cs": [
+            {
+                "dr": "action",
+                "dw": "POPUP5",
+                "a": "popup"
+            }
+        ]
+    },
+    "HEADLINE390": {
+        "a": "headline",
+        "F": "fadeInUp",
+        "C": "0s"
+    },
+    "PARAGRAPH401": {
+        "a": "paragraph",
+        "F": "fadeInUp",
+        "C": "0s"
+    },
+    "FORM_ITEM350": {
+        "a": "form_item",
+        "bS": "text",
+        "bQ": 1
+    },
+    "FORM_ITEM351": {
+        "a": "form_item",
+        "bS": "textarea",
+        "bQ": 2
+    },
+    "FORM_ITEM352": {
+        "a": "form_item",
+        "bS": "select",
+        "bR": "Bạn cô Dâu",
+        "bQ": 3
+    },
+    "FORM_ITEM353": {
+        "a": "form_item",
+        "bS": "select",
+        "bQ": 4
+    },
+    "FORM339": {
+        "option.dynamic_form_config": "&#123;&#34;configs&#34;:[],&#34;default_actions&#34;:[&#123;&#34;id_open_popup&#34;:&#34;POPUP342&#34;,&#34;type&#34;:&#34;form_open_popup&#34;,&#34;no_delete&#34;:true&#125;]&#125;",
+        "a": "form",
+        "bP": "66d360f3b4577100128b7bb4",
+        "bM": true,
+        "by": true,
+        "bx": true,
+        "F": "fadeInUp",
+        "C": "0s"
+    },
+    "BOX383": {
+        "a": "box",
+        "F": "bounceIn",
+        "C": "1s"
+    },
+    "BOX384": {
+        "a": "box",
+        "F": "fadeInDown",
+        "C": "1s"
+    },
+    "HEADLINE393": {
+        "a": "headline",
+        "F": "fadeInDown",
+        "C": "0s"
+    },
+    "SHAPE395": {
+        "a": "shape",
+        "F": "fadeInUp",
+        "C": "1s"
+    },
+    "PARAGRAPH404": {
+        "a": "paragraph",
+        "F": "fadeInDown",
+        "C": "0s"
+    },
+    "FORM340": {
+        "option.dynamic_form_config": "&#123;&#34;configs&#34;:[],&#34;default_actions&#34;:[&#123;&#34;id_open_popup&#34;:&#34;POPUP247&#34;,&#34;type&#34;:&#34;form_open_popup&#34;,&#34;no_delete&#34;:true&#125;]&#125;",
+        "a": "form",
+        "bP": "66d3611eb4577100128b7ccf",
+        "bM": true,
+        "by": true,
+        "bx": true,
+        "bw": true,
+        "F": "fadeInUp",
+        "C": "0s"
+    },
+    "FORM_ITEM354": {
+        "a": "form_item",
+        "bS": "text",
+        "bQ": 1
+    },
+    "FORM_ITEM355": {
+        "a": "form_item",
+        "bS": "tel",
+        "bQ": 3
+    },
+    "FORM_ITEM356": {
+        "a": "form_item",
+        "bS": "textarea",
+        "bQ": 4
+    },
+    "FORM_ITEM357": {
+        "a": "form_item",
+        "bS": "radio",
+        "bQ": 3
+    },
+    "FORM_ITEM358": {
+        "a": "form_item",
+        "bS": "select",
+        "bR": "Tiệc Cưới nhà Trai",
+        "bQ": 5
+    },
+    "FORM_ITEM359": {
+        "a": "form_item",
+        "bS": "select",
+        "bR": "Tôi tới 1 mình",
+        "bQ": 6
+    },
+    "HEADLINE395": {
+        "a": "headline",
+        "cs": [
+            {
+                "dr": "action",
+                "dw": "THIEPMOI",
+                "a": "popup"
+            }
+        ],
+        "F": "fadeInRight",
+        "C": "0s"
+    },
+    "HEADLINE396": {
+        "a": "headline",
+        "cs": [
+            {
+                "dr": "action",
+                "dw": "POPUP346",
+                "a": "popup"
+            }
+        ],
+        "F": "fadeInLeft",
+        "C": "0s"
+    },
+    "IMAGE385": {
+        "a": "image",
+        "F": "tada",
+        "C": "1s"
+    },
+    "GROUP426": {
+        "a": "group",
+        "cs": [
+            {
+                "dr": "action",
+                "dv": "_blank",
+                "dw": "https://wedup.io.vn",
+                "a": "link"
+            }
+        ],
+        "B": "0s",
+        "A": "1s",
+        "F": "fadeInUp"
+    },
+    "SHAPE396": {
+        "a": "shape",
+        "F": "fadeInDown",
+        "C": "0s"
+    },
+    "POPUP353": {
+        "a": "popup",
+        "X": "default",
+        "U": "background-color: rgba(0, 0, 0, 0.5);"
+    },
+    "GALLERY337": {
+        "a": "gallery",
+        "ah": true,
+        "ae": 4
+    },
+    "CHURE": {
+        "a": "popup",
+        "X": "default",
+        "U": "background-color: rgba(0, 0, 0, 0.5);"
+    },
+    "GALLERY338": {
+        "a": "gallery",
+        "ah": true,
+        "ae": 4
+    },
+    "GALLERY339": {
+        "a": "gallery",
+        "ah": true,
+        "ae": 4
+    },
+    "CODAU": {
+        "a": "popup",
+        "X": "default",
+        "U": "background-color: rgba(0, 0, 0, 0.5);"
+    },
+    "GALLERY340": {
+        "a": "gallery",
+        "ah": true,
+        "ae": 4
+    },
+    "VIDEO339": {
+        "a": "video",
+        "ch": "direct",
+        "cg": true,
+        "F": "fadeInUp",
+        "C": "1s"
+    },
+    "PARAGRAPH407": {
+        "a": "paragraph",
+        "F": "fadeInDown",
+        "C": "0s"
+    },
+    "PARAGRAPH408": {
+        "a": "paragraph",
+        "F": "fadeInDown",
+        "C": "0s"
+    },
+    "SHAPE397": {
+        "a": "shape",
+        "cs": [
+            {
+                "dr": "action",
+                "dw": "POPUP356",
+                "a": "popup"
+            }
+        ],
+        "F": "fadeInUp",
+        "C": "0s"
+    },
+    "POPUP356": {
+        "a": "popup",
+        "X": "default",
+        "U": "background-color: rgba(0, 0, 0, 0.5);"
+    },
+    "HEADLINE397": {
+        "a": "headline",
+        "F": "fadeInDown",
+        "C": "1s"
+    },
+    "SHAPE398": {
+        "a": "shape",
+        "F": "fadeInUp",
+        "C": "1s"
+    },
+    "PARAGRAPH409": {
+        "a": "paragraph",
+        "F": "fadeInDown",
+        "C": "1s"
+    },
+    "VIDEO340": {
+        "a": "video",
+        "ci": "https://www.youtube.com/watch?v=CaFZ1A1pn3o",
+        "ch": "youtube",
+        "cg": true
+    },
+    "VIDEO341": {
+        "a": "video",
+        "ci": "https://www.youtube.com/watch?v=CaFZ1A1pn3o",
+        "ch": "direct",
+        "cg": true
+    },
+    "IMAGE389": {
+        "a": "image",
+        "cs": [
+            {
+                "dr": "action",
+                "dC": "/Content/images/qr_hao.jpg",
+                "dF": "image",
+                "a": "lightbox"
+            }
+        ]
+    },
+    "IMAGE390": {
+        "a": "image",
+        "cs": [
+            {
+                "dr": "action",
+                "dC": "",
+                "dF": "image",
+                "a": "lightbox"
+            }
+        ]
+    },
+    "HEADLINE398": {
+        "a": "headline",
+        "F": "fadeInDown",
+        "C": "1s"
+    },
+    "IMAGE391": {
+        "a": "image",
+        "F": "fadeInDown",
+        "C": "1s"
+    },
+    "GROUP432": {
+        "a": "group",
+        "E": "fadeInLeft",
+        "B": "0.2s",
+        "D": "fadeInUp",
+        "A": "1s"
+    },
+    "GROUP435": {
+        "a": "group",
+        "E": "fadeInRight",
+        "B": "0.2s",
+        "D": "fadeInLeft",
+        "A": "1s"
+    },
+    "GROUP436": {
+        "a": "group",
+        "B": "0.2s",
+        "A": "1s",
+        "F": "fadeInLeft"
+    },
+    "BUTTON374": {
+        "a": "button",
+        "cs": [
+            {
+                "dr": "action",
+                "dE": [
+                    "BUTTON374",
+                    "BUTTON375",
+                    "GROUP441"
+                ],
+                "dD": [
+                    "BUTTON373",
+                    "BUTTON376",
+                    "GROUP440"
+                ],
+                "a": "hidden_show"
+            }
+        ]
+    },
+    "BUTTON376": {
+        "a": "button",
+        "cs": [
+            {
+                "dr": "action",
+                "dE": [
+                    "BUTTON373",
+                    "BUTTON376",
+                    "GROUP440"
+                ],
+                "dD": [
+                    "BUTTON374",
+                    "BUTTON375",
+                    "GROUP441"
+                ],
+                "a": "hidden_show"
+            }
+        ]
+    },
+    "FORM_ITEM364": {
+        "a": "form_item",
+        "bS": "text",
+        "bR": "Bạn + NT (GĐ Bạn)",
+        "bQ": 1
+    },
+    "FORM342": {
+        "option.dynamic_form_config": "&#123;&#34;configs&#34;:[],&#34;default_actions&#34;:[&#123;&#34;text_thankyou_value&#34;:&#34;Cảm ơn bạn đã quan tâm!&#34;,&#34;type&#34;:&#34;form_show_popup_default&#34;,&#34;no_delete&#34;:true&#125;]&#125;",
+        "a": "form",
+        "bM": true,
+        "by": true,
+        "bx": true
+    },
+    "FORM_ITEM365": {
+        "a": "form_item",
+        "bS": "text",
+        "bR": "Bạn + NT (GĐ Bạn)",
+        "bQ": 1
+    },
+    "FORM343": {
+        "option.dynamic_form_config": "&#123;&#34;configs&#34;:[],&#34;default_actions&#34;:[&#123;&#34;text_thankyou_value&#34;:&#34;Cảm ơn bạn đã quan tâm!&#34;,&#34;type&#34;:&#34;form_show_popup_default&#34;,&#34;no_delete&#34;:true&#125;]&#125;",
+        "a": "form",
+        "bM": true,
+        "by": true,
+        "bx": true
+    },
+    "THIEPMOI": {
+        "a": "popup",
+        "cd": true,
+        "cc": 50,
+        "X": "default",
+        "U": "background-color: rgba(0, 0, 0, 0.5);"
+    },
+    "GROUP445": {
+        "a": "group",
+        "F": "bounceIn",
+        "C": "0s"
+    },
+    "COUNTDOWN337": {
+        "a": "countdown",
+        "bX": "countdown",
+                "bW": "@minutesLeft"
+    },
+    "COUNTDOWN_ITEM343": {
+        "a": "countdown_item",
+        "bY": "day"
+    },
+    "COUNTDOWN_ITEM344": {
+        "a": "countdown_item",
+        "bY": "hour"
+    },
+    "COUNTDOWN_ITEM345": {
+        "a": "countdown_item",
+        "bY": "minute"
+    },
+    "COUNTDOWN_ITEM346": {
+        "a": "countdown_item",
+        "bY": "seconds"
+    },
+    "PARAGRAPH429": {
+        "a": "paragraph",
+        "F": "bounceIn",
+        "C": "0s"
+    },
+    "GROUP446": {
+        "a": "group",
+        "F": "fadeInUpBig",
+        "C": "0s"
+    },
+    "COUNTDOWN_ITEM347": {
+        "a": "countdown_item",
+        "bY": "day"
+    },
+    "COUNTDOWN_ITEM348": {
+        "a": "countdown_item",
+        "bY": "hour"
+    },
+    "COUNTDOWN_ITEM349": {
+        "a": "countdown_item",
+        "bY": "minute"
+    },
+    "COUNTDOWN_ITEM350": {
+        "a": "countdown_item",
+        "bY": "seconds"
+    },
+    "COUNTDOWN338": {
+        "a": "countdown",
+        "bX": "countdown",
+        "bW": "@minutesLeft"
+    },
+    "GROUP447": {
+        "a": "group",
+        "F": "bounceIn",
+        "C": "0s"
+    },
+    "PARAGRAPH465": {
+        "a": "paragraph",
+        "F": "bounceIn",
+        "C": "0s"
+    },
+    "GROUP448": {
+        "a": "group",
+        "F": "fadeInUpBig",
+        "C": "0s"
+    }
+}</script>
+        <script id="script_ladipage_run" type="text/javascript">
+    (function() {
+        var run = function() {
+            if (typeof window.LadiPageScript == "undefined" || typeof window.ladi == "undefined" || window.ladi == undefined) {
+                setTimeout(run, 100);
+                return;
+            }
+            window.LadiPageApp = window.LadiPageApp || new window.LadiPageAppV2();
+            window.LadiPageScript.runtime.ladipage_id = '670657110b7dd20012965784';
+            window.LadiPageScript.runtime.publish_platform = 'LADIPAGEDNS';
+            window.LadiPageScript.runtime.version = '1752746419968';
+            window.LadiPageScript.runtime.cdn_url = 'https://w.ladicdn.com/v5/source/';
+            window.LadiPageScript.runtime.DOMAIN_SET_COOKIE = ["mewedding.vn"];
+            window.LadiPageScript.runtime.DOMAIN_FREE = ["preview.ldpdemo.com", "ldp.page"];
+            window.LadiPageScript.runtime.bodyFontSize = 12;
+            window.LadiPageScript.runtime.store_id = "5c728619c417ab07e5194baa";
+            window.LadiPageScript.runtime.store_ladiuid = "5c728619c417ab07e5194baa";
+            window.LadiPageScript.runtime.time_zone = 7;
+            window.LadiPageScript.runtime.currency = "VND";
+            window.LadiPageScript.runtime.convert_replace_str = true;
+            window.LadiPageScript.runtime.desktop_width = 960;
+            window.LadiPageScript.runtime.mobile_width = 420;
+            window.LadiPageScript.runtime.formdata = true;
+            window.LadiPageScript.runtime.tracking_button_click = true;
+            window.LadiPageScript.runtime.publish_time = 1752833580294;
+            window.LadiPageScript.runtime.lang = "vi";
+            window.LadiPageScript.run(true);
+            window.LadiPageScript.runEventScroll();
+        };
+        run();
+    }
+    )();
+</script>
+        <div class="snowflakes" aria-hidden="true">
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake" style="font-size: 20px;">♥️</div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake" style="font-size: 18px;">♥️ </div>
+        <div class="snowflake">❅</div>
+        <div class="snowflake" style="font-size: 20px;">♥️</div>
+        <div class="snowflake" style="font-size: 22px;">♥️</div>
+        <div class="snowflake" style="font-size: 14px;">❤️</div>
+        <div class="snowflake" style="font-size: 16px;">❤️</div>
+        <div class="snowflake" style="font-size: 18px;">❤️</div>
+        <div class="snowflake" style="font-size: 15px;">❤️</div>
+    </div>
+    <link rel="stylesheet" href="Content/css/snowflakes.css?v=@DateTime.Now.Ticks">
+</div>
+</body>
+</html>
+<!--Publish time: Fri, 18 Jul 2025 10:13:01 GMT-->
+<!--LadiPage build time: Thu, 17 Jul 2025 10:00:19 GMT-->

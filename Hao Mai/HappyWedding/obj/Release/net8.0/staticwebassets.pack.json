@@ -1,0 +1,749 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\HappyWedding.bundle.scp.css",
+      "PackagePath": "staticwebassets\\HappyWedding.484t7g64ua.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\css\\ladi.css",
+      "PackagePath": "staticwebassets\\Content\\css\\ladi.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\css\\snowflakes.css",
+      "PackagePath": "staticwebassets\\Content\\css\\snowflakes.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\css\\style.css",
+      "PackagePath": "staticwebassets\\Content\\css\\style.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\css\\style_animation.css",
+      "PackagePath": "staticwebassets\\Content\\css\\style_animation.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\css\\style_element.css",
+      "PackagePath": "staticwebassets\\Content\\css\\style_element.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\css\\style_keyframe.css",
+      "PackagePath": "staticwebassets\\Content\\css\\style_keyframe.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\css\\style_lazyload.css",
+      "PackagePath": "staticwebassets\\Content\\css\\style_lazyload.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\css\\style_page.css",
+      "PackagePath": "staticwebassets\\Content\\css\\style_page.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\HTH04755.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\HTH04755.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\Originals\\ALS_7393.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\Originals\\ALS_7393.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\Originals\\banner_master.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\Originals\\banner_master.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\Originals\\img_001.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\Originals\\img_001.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\Originals\\master_001.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\Originals\\master_001.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\Originals\\master_002.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\Originals\\master_002.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\Originals\\master_003.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\Originals\\master_003.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\Originals\\master_004.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\Originals\\master_004.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\banner_thank_you.png",
+      "PackagePath": "staticwebassets\\Content\\images\\banner_thank_you.png"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\c2-20201125074835.png",
+      "PackagePath": "staticwebassets\\Content\\images\\c2-20201125074835.png"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\c3-20201125074835.png",
+      "PackagePath": "staticwebassets\\Content\\images\\c3-20201125074835.png"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\1.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\1.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\ALS_7393.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\ALS_7393.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\SECTION5\\ALS_7398.JPG",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\SECTION5\\ALS_7398.JPG"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\SECTION5\\ALS_7435.JPG",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\SECTION5\\ALS_7435.JPG"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\SECTION5\\ALS_7440.JPG",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\SECTION5\\ALS_7440.JPG"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\SECTION5\\ALS_7463.JPG",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\SECTION5\\ALS_7463.JPG"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\SECTION5\\HTH04349.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\SECTION5\\HTH04349.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\SECTION5\\HTH04573.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\SECTION5\\HTH04573.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\SECTION5\\HTH04619.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\SECTION5\\HTH04619.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\SECTION5\\HTH04755.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\SECTION5\\HTH04755.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\SECTION5\\HTH04845.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\SECTION5\\HTH04845.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\SECTION5\\HTH04923.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\SECTION5\\HTH04923.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\SECTION5\\HTH05129.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\SECTION5\\HTH05129.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\SECTION5\\HTH05356.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\SECTION5\\HTH05356.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\SECTION5\\IMG_5554.JPG",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\SECTION5\\IMG_5554.JPG"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\banner_master.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\banner_master.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\image354\\ALS_7435.JPG",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\image354\\ALS_7435.JPG"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\image354\\ALS_7560.JPG",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\image354\\ALS_7560.JPG"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\image354\\HTH04486.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\image354\\HTH04486.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\image354\\HTH04755.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\image354\\HTH04755.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\image354\\HTH04987.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\image354\\HTH04987.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\img_001.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\img_001.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\list\\ALS_7563.JPG",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\list\\ALS_7563.JPG"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\list\\HTH04249.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\list\\HTH04249.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\list\\HTH04573.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\list\\HTH04573.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\list\\HTH04945.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\list\\HTH04945.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\list\\HTH05241.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\list\\HTH05241.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\list\\HTH05379.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\list\\HTH05379.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\master_001.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\master_001.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\master_002.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\master_002.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\master_003.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\master_003.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\haomai\\master_004.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\haomai\\master_004.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\logo.png",
+      "PackagePath": "staticwebassets\\Content\\images\\logo.png"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\logo_weeding.ico",
+      "PackagePath": "staticwebassets\\Content\\images\\logo_weeding.ico"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\ALS_7393.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\ALS_7393.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\SECTION5\\ALS_7398.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\SECTION5\\ALS_7398.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\SECTION5\\ALS_7435.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\SECTION5\\ALS_7435.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\SECTION5\\ALS_7440.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\SECTION5\\ALS_7440.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\SECTION5\\ALS_7463.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\SECTION5\\ALS_7463.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\SECTION5\\HTH04349.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\SECTION5\\HTH04349.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\SECTION5\\HTH04573.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\SECTION5\\HTH04573.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\SECTION5\\HTH04619.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\SECTION5\\HTH04619.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\SECTION5\\HTH04755.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\SECTION5\\HTH04755.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\SECTION5\\HTH04845.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\SECTION5\\HTH04845.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\SECTION5\\HTH04923.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\SECTION5\\HTH04923.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\SECTION5\\HTH05129.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\SECTION5\\HTH05129.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\SECTION5\\HTH05356.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\SECTION5\\HTH05356.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\SECTION5\\IMG_5554.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\SECTION5\\IMG_5554.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\banner_master.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\banner_master.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\image354\\ALS_7435.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\image354\\ALS_7435.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\image354\\ALS_7560.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\image354\\ALS_7560.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\image354\\HTH04486.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\image354\\HTH04486.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\image354\\HTH04755.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\image354\\HTH04755.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\image354\\HTH04987.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\image354\\HTH04987.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\img_001.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\img_001.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\list\\ALS_7563.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\list\\ALS_7563.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\list\\HTH04249.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\list\\HTH04249.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\list\\HTH04573.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\list\\HTH04573.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\list\\HTH04945.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\list\\HTH04945.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\list\\HTH05241.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\list\\HTH05241.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\list\\HTH05379.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\list\\HTH05379.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\master_001.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\master_001.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\master_002.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\master_002.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\master_003.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\master_003.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\medium\\master_004.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\medium\\master_004.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\modern_kids.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\modern_kids.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\pause-music.png",
+      "PackagePath": "staticwebassets\\Content\\images\\pause-music.png"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\play_music.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\play_music.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\qr_hao.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\qr_hao.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\qr_mai.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\qr_mai.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\small\\ALS_7393.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\small\\ALS_7393.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\small\\SECTION5\\ALS_7398.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\small\\SECTION5\\ALS_7398.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\small\\SECTION5\\ALS_7435.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\small\\SECTION5\\ALS_7435.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\small\\SECTION5\\ALS_7440.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\small\\SECTION5\\ALS_7440.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\small\\SECTION5\\ALS_7463.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\small\\SECTION5\\ALS_7463.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\small\\SECTION5\\HTH04349.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\small\\SECTION5\\HTH04349.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\small\\SECTION5\\HTH04573.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\small\\SECTION5\\HTH04573.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\small\\SECTION5\\HTH04619.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\small\\SECTION5\\HTH04619.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\small\\SECTION5\\HTH04755.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\small\\SECTION5\\HTH04755.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\small\\SECTION5\\HTH04845.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\small\\SECTION5\\HTH04845.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\small\\SECTION5\\HTH04923.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\small\\SECTION5\\HTH04923.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\small\\SECTION5\\HTH05129.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\small\\SECTION5\\HTH05129.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\small\\SECTION5\\HTH05356.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\small\\SECTION5\\HTH05356.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\small\\SECTION5\\IMG_5554.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\small\\SECTION5\\IMG_5554.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\small\\banner_master.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\small\\banner_master.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\small\\image354\\ALS_7435.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\small\\image354\\ALS_7435.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\small\\image354\\ALS_7560.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\small\\image354\\ALS_7560.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\small\\image354\\HTH04486.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\small\\image354\\HTH04486.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\small\\image354\\HTH04755.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\small\\image354\\HTH04755.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\small\\image354\\HTH04987.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\small\\image354\\HTH04987.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\small\\img_001.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\small\\img_001.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\small\\master_001.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\small\\master_001.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\small\\master_002.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\small\\master_002.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\small\\master_003.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\small\\master_003.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\small\\master_004.jpg",
+      "PackagePath": "staticwebassets\\Content\\images\\small\\master_004.jpg"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\images\\t6urt6-20201125030742.png",
+      "PackagePath": "staticwebassets\\Content\\images\\t6urt6-20201125030742.png"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\js\\ladipagev3.js",
+      "PackagePath": "staticwebassets\\Content\\js\\ladipagev3.js"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\js\\script_lazyload.js",
+      "PackagePath": "staticwebassets\\Content\\js\\script_lazyload.js"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\js\\toggle_music.js",
+      "PackagePath": "staticwebassets\\Content\\js\\toggle_music.js"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\music\\music_bg.mp3",
+      "PackagePath": "staticwebassets\\Content\\music\\music_bg.mp3"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\music\\music_bg_01.mp3",
+      "PackagePath": "staticwebassets\\Content\\music\\music_bg_01.mp3"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.HappyWedding.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.HappyWedding.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.HappyWedding.props",
+      "PackagePath": "build\\HappyWedding.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.HappyWedding.props",
+      "PackagePath": "buildMultiTargeting\\HappyWedding.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.HappyWedding.props",
+      "PackagePath": "buildTransitive\\HappyWedding.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
