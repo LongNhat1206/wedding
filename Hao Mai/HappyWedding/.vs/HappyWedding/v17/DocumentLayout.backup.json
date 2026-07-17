@@ -1,0 +1,150 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Code\\Wedding\\HappyWedding\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E21F92E7-F1C7-4C34-9B63-0D8FAA6B1D43}|HappyWedding.csproj|e:\\code\\wedding\\happywedding\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E21F92E7-F1C7-4C34-9B63-0D8FAA6B1D43}|HappyWedding.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E21F92E7-F1C7-4C34-9B63-0D8FAA6B1D43}|HappyWedding.csproj|e:\\code\\wedding\\happywedding\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E21F92E7-F1C7-4C34-9B63-0D8FAA6B1D43}|HappyWedding.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E21F92E7-F1C7-4C34-9B63-0D8FAA6B1D43}|HappyWedding.csproj|e:\\code\\wedding\\happywedding\\wwwroot\\content\\css\\style_element.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E21F92E7-F1C7-4C34-9B63-0D8FAA6B1D43}|HappyWedding.csproj|solutionrelative:wwwroot\\content\\css\\style_element.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E21F92E7-F1C7-4C34-9B63-0D8FAA6B1D43}|HappyWedding.csproj|e:\\code\\wedding\\happywedding\\wwwroot\\content\\js\\ladipagev3.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{E21F92E7-F1C7-4C34-9B63-0D8FAA6B1D43}|HappyWedding.csproj|solutionrelative:wwwroot\\content\\js\\ladipagev3.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E21F92E7-F1C7-4C34-9B63-0D8FAA6B1D43}|HappyWedding.csproj|e:\\code\\wedding\\happywedding\\controllers\\saveformcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E21F92E7-F1C7-4C34-9B63-0D8FAA6B1D43}|HappyWedding.csproj|solutionrelative:controllers\\saveformcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E21F92E7-F1C7-4C34-9B63-0D8FAA6B1D43}|HappyWedding.csproj|e:\\code\\wedding\\happywedding\\wwwroot\\content\\css\\ladi.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{E21F92E7-F1C7-4C34-9B63-0D8FAA6B1D43}|HappyWedding.csproj|solutionrelative:wwwroot\\content\\css\\ladi.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E21F92E7-F1C7-4C34-9B63-0D8FAA6B1D43}|HappyWedding.csproj|e:\\code\\wedding\\happywedding\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E21F92E7-F1C7-4C34-9B63-0D8FAA6B1D43}|HappyWedding.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E21F92E7-F1C7-4C34-9B63-0D8FAA6B1D43}|HappyWedding.csproj|e:\\code\\wedding\\happywedding\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E21F92E7-F1C7-4C34-9B63-0D8FAA6B1D43}|HappyWedding.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\Code\\Wedding\\HappyWedding\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\Code\\Wedding\\HappyWedding\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-31T12:40:18.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Code\\Wedding\\HappyWedding\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "E:\\Code\\Wedding\\HappyWedding\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAABkJAAAAAAAAAAAkwDAJAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-29T15:55:19.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ladi.css",
+              "DocumentMoniker": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\css\\ladi.css",
+              "RelativeDocumentMoniker": "wwwroot\\Content\\css\\ladi.css",
+              "ToolTip": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\css\\ladi.css",
+              "RelativeToolTip": "wwwroot\\Content\\css\\ladi.css",
+              "ViewState": "AgIAAE8CAAAAAAAAAADwv14CAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-12T07:42:34.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "style_element.css",
+              "DocumentMoniker": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\css\\style_element.css",
+              "RelativeDocumentMoniker": "wwwroot\\Content\\css\\style_element.css",
+              "ToolTip": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\css\\style_element.css",
+              "RelativeToolTip": "wwwroot\\Content\\css\\style_element.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-10-12T03:02:48.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Code\\Wedding\\HappyWedding\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\Code\\Wedding\\HappyWedding\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAwB4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T12:54:19.455Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SaveFormController.cs",
+              "DocumentMoniker": "E:\\Code\\Wedding\\HappyWedding\\Controllers\\SaveFormController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SaveFormController.cs",
+              "ToolTip": "E:\\Code\\Wedding\\HappyWedding\\Controllers\\SaveFormController.cs",
+              "RelativeToolTip": "Controllers\\SaveFormController.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAArwF4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T12:39:47.504Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\Code\\Wedding\\HappyWedding\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "E:\\Code\\Wedding\\HappyWedding\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-11T12:39:13.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ladipagev3.js",
+              "DocumentMoniker": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\js\\ladipagev3.js",
+              "RelativeDocumentMoniker": "wwwroot\\Content\\js\\ladipagev3.js",
+              "ToolTip": "E:\\Code\\Wedding\\HappyWedding\\wwwroot\\Content\\js\\ladipagev3.js",
+              "RelativeToolTip": "wwwroot\\Content\\js\\ladipagev3.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIwBAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-11T02:46:02.109Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
