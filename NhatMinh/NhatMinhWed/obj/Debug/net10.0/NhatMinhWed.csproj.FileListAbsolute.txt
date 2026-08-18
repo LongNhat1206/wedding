@@ -1,0 +1,198 @@
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\bin\Debug\net10.0\appsettings.Development.json
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\bin\Debug\net10.0\appsettings.json
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\bin\Debug\net10.0\NhatMinhWed.staticwebassets.runtime.json
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\bin\Debug\net10.0\NhatMinhWed.staticwebassets.endpoints.json
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\bin\Debug\net10.0\NhatMinhWed.exe
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\bin\Debug\net10.0\NhatMinhWed.deps.json
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\bin\Debug\net10.0\NhatMinhWed.runtimeconfig.json
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\bin\Debug\net10.0\NhatMinhWed.dll
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\bin\Debug\net10.0\NhatMinhWed.pdb
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\rpswa.dswa.cache.json
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\NhatMinhWed.GeneratedMSBuildEditorConfig.editorconfig
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\NhatMinhWed.AssemblyInfoInputs.cache
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\NhatMinhWed.AssemblyInfo.cs
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\NhatMinhWed.csproj.CoreCompileInputs.cache
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\NhatMinhWed.MvcApplicationPartsAssemblyInfo.cache
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\NhatMinhWed.RazorAssemblyInfo.cache
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\NhatMinhWed.RazorAssemblyInfo.cs
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\NhatMinhWed.sourcelink.json
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\rjimswa.dswa.cache.json
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\scopedcss\bundle\NhatMinhWed.styles.css
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\scopedcss\projectbundle\NhatMinhWed.bundle.scp.css
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\od2pmab0b3-{0}-61n19gt1b8-61n19gt1b8.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\o2l24fthqc-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\87caou2jk4-{0}-bqjiyaj88i-bqjiyaj88i.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\jt9szrrv1j-{0}-c2jlpeoesf-c2jlpeoesf.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\rurmux6ahd-{0}-erw9l3u2r3-erw9l3u2r3.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\y5jrocfsxx-{0}-aexeepp0ev-aexeepp0ev.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\3osgzkn1ab-{0}-d7shbmvgxk-d7shbmvgxk.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\rbg1m3y9fg-{0}-ausgxo2sd3-ausgxo2sd3.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\a57lybkfsh-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\mrj6gom4ue-{0}-cosvhxvwiu-cosvhxvwiu.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\cijqvem2cj-{0}-ub07r2b239-ub07r2b239.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\k8vldifnnl-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\mps33d7ogk-{0}-b7pk76d08c-b7pk76d08c.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\435wb8kcb2-{0}-fsbi9cje9m-fsbi9cje9m.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\jlxpz5tyew-{0}-rzd6atqjts-rzd6atqjts.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\1mmi0dpvqu-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\ebemm85zlo-{0}-dxx9fxp4il-dxx9fxp4il.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\mbotpompgo-{0}-jd9uben2k1-jd9uben2k1.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\emulj6qyj4-{0}-khv3u5hwcm-khv3u5hwcm.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\02qvc89mmz-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\9wn2alor5y-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\d5bwkrr5e5-{0}-c2oey78nd0-c2oey78nd0.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\ezxjdj0z14-{0}-tdbxkamptv-tdbxkamptv.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\d6d9nrzanb-{0}-j5mq2jizvt-j5mq2jizvt.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\ccfqwn48lg-{0}-06098lyss8-06098lyss8.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\bj0zs932ag-{0}-nvvlpmu67g-nvvlpmu67g.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\lo07s70hl1-{0}-s35ty4nyc5-s35ty4nyc5.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\tplk7j9g43-{0}-pj5nd1wqec-pj5nd1wqec.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\fzbo31pbiw-{0}-46ein0sx1k-46ein0sx1k.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\c06bgjyimp-{0}-v0zj4ognzu-v0zj4ognzu.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\roq34te97r-{0}-37tfw0ft22-37tfw0ft22.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\0m63l0af4u-{0}-hrwsygsryq-hrwsygsryq.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\6n61wqwj10-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\x7vrauegcr-{0}-ft3s53vfgj-ft3s53vfgj.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\vp5s2y1p48-{0}-6cfz1n2cew-6cfz1n2cew.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\ym5yek1crx-{0}-6pdc2jztkx-6pdc2jztkx.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\7eyz6ug8jg-{0}-493y06b0oq-493y06b0oq.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\v28pfyjmp9-{0}-iovd86k7lj-iovd86k7lj.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\tmsrgr6eb7-{0}-vr1egmr9el-vr1egmr9el.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\a1vf5ddij6-{0}-kbrnm935zg-kbrnm935zg.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\qcpdo3xzlt-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\lmbj9zwgcn-{0}-y7v9cxd14o-y7v9cxd14o.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\ulssjrja8v-{0}-notf2xhcfb-notf2xhcfb.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\e9jk4fkatg-{0}-h1s4sie4z3-h1s4sie4z3.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\ho1bpjll6i-{0}-63fj8s7r0e-63fj8s7r0e.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\0x7legilsw-{0}-0j3bgjxly4-0j3bgjxly4.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\zuandlsrqm-{0}-47otxtyo56-47otxtyo56.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\c0qrzrvahy-{0}-4v8eqarkd7-4v8eqarkd7.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\ab6w3746vj-{0}-356vix0kms-356vix0kms.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\rsu5ib8f1x-{0}-83jwlth58m-83jwlth58m.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\hotux7xdfr-{0}-mrlpezrjn3-mrlpezrjn3.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\vb8lubtr3v-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\ji90hehfl8-{0}-ag7o75518u-ag7o75518u.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\yk1p07orje-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\b0qrq95mvn-{0}-0i3buxo5is-0i3buxo5is.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\7jkaosf7qk-{0}-o1o13a6vjx-o1o13a6vjx.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\eil4nfd4j6-{0}-ttgo8qnofa-ttgo8qnofa.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\mumwfb0p8w-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\1x8d092et7-{0}-muycvpuwrr-muycvpuwrr.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\b20lw0nldk-{0}-87fc7y1x7t-87fc7y1x7t.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\ridsj1cua1-{0}-mlv21k5csn-mlv21k5csn.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\staticwebassets.build.json
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\staticwebassets.build.json.cache
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\staticwebassets.development.json
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\swae.build.ex.cache
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\NhatMinhWed.dll
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\refint\NhatMinhWed.dll
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\NhatMinhWed.pdb
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\NhatMinhWed.genruntimeconfig.cache
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\ref\NhatMinhWed.dll
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\yuaxhmuxrw-{0}-ca4ld1q0eb-ca4ld1q0eb.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\2icl7fs43t-{0}-rb5dqfhmlu-rb5dqfhmlu.gz
+D:\nhatnl\Codes\Weeding\Nhật Minh\NhatMinhWed\obj\Debug\net10.0\compressed\97p0z7s2pj-{0}-rb5dqfhmlu-rb5dqfhmlu.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\bin\Debug\net10.0\appsettings.Development.json
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\bin\Debug\net10.0\appsettings.json
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\bin\Debug\net10.0\NhatMinhWed.staticwebassets.runtime.json
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\bin\Debug\net10.0\NhatMinhWed.staticwebassets.endpoints.json
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\bin\Debug\net10.0\NhatMinhWed.exe
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\bin\Debug\net10.0\NhatMinhWed.deps.json
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\bin\Debug\net10.0\NhatMinhWed.runtimeconfig.json
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\bin\Debug\net10.0\NhatMinhWed.dll
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\bin\Debug\net10.0\NhatMinhWed.pdb
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\rpswa.dswa.cache.json
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\NhatMinhWed.GeneratedMSBuildEditorConfig.editorconfig
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\NhatMinhWed.AssemblyInfoInputs.cache
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\NhatMinhWed.AssemblyInfo.cs
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\NhatMinhWed.csproj.CoreCompileInputs.cache
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\NhatMinhWed.MvcApplicationPartsAssemblyInfo.cache
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\NhatMinhWed.RazorAssemblyInfo.cache
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\NhatMinhWed.RazorAssemblyInfo.cs
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\NhatMinhWed.sourcelink.json
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\rjimswa.dswa.cache.json
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\scopedcss\bundle\NhatMinhWed.styles.css
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\scopedcss\projectbundle\NhatMinhWed.bundle.scp.css
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\od2pmab0b3-{0}-61n19gt1b8-61n19gt1b8.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\o2l24fthqc-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\87caou2jk4-{0}-bqjiyaj88i-bqjiyaj88i.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\jt9szrrv1j-{0}-c2jlpeoesf-c2jlpeoesf.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\rurmux6ahd-{0}-erw9l3u2r3-erw9l3u2r3.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\y5jrocfsxx-{0}-aexeepp0ev-aexeepp0ev.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\3osgzkn1ab-{0}-d7shbmvgxk-d7shbmvgxk.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\rbg1m3y9fg-{0}-ausgxo2sd3-ausgxo2sd3.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\a57lybkfsh-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\mrj6gom4ue-{0}-cosvhxvwiu-cosvhxvwiu.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\cijqvem2cj-{0}-ub07r2b239-ub07r2b239.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\k8vldifnnl-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\mps33d7ogk-{0}-b7pk76d08c-b7pk76d08c.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\435wb8kcb2-{0}-fsbi9cje9m-fsbi9cje9m.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\jlxpz5tyew-{0}-rzd6atqjts-rzd6atqjts.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\1mmi0dpvqu-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\ebemm85zlo-{0}-dxx9fxp4il-dxx9fxp4il.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\mbotpompgo-{0}-jd9uben2k1-jd9uben2k1.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\emulj6qyj4-{0}-khv3u5hwcm-khv3u5hwcm.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\02qvc89mmz-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\9wn2alor5y-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\d5bwkrr5e5-{0}-c2oey78nd0-c2oey78nd0.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\ezxjdj0z14-{0}-tdbxkamptv-tdbxkamptv.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\d6d9nrzanb-{0}-j5mq2jizvt-j5mq2jizvt.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\ccfqwn48lg-{0}-06098lyss8-06098lyss8.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\bj0zs932ag-{0}-nvvlpmu67g-nvvlpmu67g.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\lo07s70hl1-{0}-s35ty4nyc5-s35ty4nyc5.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\tplk7j9g43-{0}-pj5nd1wqec-pj5nd1wqec.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\fzbo31pbiw-{0}-46ein0sx1k-46ein0sx1k.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\c06bgjyimp-{0}-v0zj4ognzu-v0zj4ognzu.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\roq34te97r-{0}-37tfw0ft22-37tfw0ft22.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\0m63l0af4u-{0}-hrwsygsryq-hrwsygsryq.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\6n61wqwj10-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\x7vrauegcr-{0}-ft3s53vfgj-ft3s53vfgj.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\vp5s2y1p48-{0}-6cfz1n2cew-6cfz1n2cew.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\ym5yek1crx-{0}-6pdc2jztkx-6pdc2jztkx.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\7eyz6ug8jg-{0}-493y06b0oq-493y06b0oq.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\v28pfyjmp9-{0}-iovd86k7lj-iovd86k7lj.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\tmsrgr6eb7-{0}-vr1egmr9el-vr1egmr9el.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\a1vf5ddij6-{0}-kbrnm935zg-kbrnm935zg.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\qcpdo3xzlt-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\lmbj9zwgcn-{0}-y7v9cxd14o-y7v9cxd14o.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\ulssjrja8v-{0}-notf2xhcfb-notf2xhcfb.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\e9jk4fkatg-{0}-h1s4sie4z3-h1s4sie4z3.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\ho1bpjll6i-{0}-63fj8s7r0e-63fj8s7r0e.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\0x7legilsw-{0}-0j3bgjxly4-0j3bgjxly4.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\zuandlsrqm-{0}-47otxtyo56-47otxtyo56.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\c0qrzrvahy-{0}-4v8eqarkd7-4v8eqarkd7.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\ab6w3746vj-{0}-356vix0kms-356vix0kms.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\rsu5ib8f1x-{0}-83jwlth58m-83jwlth58m.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\hotux7xdfr-{0}-mrlpezrjn3-mrlpezrjn3.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\vb8lubtr3v-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\ji90hehfl8-{0}-ag7o75518u-ag7o75518u.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\yk1p07orje-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\b0qrq95mvn-{0}-0i3buxo5is-0i3buxo5is.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\7jkaosf7qk-{0}-o1o13a6vjx-o1o13a6vjx.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\eil4nfd4j6-{0}-ttgo8qnofa-ttgo8qnofa.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\mumwfb0p8w-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\1x8d092et7-{0}-muycvpuwrr-muycvpuwrr.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\b20lw0nldk-{0}-87fc7y1x7t-87fc7y1x7t.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\ridsj1cua1-{0}-mlv21k5csn-mlv21k5csn.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\2icl7fs43t-{0}-rb5dqfhmlu-rb5dqfhmlu.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\97p0z7s2pj-{0}-rb5dqfhmlu-rb5dqfhmlu.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\staticwebassets.build.json
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\staticwebassets.build.json.cache
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\staticwebassets.development.json
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\swae.build.ex.cache
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\NhatMinhWed.dll
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\refint\NhatMinhWed.dll
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\NhatMinhWed.pdb
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\NhatMinhWed.genruntimeconfig.cache
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\ref\NhatMinhWed.dll
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\xzwhd1rhfd-{0}-yj7a65ar6q-yj7a65ar6q.gz
+D:\nhatnl\Codes\Weeding\NhatMinh\NhatMinhWed\obj\Debug\net10.0\compressed\yuaxhmuxrw-{0}-yrm4ug8h9b-yrm4ug8h9b.gz

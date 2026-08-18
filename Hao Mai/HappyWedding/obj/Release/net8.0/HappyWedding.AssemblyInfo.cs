@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HappyWedding")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+823df9ab534138fc064f3a6b34bc5bb1d6532745")]
 [assembly: System.Reflection.AssemblyProductAttribute("HappyWedding")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HappyWedding")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
