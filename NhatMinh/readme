@@ -1,0 +1,63 @@
+# Hướng dẫn setup (bản ĐƠN GIẢN) — chỉ dùng Google, không qua bên nào khác
+
+Toàn bộ chỉ cần 1 tài khoản Google. Không cần Cloudflare, không cần Google Cloud Console,
+không cần Service Account hay API key. Mất khoảng 5 phút.
+
+## BƯỚC 1 — Tạo Google Sheet
+
+1. Vào https://sheets.new để tạo 1 sheet mới.
+2. Đổi tên tab (góc dưới, mặc định "Sheet1") thành **`LoiChuc`**.
+3. Ở dòng 1, nhập tiêu đề 3 cột: `ThoiGian | Ten | LoiChuc`
+
+## BƯỚC 2 — Gắn code xử lý (Apps Script)
+
+1. Trên thanh menu, chọn **Extensions (Tiện ích) → Apps Script**.
+2. Xoá hết đoạn code mẫu (`function myFunction() {...}`) trong ô hiện ra.
+3. Mở file **`apps-script-code.gs`** (mình đã viết sẵn), copy toàn bộ nội dung, dán vào.
+4. Bấm biểu tượng 💾 **Save** (hoặc Ctrl+S).
+
+## BƯỚC 3 — Deploy thành 1 địa chỉ web (API)
+
+1. Bấm nút **Deploy (Triển khai)** góc trên phải → **New deployment (Triển khai mới)**.
+2. Bấm biểu tượng ⚙️ cạnh "Select type" → chọn **Web app (Ứng dụng web)**.
+3. Điền:
+   - **Execute as (Thực thi với quyền)**: `Me` (tài khoản của bạn)
+   - **Who has access (Ai được truy cập)**: `Anyone` (Bất kỳ ai)
+4. Bấm **Deploy**. Lần đầu Google sẽ hỏi xác nhận quyền:
+   - Bấm **Authorize access** → chọn tài khoản Google của bạn.
+   - Nếu hiện cảnh báo "Google chưa xác minh app này" → bấm **Advanced (Nâng cao)** → **Go to (tên project) (unsafe)** → **Allow**.
+     (Cảnh báo này bình thường vì đây là script do chính bạn viết/deploy, không phải app lạ.)
+5. Sau khi deploy xong, Google cho bạn 1 **URL dạng**:
+   `https://script.google.com/macros/s/AKfycb.../exec`
+   → Copy URL này lại.
+
+## BƯỚC 4 — Gắn vào file thiệp cưới
+
+Mở file `thiep-cuoi-long-nhat-ngoc-minh.html`, tìm dòng:
+
+```js
+const WISH_API_URL = "https://script.google.com/macros/s/AKfycbyjC15bavDF7beDSLwOu85HaxWq6SKvpMWUzMsz3Z7Kfegdg_1pY47fJ2RP6tH-7Ojg3w/exec";
+```
+
+Thay bằng URL bạn vừa copy ở Bước 3. Lưu file lại — xong!
+
+Mở thử file HTML (double-click hoặc mở bằng trình duyệt) để kiểm tra:
+- Bảng lời chúc góc trái có tải lên không (ban đầu sẽ trống vì Sheet chưa có dữ liệu).
+- Gửi thử 1 lời chúc → mở lại Google Sheet xem có dòng mới xuất hiện không.
+
+## Sau này muốn sửa gì?
+
+- **Thêm/bớt từ khoá cấm**: mở lại Apps Script (Extensions → Apps Script), sửa mảng `BANNED_WORDS` ở đầu file, Save. Không cần Deploy lại — Apps Script tự áp dụng ngay cho lần gọi tiếp theo (miễn là bạn không tạo deployment mới, chỉ sửa code trong deployment cũ vẫn áp dụng do "auto-update" khi Execute as Me + đã deploy).
+  → *Lưu ý nhỏ*: nếu sửa xong mà chưa thấy hiệu lực, vào **Deploy → Manage deployments → biểu tượng bút chì → Version: New version → Deploy** để chắc chắn bản mới được dùng.
+- **Đổi thời gian chặn spam** (mặc định 4 giây/lượt, trùng nội dung trong 3 phút): sửa số `4000` (mili-giây) và `3 * 60 * 1000` trong file `.gs`.
+
+## Vì sao vẫn ẩn được thông tin dù không có Worker?
+
+- F12 chỉ thấy được URL `.../exec` — đây vốn phải công khai để trình duyệt gọi được.
+- URL đó **không hé lộ** ID Sheet thật hay quyền truy cập trực tiếp vào Sheet.
+- Script chỉ cho 2 việc: đọc toàn bộ danh sách, và **thêm** 1 dòng hợp lệ. Không có cách nào để sửa/xoá dòng có sẵn thông qua URL này.
+
+## Giới hạn cần biết
+
+- **Không chặn được chính xác theo IP** (Apps Script không cung cấp IP người gọi vì lý do riêng tư của Google). Việc chống spam ở đây dựa vào: chặn gửi dồn dập toàn hệ thống + chặn trùng nội dung + honeypot bẫy bot — đủ dùng cho hầu hết trường hợp thiệp cưới thực tế, nhưng nếu có người cố ý dùng nhiều thiết bị/trình duyệt khác nhau để spam thủ công thì cách này không chặn được triệt để.
+- Nếu sau này cần chặn IP thật chính xác, quay lại bản dùng Cloudflare Worker (file `worker.js` + `HUONG-DAN-SETUP.md` mình đã gửi trước đó).

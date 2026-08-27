@@ -2266,6 +2266,55 @@
       transform: translateY(-1px);
     }
 
+    /* ── Hiệu ứng khi đang gửi lời chúc: chữ mờ đi + spinner tròn xoay ── */
+    .gb-submit.is-sending {
+      color: transparent;
+      pointer-events: none;
+      position: relative;
+    }
+
+    .gb-submit.is-sending::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 16px;
+      height: 16px;
+      margin: -8px 0 0 -8px;
+      border: 2px solid rgba(255, 255, 255, .35);
+      border-top-color: #fff;
+      border-radius: 50%;
+      animation: gbspin .7s linear infinite;
+    }
+
+    @keyframes gbspin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .live-input-wrap.is-sending .live-input {
+      opacity: .55;
+    }
+
+    .live-input-wrap.is-sending .live-input-icon {
+      opacity: 0;
+    }
+
+    .live-input-wrap.is-sending::after {
+      content: "";
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      width: 14px;
+      height: 14px;
+      margin-top: -7px;
+      border: 2px solid rgba(122, 46, 46, .25);
+      border-top-color: var(--wine);
+      border-radius: 50%;
+      animation: gbspin .7s linear infinite;
+    }
+
     #gb-sent {
       display: none;
       text-align: center;
@@ -2972,6 +3021,9 @@
         </div>
       </div>
       <div class="live-quickform">
+        <!-- Honeypot chống bot -->
+        <input type="text" id="live-hp" name="website" autocomplete="off" tabindex="-1"
+          style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" aria-hidden="true">
         <div class="live-input-wrap">
           <input type="text" class="live-input" id="live-msg" placeholder="Nhập lời chúc rồi nhấn Enter…"
             maxlength="220">
@@ -3721,6 +3773,9 @@
       </div>
       <div class="gb-form gb-single" data-reveal="up">
         <input class="gb-in" id="gb-name" placeholder="Tên của bạn *" type="text">
+        <!-- Honeypot chống bot — người thật không thấy ô này, bot tự động thường điền vào -->
+        <input type="text" id="gb-hp" name="website" autocomplete="off" tabindex="-1"
+          style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" aria-hidden="true">
         <div class="emoji-bar">
           <button class="emoji-btn" onclick="appendEmoji('❤️')">❤️</button>
           <button class="emoji-btn" onclick="appendEmoji('🎉')">🎉</button>
@@ -3982,20 +4037,19 @@
     // ── LIVE CORNER TICKER (only place wishes are displayed) ──
     // Declared at top level (not nested) so pushTicker/tickerQueue stay
     // reachable from sendWish() below even if something earlier failed.
+
+    // 👉 THAY ĐỔI DUY NHẤT bạn cần làm: dán URL Apps Script (kết thúc bằng /exec)
+    //    vào đây (xem HUONG-DAN-SETUP.md). Đây là URL công khai, không phải bí
+    //    mật — Sheet thật, dữ liệu thật không bao giờ xuất hiện ở đây hay trong
+    //    F12 của trình duyệt.
+    const WISH_API_URL = "https://script.google.com/macros/s/AKfycbyjC15bavDF7beDSLwOu85HaxWq6SKvpMWUzMsz3Z7Kfegdg_1pY47fJ2RP6tH-7Ojg3w/exec";
+
+    // Lời chúc mặc định — chỉ dùng để hiển thị tạm trong lúc đang tải dữ liệu
+    // thật từ Google Sheet, hoặc khi chưa cấu hình WISH_API_URL / mất mạng.
     const initWishes = [
       { name: 'Lan Anh', text: 'Chúc mừng đám cưới Long Nhật và Ngọc Minh! Chúc hai bạn mãi mãi hạnh phúc, sức khoẻ và thịnh vượng!' },
       { name: 'Hùng & Linh', text: 'Ước chúc đôi uyên ương trăm năm hạnh phúc. Gia đình luôn sum vầy, ấm áp yêu thương!' },
       { name: 'Minh Châu', text: 'Tình yêu đẹp nhất là khi hai người cùng nhìn về một hướng. Chúc mừng hai bạn!' },
-      { name: 'Team công ty', text: 'Cả team chúc mừng anh Long Nhật và chị Ngọc Minh! Hạnh phúc mãi mãi nhé!' },
-      { name: 'Bà Phương', text: 'Cháu ơi, bà chúc hai đứa trăm năm hạnh phúc, sớm sinh quý tử nhé!' },
-      { name: 'Hội bạn thân', text: 'Cả hội cấp 3 chúc mừng đám cưới! Nhớ đặt bàn xịn cho tụi mình nha!' },
-      { name: 'Thầy Hùng', text: 'Thầy chúc mừng em! Hạnh phúc bền lâu, sự nghiệp thịnh vượng nhé!' },
-      { name: 'Nhóm du lịch', text: 'Tụi mình từ Đà Nẵng gửi lời chúc mừng đến hai bạn!' },
-      { name: 'Thanh Hương', text: 'Chúc đôi bạn trăm năm hạnh phúc, mãi yêu thương và nâng đỡ nhau!' },
-      { name: 'Anh Khôi', text: 'Tình yêu là món quà quý giá nhất. Chúc mừng cặp đôi đẹp nhất Hà Nội!' },
-      { name: 'Cô Hoa', text: 'Chúc cháu trăm năm bền vững, phúc lộc đầy nhà!' },
-      { name: 'Bạn Quân', text: 'Chúc mừng mày! Cuối cùng cũng cưới được cô ấy rồi. Hạnh phúc mãi nhé!' },
-      { name: 'Dì Bình', text: 'Chúc hai con trăm năm hạnh phúc, sớm sinh cháu ngoại cho bà bế!' },
     ];
     const tickerEl = document.getElementById('live-ticker');
     // FLIP helper: measure item positions before a DOM mutation, then after the
@@ -4033,16 +4087,27 @@
       // (relying on a bare CSS @keyframes animation on a freshly-inserted node can silently fail to play in some restricted/embedded browser views).
       void item.offsetHeight;
       requestAnimationFrame(() => { requestAnimationFrame(() => { item.classList.add('in'); }); });
-      setTimeout(() => {
+      const removeTimer = setTimeout(() => {
         item.classList.remove('in');
         item.classList.add('out');
         setTimeout(() => {
           flipTicker(() => { if (item.parentNode) item.parentNode.removeChild(item); });
         }, 650);
       }, 6800);
+      // Trả về item + hàm huỷ sớm (dùng khi server từ chối lời chúc vừa hiện lạc quan)
+      return {
+        el: item,
+        removeNow() {
+          clearTimeout(removeTimer);
+          item.classList.remove('in');
+          item.classList.add('out');
+          setTimeout(() => { flipTicker(() => { if (item.parentNode) item.parentNode.removeChild(item); }); }, 650);
+        }
+      };
     }
     const tickerQueue = [...initWishes];
     let tickerQIdx = 0;
+    let tickerStarted = false;
     function dripTicker() {
       if (tickerQIdx === 0) {
         document.querySelectorAll('.static-item').forEach(el => {
@@ -4056,27 +4121,123 @@
       tickerQIdx++;
       setTimeout(dripTicker, 1700 + Math.random() * 1500);
     }
-    setTimeout(dripTicker, 400);
+    function startTickerOnce() {
+      if (tickerStarted) return;
+      tickerStarted = true;
+      setTimeout(dripTicker, 400);
+    }
+
+    // ── Tải danh sách lời chúc thật từ Google Sheet (qua Worker) khi mở trang ──
+    async function loadWishesFromServer() {
+      try {
+        const res = await fetch(WISH_API_URL);
+        const data = await res.json();
+        if (data.ok && Array.isArray(data.wishes) && data.wishes.length) {
+          tickerQueue.length = 0;
+          tickerQueue.push(...data.wishes);
+        }
+      } catch (e) {
+        // mất mạng hoặc chưa cấu hình WISH_API_URL -> vẫn chạy tiếp với initWishes mặc định
+      }
+      startTickerOnce();
+    }
+    loadWishesFromServer();
+    // phòng trường hợp mạng chậm: dù API chưa phản hồi kịp vẫn cho ticker chạy sau 2.5s
+    setTimeout(startTickerOnce, 2500);
+
+    // Gửi 1 lời chúc lên server (lọc từ xấu + chống spam được xử lý ở backend).
+    // Trả về {ok:true} hoặc {ok:false, error}.
+    async function submitWishToServer(name, text, honeypot) {
+      try {
+        const res = await fetch(WISH_API_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' }, // tránh preflight CORS với Apps Script
+          body: JSON.stringify({ name, text, hp: honeypot || '' }),
+        });
+        return await res.json();
+      } catch (e) {
+        return { ok: false, error: 'Không kết nối được máy chủ, vui lòng thử lại.' };
+      }
+    }
+
+    // Cooldown phía trình duyệt: chỉ để tránh bấm nhầm nhiều lần, không thay
+    // cho việc chống spam thật (việc đó xử lý ở server).
+    let lastLocalSubmit = 0;
+    function localCooldownOk() {
+      const now = Date.now();
+      if (now - lastLocalSubmit < 4000) return false;
+      lastLocalSubmit = now;
+      return true;
+    }
+
+    // Cờ khoá gửi: chặn tuyệt đối việc gửi trùng khi đang có 1 request bay đi
+    // (khác với cooldown ở trên — cooldown chặn gửi *sau khi xong*, còn cờ này
+    // chặn bấm Enter/click liên tục ngay trong lúc đang chờ server trả lời).
+    let isSendingGB = false;
+    let isSendingLive = false;
 
     function appendEmoji(e) { const ta = document.getElementById('gb-text'); ta.value += e; ta.focus(); }
-    function sendWish() {
+    async function sendWish() {
+      if (isSendingGB) return;
       const name = document.getElementById('gb-name').value.trim();
       const text = document.getElementById('gb-text').value.trim();
-      if (!name || !text) { alert('Vui lòng nhập tên và lời chúc!'); return; }
-      pushTicker({ name, text });
+      const hp = (document.getElementById('gb-hp') || {}).value || '';
+      if (!name || !text) { showToast('Vui lòng nhập tên và lời chúc!', 'error'); return; }
+      if (!localCooldownOk()) { showToast('Bạn vừa gửi xong, vui lòng đợi ít giây rồi gửi tiếp.', 'info'); return; }
+
+      isSendingGB = true;
+      const btn = document.querySelector('.gb-submit');
+      const ta = document.getElementById('gb-text');
+      if (btn) { btn.disabled = true; btn.classList.add('is-sending'); }
+      if (ta) ta.disabled = true;
+
+      // ── Chờ lưu vào Google Sheet thành công rồi mới hiện lên ticker ──
+      const result = await submitWishToServer(name, text, hp);
+
+      isSendingGB = false;
+      if (btn) { btn.disabled = false; btn.classList.remove('is-sending'); }
+      if (ta) ta.disabled = false;
+
+      if (!result.ok) {
+        showToast(result.error || 'Có lỗi khi gửi lời chúc, lời chúc chưa được lưu.', 'error');
+        return;
+      }
+
+      //pushTicker({ name, text });
       tickerQueue.unshift({ name, text });
+      document.getElementById('gb-name').value = ''; document.getElementById('gb-text').value = '';
       const sent = document.getElementById('gb-sent');
       sent.classList.add('show');
       setTimeout(() => sent.classList.remove('show'), 3200);
-      document.getElementById('gb-name').value = ''; document.getElementById('gb-text').value = '';
     }
 
     // ── Gửi lời chúc ẩn danh trực tiếp từ live-panel — chỉ 1 ô, gửi bằng Enter ──
-    function sendWishFromLive() {
+    async function sendWishFromLive() {
+      if (isSendingLive) return;
       const msgEl = document.getElementById('live-msg');
       const text = msgEl.value.trim();
+      const hp = (document.getElementById('live-hp') || {}).value || '';
       if (!text) return;
-      // đảm bảo panel đang mở để khách thấy lời chúc của mình xuất hiện
+      if (!localCooldownOk()) return;
+
+      isSendingLive = true;
+      const wrap = msgEl.closest('.live-input-wrap');
+      msgEl.disabled = true;
+      if (wrap) wrap.classList.add('is-sending');
+
+      // ── Chờ lưu vào Google Sheet thành công rồi mới hiện lên ticker ──
+      const result = await submitWishToServer('Ẩn danh', text, hp);
+
+      isSendingLive = false;
+      msgEl.disabled = false;
+      if (wrap) wrap.classList.remove('is-sending');
+      msgEl.focus();
+
+      if (!result.ok) {
+        showToast(result.error || 'Có lỗi khi gửi lời chúc, lời chúc chưa được lưu.', 'error');
+        return;
+      }
+
       const card = document.getElementById('live-card');
       if (card && card.classList.contains('collapsed')) card.classList.remove('collapsed');
       pushTicker({ name: 'Ẩn danh', text });
@@ -4090,7 +4251,12 @@
     }
     (function () {
       const msgEl = document.getElementById('live-msg');
-      if (msgEl) msgEl.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); sendWishFromLive(); } });
+      if (msgEl) msgEl.addEventListener('keydown', e => {
+        if (e.key !== 'Enter') return;
+        e.preventDefault();
+        if (e.repeat || isSendingLive) return; // chặn giữ phím Enter / bấm dồn dập
+        sendWishFromLive();
+      });
     })();
 
     // ── AMBIENT FX: hearts, petals, snow, kisses, bubbles — lush but tasteful ──
@@ -4201,6 +4367,146 @@
     fetch('https://api.open-meteo.com/v1/forecast?latitude=21.0285&longitude=105.8542&current=temperature_2m')
       .then(r => r.json()).then(d => weatherBox.innerHTML = '🌤️ Hà Nội<br>' + d.current.temperature_2m + '°C').catch(() => weatherBox.innerHTML = '🌤️ Hà Nội');
   </script>
+  <!-- ══ TOAST — thông báo đẹp thay cho alert() mặc định của trình duyệt ══ -->
+  <style>
+    #toast-stack {
+      position: fixed;
+      left: 50%;
+      bottom: 28px;
+      transform: translateX(-50%);
+      z-index: 10050;
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      gap: 10px;
+      width: min(92vw, 420px);
+      pointer-events: none;
+    }
+
+    .toast {
+      pointer-events: auto;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      width: 100%;
+      background: var(--card, #fff);
+      color: var(--ink, #1E1B18);
+      border-radius: 12px;
+      padding: 13px 16px;
+      box-shadow: 0 12px 34px rgba(30, 27, 24, .18), 0 2px 8px rgba(30, 27, 24, .08);
+      border: 1px solid var(--line, rgba(30, 27, 24, .09));
+      border-left: 4px solid var(--wine, #7A2E2E);
+      font-family: var(--ff-body, 'Inter', sans-serif);
+      font-size: 13px;
+      line-height: 1.45;
+      opacity: 0;
+      transform: translateY(14px) scale(.97);
+      transition: opacity .35s cubic-bezier(.16, 1, .3, 1), transform .35s cubic-bezier(.16, 1, .3, 1);
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+
+    .toast.leaving {
+      opacity: 0;
+      transform: translateY(-6px) scale(.97);
+    }
+
+    .toast.toast-success {
+      border-left-color: #4a7c59;
+    }
+
+    .toast.toast-error {
+      border-left-color: var(--wine, #7A2E2E);
+    }
+
+    .toast.toast-info {
+      border-left-color: var(--gold-deep, #8C6F3F);
+    }
+
+    .toast-icon {
+      flex: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      margin-top: 1px;
+      color: #fff;
+    }
+
+    .toast-success .toast-icon {
+      background: #4a7c59;
+    }
+
+    .toast-error .toast-icon {
+      background: var(--wine, #7A2E2E);
+    }
+
+    .toast-info .toast-icon {
+      background: var(--gold-deep, #8C6F3F);
+    }
+
+    .toast-msg {
+      flex: 1;
+      padding-top: 1px;
+    }
+
+    .toast-close {
+      flex: none;
+      background: none;
+      border: none;
+      color: var(--gray, #6D665D);
+      cursor: pointer;
+      font-size: 15px;
+      line-height: 1;
+      padding: 2px;
+      opacity: .6;
+      transition: opacity .2s;
+    }
+
+    .toast-close:hover {
+      opacity: 1;
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+      .toast {
+        transition: opacity .2s linear;
+        transform: none !important;
+      }
+    }
+  </style>
+  <div id="toast-stack"></div>
+  <script>
+    // Hàm thông báo dùng chung trong toàn trang, thay cho alert().
+    // type: 'error' | 'success' | 'info'
+    function showToast(message, type = 'info', duration = 3600) {
+      const stack = document.getElementById('toast-stack');
+      if (!stack) { console.log(message); return; }
+      const icons = { success: '✓', error: '✕', info: '❤' };
+      const el = document.createElement('div');
+      el.className = `toast toast-${type}`;
+      el.innerHTML = `<div class="toast-icon">${icons[type] || icons.info}</div><div class="toast-msg"></div><button class="toast-close" aria-label="Đóng">✕</button>`;
+      el.querySelector('.toast-msg').textContent = message; // textContent để tránh chèn HTML lạ
+      stack.appendChild(el);
+      requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add('show')));
+
+      let hideTimer;
+      function dismiss() {
+        clearTimeout(hideTimer);
+        el.classList.remove('show');
+        el.classList.add('leaving');
+        setTimeout(() => el.remove(), 350);
+      }
+      hideTimer = setTimeout(dismiss, duration);
+      el.querySelector('.toast-close').addEventListener('click', dismiss);
+    }
+  </script>
+
 </body>
 
 </html>
