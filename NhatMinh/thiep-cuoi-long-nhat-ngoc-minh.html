@@ -4,7 +4,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Long Nhật & Ngọc Minh · Wedding · 18.10.2026</title>
+  <title>Long Nhật & Ngọc Minh · Thiệp Cưới Online · 18.10.2026</title>
+
+  <!-- ══ SEO CƠ BẢN ══ -->
+  <!-- ⚠️ Thay THE_DOMAIN bên dưới bằng tên miền thật nơi bạn host trang này (vd: https://thiepcuoi-longnhat-ngocminh.com/) -->
+  <meta name="description"
+    content="Trân trọng kính mời bạn đến chung vui cùng Long Nhật & Ngọc Minh trong ngày cưới Chủ Nhật, 18/10/2026 tại Ngọc Hòa, Ninh Giang, Hải Phòng. Xem thiệp mời, chương trình lễ cưới và gửi lời chúc mừng ngay tại đây.">
+  <meta name="keywords"
+    content="thiệp cưới online, thiệp mời cưới, đám cưới Long Nhật Ngọc Minh, wedding invitation, thiệp cưới điện tử">
+  <meta name="author" content="Long Nhật & Ngọc Minh">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://THE_DOMAIN/thiep-cuoi-long-nhat-ngoc-minh.html">
+
+  <!-- ══ OPEN GRAPH — Facebook, Messenger, Zalo, nhóm chat đọc các thẻ này để hiện ảnh + tiêu đề khi dán link ══ -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://THE_DOMAIN/thiep-cuoi-long-nhat-ngoc-minh.html">
+  <meta property="og:site_name" content="Thiệp Cưới Long Nhật & Ngọc Minh">
+  <meta property="og:locale" content="vi_VN">
+  <meta property="og:title" content="Long Nhật & Ngọc Minh · Thiệp Cưới Online · 18.10.2026">
+  <meta property="og:description"
+    content="Trân trọng kính mời bạn đến chung vui cùng Long Nhật & Ngọc Minh, Chủ Nhật 18/10/2026 tại Ngọc Hòa, Ninh Giang, Hải Phòng. Bấm để xem thiệp mời và gửi lời chúc!">
+  <meta property="og:image" content="https://THE_DOMAIN/assets/img/hero-img-wrap/img-original.jpg">
+  <meta property="og:image:secure_url" content="https://THE_DOMAIN/assets/img/hero-img-wrap/img-original.jpg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Long Nhật và Ngọc Minh">
+
+  <!-- ══ TWITTER CARD (một số trình xem link cũng đọc thẻ này) ══ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Long Nhật & Ngọc Minh · Thiệp Cưới Online · 18.10.2026">
+  <meta name="twitter:description"
+    content="Trân trọng kính mời bạn đến chung vui cùng Long Nhật & Ngọc Minh, Chủ Nhật 18/10/2026 tại Ngọc Hòa, Ninh Giang, Hải Phòng.">
+  <meta name="twitter:image" content="https://THE_DOMAIN/assets/img/hero-img-wrap/img-original.jpg">
+
+  <!-- ══ FAVICON / GIAO DIỆN THANH ĐỊA CHỈ ══ -->
+  <link rel="icon" type="image/jpeg" href="assets/img/hero-img-wrap/img-original.jpg">
+  <link rel="apple-touch-icon" href="assets/img/hero-img-wrap/img-original.jpg">
+  <meta name="theme-color" content="#7A2E2E">
+
+  <!-- ══ DỮ LIỆU CÓ CẤU TRÚC — giúp Google hiểu đây là sự kiện cưới, dễ được tìm thấy hơn ══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Đám cưới Long Nhật & Ngọc Minh",
+    "startDate": "2026-10-18T18:00:00+07:00",
+    "endDate": "2026-10-18T21:30:00+07:00",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "location": {
+      "@type": "Place",
+      "name": "Tư gia nhà trai",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ngọc Hòa, Ninh Giang",
+        "addressRegion": "Hải Phòng",
+        "addressCountry": "VN"
+      }
+    },
+    "image": ["https://THE_DOMAIN/assets/img/hero-img-wrap/img-original.jpg"],
+    "description": "Trân trọng kính mời bạn đến chung vui cùng Long Nhật & Ngọc Minh trong ngày cưới.",
+    "organizer": {
+      "@type": "Person",
+      "name": "Long Nhật & Ngọc Minh"
+    }
+  }
+  </script>
+
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
     rel="stylesheet">
@@ -2419,6 +2486,86 @@
       word-break: break-word;
     }
 
+    /* ══ LIVE PANEL — quick wish input (send straight from the corner panel) ══ */
+    .live-quickform {
+      pointer-events: auto;
+      padding: 8px 3px 2px;
+      border-top: 1px solid rgba(140, 111, 63, .16);
+      margin-top: 2px;
+    }
+
+    .live-input-wrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .live-input {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid rgba(140, 111, 63, .28);
+      background: transparent;
+      border-radius: 0;
+      padding: 7px 24px 7px 2px;
+      font-family: var(--ff-body);
+      font-size: 10.5px;
+      color: var(--ink);
+      outline: none;
+      transition: border-color .25s, box-shadow .25s;
+    }
+
+    .live-input::placeholder {
+      color: var(--gray-light);
+      font-style: italic;
+    }
+
+    .live-input:focus {
+      border-bottom-color: var(--gold);
+      box-shadow: 0 1px 0 0 var(--gold);
+    }
+
+    .live-input-icon {
+      position: absolute;
+      right: 4px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 11px;
+      height: 11px;
+      color: var(--gold-deep);
+      opacity: .5;
+      pointer-events: none;
+      transition: opacity .25s, transform .25s;
+    }
+
+    .live-input:focus~.live-input-icon {
+      opacity: .9;
+      transform: translateY(-50%) translateX(1px);
+    }
+
+    .live-card.collapsed .live-quickform {
+      border-top-color: transparent;
+      padding-top: 3px;
+    }
+
+    .live-sent-msg {
+      font-family: var(--ff-body);
+      font-size: 9px;
+      letter-spacing: .02em;
+      color: var(--gold-deep);
+      font-weight: 600;
+      text-align: center;
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height .3s ease, opacity .3s ease, padding .3s ease;
+    }
+
+    .live-sent-msg.show {
+      max-height: 20px;
+      opacity: 1;
+      padding-top: 5px;
+    }
+
     @media(max-width:640px) {
       #live-panel {
         width: min(56vw, 180px);
@@ -2436,6 +2583,12 @@
 
       .ticker-text {
         font-size: 9.5px;
+      }
+
+      .live-input {
+        font-size: 9.5px;
+        padding: 6px 22px 6px 2px;
+
       }
 
       .ticker-av {
@@ -2817,6 +2970,18 @@
             <div class="ticker-text">Ước chúc đôi uyên ương trăm năm hạnh phúc, sum vầy!</div>
           </div>
         </div>
+      </div>
+      <div class="live-quickform">
+        <div class="live-input-wrap">
+          <input type="text" class="live-input" id="live-msg" placeholder="Nhập lời chúc rồi nhấn Enter…"
+            maxlength="220">
+          <svg class="live-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </div>
+        <div class="live-sent-msg" id="live-sent-msg">💌 Đã gửi lời chúc của bạn!</div>
       </div>
     </div>
   </div>
@@ -3905,6 +4070,28 @@
       setTimeout(() => sent.classList.remove('show'), 3200);
       document.getElementById('gb-name').value = ''; document.getElementById('gb-text').value = '';
     }
+
+    // ── Gửi lời chúc ẩn danh trực tiếp từ live-panel — chỉ 1 ô, gửi bằng Enter ──
+    function sendWishFromLive() {
+      const msgEl = document.getElementById('live-msg');
+      const text = msgEl.value.trim();
+      if (!text) return;
+      // đảm bảo panel đang mở để khách thấy lời chúc của mình xuất hiện
+      const card = document.getElementById('live-card');
+      if (card && card.classList.contains('collapsed')) card.classList.remove('collapsed');
+      pushTicker({ name: 'Ẩn danh', text });
+      tickerQueue.unshift({ name: 'Ẩn danh', text });
+      msgEl.value = '';
+      const sentMsg = document.getElementById('live-sent-msg');
+      if (sentMsg) {
+        sentMsg.classList.add('show');
+        setTimeout(() => sentMsg.classList.remove('show'), 2200);
+      }
+    }
+    (function () {
+      const msgEl = document.getElementById('live-msg');
+      if (msgEl) msgEl.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); sendWishFromLive(); } });
+    })();
 
     // ── AMBIENT FX: hearts, petals, snow, kisses, bubbles — lush but tasteful ──
     (function () {
