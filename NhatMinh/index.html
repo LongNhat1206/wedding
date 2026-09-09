@@ -4,10 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Long Nhật & Ngọc Minh · Thiệp Cưới Online · 18.10.2026</title>
+  <title>Long Nhật & Ngọc Minh · Thiệp Cưới · 18.10.2026</title>
 
   <!-- ══ SEO CƠ BẢN ══ -->
-  <!-- ⚠️ Thay THE_DOMAIN bên dưới bằng tên miền thật nơi bạn host trang này (vd: https://thiepcuoi-longnhat-ngocminh.com/) -->
   <meta name="description"
     content="Trân trọng kính mời bạn đến chung vui cùng Long Nhật & Ngọc Minh trong ngày cưới Chủ Nhật, 18/10/2026 tại Ngọc Hòa, Ninh Giang, Hải Phòng. Xem thiệp mời, chương trình lễ cưới và gửi lời chúc mừng ngay tại đây.">
   <meta name="keywords"
@@ -18,10 +17,10 @@
 
   <!-- ══ OPEN GRAPH — Facebook, Messenger, Zalo, nhóm chat đọc các thẻ này để hiện ảnh + tiêu đề khi dán link ══ -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://longnhat1206.github.io/wedding/NhatMinh/index.html?v=3">
+  <meta property="og:url" content="https://longnhat1206.github.io/wedding/NhatMinh/index.html">
   <meta property="og:site_name" content="Thiệp Cưới Long Nhật & Ngọc Minh">
   <meta property="og:locale" content="vi_VN">
-  <meta property="og:title" content="Long Nhật & Ngọc Minh · Thiệp Cưới Online · 18.10.2026">
+  <meta property="og:title" content="Long Nhật & Ngọc Minh · Thiệp Cưới · 18.10.2026">
   <meta property="og:description"
     content="Trân trọng kính mời bạn đến chung vui cùng Long Nhật & Ngọc Minh, Chủ Nhật 18/10/2026 tại Ngọc Hòa, Ninh Giang, Hải Phòng. Bấm để xem thiệp mời và gửi lời chúc!">
   <meta property="og:image" content="assets/img/hero-img-wrap/img-original.jpg">
@@ -981,7 +980,7 @@
       font-family: var(--ff-quote);
       font-style: italic;
       font-weight: 500;
-      font-size: 16px;
+      font-size: 13.5px;
       line-height: 1.9;
       color: var(--ink);
       margin-bottom: 20px;
@@ -1085,7 +1084,7 @@
       font-family: var(--ff-head);
       font-style: italic;
       font-weight: 600;
-      font-size: 16px;
+      font-size: 13.5px;
       color: var(--ink);
       margin-bottom: 6px;
     }
@@ -1602,7 +1601,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 16px;
+      font-size: 13.5px;
       flex-shrink: 0;
     }
 
@@ -2095,7 +2094,7 @@
       font-family: var(--ff-head);
       font-style: italic;
       font-weight: 600;
-      font-size: 16px;
+      font-size: 13.5px;
       box-shadow: 0 6px 16px rgba(176, 141, 87, .3);
     }
 
@@ -2113,7 +2112,7 @@
       font-family: var(--ff-head);
       font-style: italic;
       font-weight: 600;
-      font-size: 16px;
+      font-size: 13.5px;
       color: var(--ink);
       margin-bottom: 10px;
     }
@@ -2192,7 +2191,7 @@
       border-radius: 9px;
       color: var(--ink);
       font-family: var(--ff-body);
-      font-size: 13.5px;
+      font-size: 16px;
       outline: none;
       margin-bottom: 10px;
     }
@@ -2214,7 +2213,7 @@
       border-radius: 9px;
       color: var(--ink);
       font-family: var(--ff-body);
-      font-size: 13.5px;
+      font-size: 16px;
       outline: none;
       margin-bottom: 10px;
       resize: vertical;
@@ -2541,6 +2540,10 @@
       padding: 8px 3px 2px;
       border-top: 1px solid rgba(140, 111, 63, .16);
       margin-top: 2px;
+      max-height: 80px;
+      overflow: hidden;
+      opacity: 1;
+      transition: max-height .4s cubic-bezier(.16, 1, .3, 1), opacity .3s ease, padding .4s cubic-bezier(.16, 1, .3, 1), margin .4s cubic-bezier(.16, 1, .3, 1);
     }
 
     .live-input-wrap {
@@ -2555,7 +2558,7 @@
       border-bottom: 1px solid rgba(140, 111, 63, .28);
       background: transparent;
       border-radius: 0;
-      padding: 7px 24px 7px 2px;
+      padding: 7px 30px 7px 2px;
       font-family: var(--ff-body);
       font-size: 10.5px;
       color: var(--ink);
@@ -2573,27 +2576,56 @@
       box-shadow: 0 1px 0 0 var(--gold);
     }
 
-    .live-input-icon {
+    .live-send-btn {
       position: absolute;
-      right: 4px;
+      right: 2px;
       top: 50%;
       transform: translateY(-50%);
-      width: 11px;
-      height: 11px;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      border: none;
+      background: transparent;
       color: var(--gold-deep);
-      opacity: .5;
-      pointer-events: none;
-      transition: opacity .25s, transform .25s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      opacity: .55;
+      padding: 0;
+      transition: opacity .25s, background .2s, transform .15s;
+      -webkit-tap-highlight-color: transparent;
     }
 
-    .live-input:focus~.live-input-icon {
-      opacity: .9;
-      transform: translateY(-50%) translateX(1px);
+    .live-send-btn:hover,
+    .live-send-btn:focus-visible {
+      opacity: 1;
+      background: rgba(140, 111, 63, .14);
+    }
+
+    .live-send-btn:active {
+      transform: translateY(-50%) scale(.9);
+    }
+
+    .live-input:focus~.live-send-btn,
+    .live-input:not(:placeholder-shown)~.live-send-btn {
+      opacity: .95;
+    }
+
+    .live-input-icon {
+      width: 13px;
+      height: 13px;
+      pointer-events: none;
     }
 
     .live-card.collapsed .live-quickform {
       border-top-color: transparent;
-      padding-top: 3px;
+      max-height: 0;
+      opacity: 0;
+      padding-top: 0;
+      padding-bottom: 0;
+      margin-top: 0;
+      pointer-events: none;
     }
 
     .live-sent-msg {
@@ -2635,9 +2667,13 @@
       }
 
       .live-input {
-        font-size: 9.5px;
-        padding: 6px 22px 6px 2px;
+        font-size: 16px;
+        padding: 7px 30px 7px 2px;
+      }
 
+      .live-send-btn {
+        width: 30px;
+        height: 30px;
       }
 
       .ticker-av {
@@ -3504,13 +3540,15 @@
         <input type="text" id="live-hp" name="website" autocomplete="off" tabindex="-1"
           style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" aria-hidden="true">
         <div class="live-input-wrap">
-          <input type="text" class="live-input" id="live-msg" placeholder="Nhập lời chúc rồi nhấn Enter…"
-            maxlength="220">
-          <svg class="live-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <line x1="22" y1="2" x2="11" y2="13"></line>
-            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-          </svg>
+          <input type="text" class="live-input" id="live-msg" placeholder="Nhập lời chúc…"
+            maxlength="220" enterkeyhint="send">
+          <button type="button" class="live-send-btn" id="live-send" aria-label="Gửi lời chúc">
+            <svg class="live-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
         </div>
         <div class="live-sent-msg" id="live-sent-msg">💌 Đã gửi lời chúc của bạn!</div>
       </div>
@@ -4559,6 +4597,15 @@
       const header = document.getElementById('live-header');
       if (!card || !header) return;
       header.addEventListener('click', () => { card.classList.toggle('collapsed'); });
+      // Trên mobile, panel mở sẵn sẽ che mất phần đếm ngược ở hero —
+      // nên mặc định thu gọn (chỉ hiện thanh tiêu đề nhỏ), khách chạm vào để mở ra xem.
+      if (window.innerWidth <= 760) card.classList.add('collapsed');
+    })();
+
+    // ── LIVE PANEL: nút gửi thật (không còn phụ thuộc hoàn toàn vào phím Enter trên mobile) ──
+    (function () {
+      const sendBtn = document.getElementById('live-send');
+      if (sendBtn) sendBtn.addEventListener('click', () => { if (typeof sendWishFromLive === 'function') sendWishFromLive(); });
     })();
 
     // ── LIVE CORNER TICKER (only place wishes are displayed) ──
@@ -5108,8 +5155,9 @@
       if (!sessionStorage.getItem(SESSION_KEY)) {
         setTimeout(() => {
           showPopup();
-          // tự mở phong bì sau một nhịp ngắn để tạo cảm giác "thư vừa được trao tay"
-          setTimeout(openEnvelope, 700);
+          // Không tự mở phong bì nữa — để khách tự chạm vào con dấu/nắp thư.
+          // Việc tự mở trước đây khiến hiệu ứng mở thiệp bị bỏ lỡ (mở gần như ngay lập tức,
+          // trước khi khách kịp nhìn thấy phong bì đóng), nên cảm giác không mượt / không đẹp.
           sessionStorage.setItem(SESSION_KEY, '1');
         }, 5000);
       }
