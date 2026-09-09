@@ -3557,8 +3557,8 @@
         <input type="text" id="live-hp" name="website" autocomplete="off" tabindex="-1"
           style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" aria-hidden="true">
         <div class="live-input-wrap">
-          <input type="text" class="live-input" id="live-msg" placeholder="Nhập lời chúc…"
-            maxlength="220" enterkeyhint="send">
+          <input type="text" class="live-input" id="live-msg" placeholder="Nhập lời chúc…" maxlength="220"
+            enterkeyhint="send">
           <button type="button" class="live-send-btn" id="live-send" aria-label="Gửi lời chúc">
             <svg class="live-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round">
@@ -4419,28 +4419,92 @@
       }
     } catch (err) { console.error('Live-panel visibility init error (non-fatal):', err); }
 
+    // try {
+    //   // ── COUNTDOWN (D/H/M/S, smooth flip on change) ──
+    //   let prevCd = { d: null, h: null, m: null, s: null };
+    //   function setCd(id, val, key) {
+    //     const el = document.getElementById(id);
+    //     if (!el) return;
+    //     if (prevCd[key] !== val) {
+    //       el.textContent = val;
+    //       el.classList.remove('flip'); void el.offsetWidth; el.classList.add('flip');
+    //       prevCd[key] = val;
+    //     }
+    //   }
+    //   function tick() {
+    //     const diff = new Date('2026-10-18T18:00:00') - new Date();
+    //     if (diff <= 0) { ['cd-d', 'cd-h', 'cd-m', 'cd-s'].forEach(id => { const el = document.getElementById(id); if (el) el.textContent = '0'; }); return; }
+    //     setCd('cd-d', Math.floor(diff / 86400000), 'd');
+    //     setCd('cd-h', Math.floor(diff % 86400000 / 3600000), 'h');
+    //     setCd('cd-m', Math.floor(diff % 3600000 / 60000), 'm');
+    //     setCd('cd-s', Math.floor(diff % 60000 / 1000), 's');
+    //   }
+    //   tick(); setInterval(tick, 1000);
+    // } catch (err) { console.error('Countdown init error (non-fatal):', err); }
     try {
-      // ── COUNTDOWN (D/H/M/S, smooth flip on change) ──
-      let prevCd = { d: null, h: null, m: null, s: null };
+      // ── COUNTDOWN ──
+      let prevCd = {
+        d: null,
+        h: null,
+        m: null,
+        s: null
+      };
+
+      // 18/10/2026 18:00:00 - giờ local của trình duyệt
+      const targetDate = new Date(2026, 9, 18, 18, 0, 0);
+
       function setCd(id, val, key) {
         const el = document.getElementById(id);
         if (!el) return;
-        if (prevCd[key] !== val) {
-          el.textContent = val;
-          el.classList.remove('flip'); void el.offsetWidth; el.classList.add('flip');
-          prevCd[key] = val;
+
+        // Đảm bảo luôn là 2 chữ số cho H/M/S
+        const displayVal = key === 'd'
+          ? String(val)
+          : String(val).padStart(2, '0');
+
+        if (prevCd[key] !== displayVal) {
+          el.textContent = displayVal;
+
+          el.classList.remove('flip');
+          void el.offsetWidth;
+          el.classList.add('flip');
+
+          prevCd[key] = displayVal;
         }
       }
+
       function tick() {
-        const diff = new Date('2026-10-18T18:00:00') - new Date();
-        if (diff <= 0) { ['cd-d', 'cd-h', 'cd-m', 'cd-s'].forEach(id => { const el = document.getElementById(id); if (el) el.textContent = '0'; }); return; }
-        setCd('cd-d', Math.floor(diff / 86400000), 'd');
-        setCd('cd-h', Math.floor(diff % 86400000 / 3600000), 'h');
-        setCd('cd-m', Math.floor(diff % 3600000 / 60000), 'm');
-        setCd('cd-s', Math.floor(diff % 60000 / 1000), 's');
+        const now = new Date();
+        const diff = targetDate.getTime() - now.getTime();
+
+        if (diff <= 0) {
+          setCd('cd-d', 0, 'd');
+          setCd('cd-h', 0, 'h');
+          setCd('cd-m', 0, 'm');
+          setCd('cd-s', 0, 's');
+          return;
+        }
+
+        const totalSeconds = Math.floor(diff / 1000);
+
+        const days = Math.floor(totalSeconds / 86400);
+        const hours = Math.floor((totalSeconds % 86400) / 3600);
+        const minutes = Math.floor((totalSeconds % 3600) / 60);
+        const seconds = totalSeconds % 60;
+
+        setCd('cd-d', days, 'd');
+        setCd('cd-h', hours, 'h');
+        setCd('cd-m', minutes, 'm');
+        setCd('cd-s', seconds, 's');
       }
-      tick(); setInterval(tick, 1000);
-    } catch (err) { console.error('Countdown init error (non-fatal):', err); }
+
+      tick();
+
+      const countdownInterval = setInterval(tick, 1000);
+
+    } catch (err) {
+      showToast(err || 'Có lỗi xảy ra', 'error');
+    }
 
     try {
       // ── MUSIC ──
@@ -4497,7 +4561,7 @@
         document.addEventListener('click', playOnFirstInteraction, { once: true });
         document.addEventListener('touchstart', playOnFirstInteraction, { once: true });
       }
-    } catch (err) { console.error('Music init error (non-fatal):', err); }
+    } catch (err) { showToast(err || 'Có lỗi xảy ra music', 'error'); }
 
     try {
       // ── TABS ──
