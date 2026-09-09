@@ -4,27 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Long Nhật & Ngọc Minh · Thiệp Cưới · 18.10.2026</title>
+  <title>Long Nhật & Ngọc Minh · Thiệp Cưới Online · 18.10.2026</title>
 
   <!-- ══ SEO CƠ BẢN ══ -->
+  <!-- ⚠️ Thay THE_DOMAIN bên dưới bằng tên miền thật nơi bạn host trang này (vd: https://thiepcuoi-longnhat-ngocminh.com/) -->
   <meta name="description"
     content="Trân trọng kính mời bạn đến chung vui cùng Long Nhật & Ngọc Minh trong ngày cưới Chủ Nhật, 18/10/2026 tại Ngọc Hòa, Ninh Giang, Hải Phòng. Xem thiệp mời, chương trình lễ cưới và gửi lời chúc mừng ngay tại đây.">
   <meta name="keywords"
     content="thiệp cưới online, thiệp mời cưới, đám cưới Long Nhật Ngọc Minh, wedding invitation, thiệp cưới điện tử">
   <meta name="author" content="Long Nhật & Ngọc Minh">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://longnhat1206.github.io/wedding/NhatMinh/index.html">
+  <link rel="canonical" href="https://THE_DOMAIN/thiep-cuoi-long-nhat-ngoc-minh.html">
 
   <!-- ══ OPEN GRAPH — Facebook, Messenger, Zalo, nhóm chat đọc các thẻ này để hiện ảnh + tiêu đề khi dán link ══ -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://longnhat1206.github.io/wedding/NhatMinh/index.html">
+  <meta property="og:url" content="https://THE_DOMAIN/thiep-cuoi-long-nhat-ngoc-minh.html">
   <meta property="og:site_name" content="Thiệp Cưới Long Nhật & Ngọc Minh">
   <meta property="og:locale" content="vi_VN">
-  <meta property="og:title" content="Long Nhật & Ngọc Minh · Thiệp Cưới · 18.10.2026">
+  <meta property="og:title" content="Long Nhật & Ngọc Minh · Thiệp Cưới Online · 18.10.2026">
   <meta property="og:description"
     content="Trân trọng kính mời bạn đến chung vui cùng Long Nhật & Ngọc Minh, Chủ Nhật 18/10/2026 tại Ngọc Hòa, Ninh Giang, Hải Phòng. Bấm để xem thiệp mời và gửi lời chúc!">
-  <meta property="og:image" content="assets/img/hero-img-wrap/img-original.jpg">
-  <meta property="og:image:secure_url" content="assets/img/hero-img-wrap/img-original.jpg">
+  <meta property="og:image" content="https://THE_DOMAIN/assets/img/hero-img-wrap/img-original.jpg">
+  <meta property="og:image:secure_url" content="https://THE_DOMAIN/assets/img/hero-img-wrap/img-original.jpg">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -35,7 +36,7 @@
   <meta name="twitter:title" content="Long Nhật & Ngọc Minh · Thiệp Cưới Online · 18.10.2026">
   <meta name="twitter:description"
     content="Trân trọng kính mời bạn đến chung vui cùng Long Nhật & Ngọc Minh, Chủ Nhật 18/10/2026 tại Ngọc Hòa, Ninh Giang, Hải Phòng.">
-  <meta name="twitter:image" content="assets/img/hero-img-wrap/img-original.jpg">
+  <meta name="twitter:image" content="https://THE_DOMAIN/assets/img/hero-img-wrap/img-original.jpg">
 
   <!-- ══ FAVICON / GIAO DIỆN THANH ĐỊA CHỈ ══ -->
   <link rel="icon" type="image/jpeg" href="assets/img/hero-img-wrap/img-original.jpg">
@@ -2339,16 +2340,6 @@
       z-index: 800;
       width: 216px;
       pointer-events: none;
-      opacity: 1;
-      transform: translateY(0);
-      transition: opacity .35s ease, transform .35s ease;
-    }
-
-    /* Ẩn mượt khi đang ở phần hero để không đè lên đồng hồ đếm ngược */
-    #live-panel.lp-hide {
-      opacity: 0;
-      transform: translateY(10px);
-      pointer-events: none;
     }
 
     .live-card {
@@ -2975,12 +2966,10 @@
       background: radial-gradient(circle at 50% 30%, rgba(60, 42, 32, .78), rgba(10, 8, 7, .92));
       backdrop-filter: blur(10px);
       -webkit-backdrop-filter: blur(10px);
-      align-items: flex-start;
+      align-items: center;
       justify-content: center;
       padding: 24px;
       opacity: 0;
-      overflow-y: auto;
-      -webkit-overflow-scrolling: touch;
       transition: opacity .55s cubic-bezier(.16, 1, .3, 1);
     }
 
@@ -3009,9 +2998,7 @@
     .invite-envelope {
       position: relative;
       width: min(92vw, 430px);
-      margin: auto 0;
       animation: inviteDrop .8s cubic-bezier(.16, 1, .3, 1) .1s both;
-      background: #652424;
     }
 
     @keyframes inviteDrop {
@@ -3035,12 +3022,10 @@
       height: 46%;
       background: linear-gradient(155deg, #fdf9f2, #f3ead9);
       border-radius: 0 0 10px 10px;
-      box-shadow: var(--shadow-lg), inset 0 0 0 1px rgba(211, 173, 114, .35), inset 0 8px 16px -10px rgba(140, 111, 63, .3);
+      box-shadow: var(--shadow-lg);
       z-index: 1;
-      overflow: hidden;
     }
 
-    /* thin gold trim just under the flap line, like a printed envelope edge */
     .invite-envelope-body::before,
     .invite-envelope-body::after {
       content: '';
@@ -3048,7 +3033,7 @@
       top: 0;
       width: 52%;
       height: 100%;
-      background: linear-gradient(180deg, rgba(140, 111, 63, .16), transparent 55%);
+      background: linear-gradient(180deg, rgba(30, 27, 24, .05), transparent 55%);
     }
 
     .invite-envelope-body::before {
@@ -3073,12 +3058,11 @@
       background: linear-gradient(140deg, var(--wine) 0%, var(--wine-deep) 100%);
       -webkit-clip-path: polygon(0 0, 100% 0, 50% 100%);
       clip-path: polygon(0 0, 100% 0, 50% 100%);
-      border-radius: 10px 10px 0 0;
       transform-origin: 50% 0%;
       transform: translateY(0) scale(1);
       transition: transform .75s cubic-bezier(.65, 0, .35, 1), opacity .5s ease .15s;
       z-index: 4;
-      box-shadow: 0 14px 30px rgba(20, 12, 9, .35);
+      box-shadow: 0 10px 24px rgba(20, 12, 9, .3);
       will-change: transform, opacity;
     }
 
@@ -3166,7 +3150,7 @@
     .invite-card {
       position: relative;
       z-index: 2;
-      margin-top: 15%;
+      margin-top: 18%;
       background: var(--white);
       border-radius: 16px;
       padding: clamp(30px, 5vw, 46px) clamp(20px, 4.5vw, 40px) clamp(28px, 4vw, 38px);
@@ -3414,7 +3398,7 @@
     <div class="invite-envelope" id="invite-envelope">
       <div class="invite-envelope-body"></div>
       <div class="invite-card">
-        <!-- <button class="invite-close" id="invite-modal-close" aria-label="Đóng">✕</button> -->
+        <button class="invite-close" id="invite-modal-close" aria-label="Đóng">✕</button>
         <div class="invite-corner invite-corner-tl"></div>
         <div class="invite-corner invite-corner-tr"></div>
         <div class="invite-corner invite-corner-bl"></div>
@@ -3557,8 +3541,8 @@
         <input type="text" id="live-hp" name="website" autocomplete="off" tabindex="-1"
           style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" aria-hidden="true">
         <div class="live-input-wrap">
-          <input type="text" class="live-input" id="live-msg" placeholder="Nhập lời chúc…" maxlength="220"
-            enterkeyhint="send">
+          <input type="text" class="live-input" id="live-msg" placeholder="Nhập lời chúc…"
+            maxlength="220" enterkeyhint="send">
           <button type="button" class="live-send-btn" id="live-send" aria-label="Gửi lời chúc">
             <svg class="live-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
               stroke-linecap="round" stroke-linejoin="round">
@@ -4406,83 +4390,27 @@
     } catch (err) { console.error('Navbar/menu init error (non-fatal):', err); }
 
     try {
-      // ── Ẩn panel "Lời chúc trực tiếp" khi đang ở hero, tránh đè lên đồng hồ đếm ngược ──
-      const livePanelEl = document.getElementById('live-panel');
-      const heroEl = document.getElementById('hero');
-      if (livePanelEl && heroEl && 'IntersectionObserver' in window) {
-        const lpObserver = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            livePanelEl.classList.toggle('lp-hide', entry.isIntersecting);
-          });
-        }, { threshold: 0.15 });
-        lpObserver.observe(heroEl);
-      }
-    } catch (err) { console.error('Live-panel visibility init error (non-fatal):', err); }
-
-    try {
-      // ── COUNTDOWN ──
-      let prevCd = {
-        d: null,
-        h: null,
-        m: null,
-        s: null
-      };
-
-      // 18/10/2026 18:00:00 - giờ local của trình duyệt
-      const targetDate = new Date(2026, 9, 18, 18, 0, 0);
-
+      // ── COUNTDOWN (D/H/M/S, smooth flip on change) ──
+      let prevCd = { d: null, h: null, m: null, s: null };
       function setCd(id, val, key) {
         const el = document.getElementById(id);
         if (!el) return;
-
-        // Đảm bảo luôn là 2 chữ số cho H/M/S
-        const displayVal = key === 'd'
-          ? String(val)
-          : String(val).padStart(2, '0');
-
-        if (prevCd[key] !== displayVal) {
-          el.textContent = displayVal;
-
-          el.classList.remove('flip');
-          void el.offsetWidth;
-          el.classList.add('flip');
-
-          prevCd[key] = displayVal;
+        if (prevCd[key] !== val) {
+          el.textContent = val;
+          el.classList.remove('flip'); void el.offsetWidth; el.classList.add('flip');
+          prevCd[key] = val;
         }
       }
-
       function tick() {
-        const now = new Date();
-        const diff = targetDate.getTime() - now.getTime();
-
-        if (diff <= 0) {
-          setCd('cd-d', 0, 'd');
-          setCd('cd-h', 0, 'h');
-          setCd('cd-m', 0, 'm');
-          setCd('cd-s', 0, 's');
-          return;
-        }
-
-        const totalSeconds = Math.floor(diff / 1000);
-
-        const days = Math.floor(totalSeconds / 86400);
-        const hours = Math.floor((totalSeconds % 86400) / 3600);
-        const minutes = Math.floor((totalSeconds % 3600) / 60);
-        const seconds = totalSeconds % 60;
-
-        setCd('cd-d', days, 'd');
-        setCd('cd-h', hours, 'h');
-        setCd('cd-m', minutes, 'm');
-        setCd('cd-s', seconds, 's');
+        const diff = new Date('2026-10-18T18:00:00') - new Date();
+        if (diff <= 0) { ['cd-d', 'cd-h', 'cd-m', 'cd-s'].forEach(id => { const el = document.getElementById(id); if (el) el.textContent = '0'; }); return; }
+        setCd('cd-d', Math.floor(diff / 86400000), 'd');
+        setCd('cd-h', Math.floor(diff % 86400000 / 3600000), 'h');
+        setCd('cd-m', Math.floor(diff % 3600000 / 60000), 'm');
+        setCd('cd-s', Math.floor(diff % 60000 / 1000), 's');
       }
-
-      tick();
-
-      const countdownInterval = setInterval(tick, 1000);
-
-    } catch (err) {
-      showToast(err || 'Có lỗi xảy ra', 'error');
-    }
+      tick(); setInterval(tick, 1000);
+    } catch (err) { console.error('Countdown init error (non-fatal):', err); }
 
     try {
       // ── MUSIC ──
@@ -4539,7 +4467,7 @@
         document.addEventListener('click', playOnFirstInteraction, { once: true });
         document.addEventListener('touchstart', playOnFirstInteraction, { once: true });
       }
-    } catch (err) { showToast(err || 'Có lỗi xảy ra music', 'error'); }
+    } catch (err) { console.error('Music init error (non-fatal):', err); }
 
     try {
       // ── TABS ──
