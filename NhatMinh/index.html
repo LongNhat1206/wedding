@@ -4321,7 +4321,7 @@
         tình yêu thương, sự đồng hành và những lời chúc phúc từ mọi người. Cảm ơn bạn vì đã luôn là một phần thật đẹp
         trong chương mới ý nghĩa này của cuộc đời chúng tôi."</div>
       <div class="thanks-names" data-reveal="up">Long Nhật &amp; Ngọc Minh</div>
-       <div class="thanks-footer" data-reveal="up">Thiệp cưới trực tuyến Long Nhật · Hà Nội, Việt Nam · v202609100930
+       <div class="thanks-footer" data-reveal="up">Thiệp cưới trực tuyến Long Nhật · Hà Nội, Việt Nam · v202609101450
       </div>
     </div>
   </section>
@@ -4337,7 +4337,7 @@
     (function () {
       const logs = [];
       let badge, panel;
-      function ensureUI() {
+      const ensureUI = function() {
         if (badge) return;
         badge = document.createElement('div');
         badge.textContent = '⚠';
@@ -4348,7 +4348,7 @@
         document.body.appendChild(badge);
         document.body.appendChild(panel);
       }
-      function report(msg) {
+      const report = function(msg) {
         try {
           logs.push(msg);
           ensureUI();
@@ -4374,7 +4374,7 @@
     // Nếu bất kỳ tính năng nào bên dưới lỗi, phần chữ/ảnh vẫn LUÔN hiện ra,
     // không bao giờ bị kẹt ở opacity:0 (đây là nguyên nhân "mất giao diện" trên 1 số máy).
     (function () {
-      function revealAll() {
+      const revealAll = function() {
         document.querySelectorAll('[data-reveal]').forEach(el => el.classList.add('revealed'));
         const galGrid = document.querySelector('.gal-grid');
         if (galGrid) galGrid.classList.add('revealed');
@@ -4413,7 +4413,7 @@
       // hình loading (phủ kín, chặn mọi thao tác chạm) treo lâu — người dùng tưởng trang bị đứng/lỗi.
       // Script này đã chạy tới gần cuối <body> nên DOM đã sẵn sàng — ẩn loader theo một mốc thời
       // gian ngắn, cố định, không phụ thuộc tốc độ mạng.
-      function hideLoader() {
+      const hideLoader = function() {
         const l = document.getElementById('loader');
         if (!l || l.classList.contains('done')) return;
         l.classList.add('done');
@@ -4428,7 +4428,7 @@
 
       // ── SCROLL PROGRESS + NAVBAR ──
       let ticking = false;
-      function onScroll() {
+      const onScroll = function() {
         const max = document.body.scrollHeight - window.innerHeight;
         const fillEl = document.getElementById('scroll-fill');
         if (fillEl) fillEl.style.width = (window.scrollY / max * 100) + '%';
@@ -4439,8 +4439,8 @@
       window.addEventListener('scroll', () => { if (!ticking) { requestAnimationFrame(onScroll); ticking = true; } }, { passive: true });
 
       // ── MOBILE MENU ──
-      function openMenu() { const m = document.getElementById('mmenu'); if (m) m.classList.add('open'); document.body.style.overflow = 'hidden'; }
-      function closeMenu() { const m = document.getElementById('mmenu'); if (m) m.classList.remove('open'); document.body.style.overflow = ''; }
+      const openMenu = function() { const m = document.getElementById('mmenu'); if (m) m.classList.add('open'); document.body.style.overflow = 'hidden'; }
+      const closeMenu = function() { const m = document.getElementById('mmenu'); if (m) m.classList.remove('open'); document.body.style.overflow = ''; }
       const menuOpenBtn = document.getElementById('menu-open');
       const menuCloseBtn = document.getElementById('menu-close');
       const mmenuEl = document.getElementById('mmenu');
@@ -4454,7 +4454,7 @@
     try {
       // ── COUNTDOWN (D/H/M/S, smooth flip on change) ──
       let prevCd = { d: null, h: null, m: null, s: null };
-      function setCd(id, val, key) {
+      const setCd = function(id, val, key) {
         const el = document.getElementById(id);
         if (!el) return;
         if (prevCd[key] !== val) {
@@ -4467,7 +4467,7 @@
       // một số trình duyệt di động thật (Safari/WebKit, WebView trong Zalo/Messenger...) phân tích
       // chuỗi ngày-giờ không có "Z"/múi giờ không nhất quán, có máy trả Invalid Date → đếm ngược ra NaN.
       const WEDDING_DATE = new Date(2026, 9, 18, 18, 0, 0); // Tháng 9 = Tháng 10 (0-indexed)
-      function tick() {
+      const tick = function() {
         const diff = WEDDING_DATE - new Date();
         if (diff <= 0) { ['cd-d', 'cd-h', 'cd-m', 'cd-s'].forEach(id => { const el = document.getElementById(id); if (el) el.textContent = '0'; }); return; }
         setCd('cd-d', Math.floor(diff / 86400000), 'd');
@@ -4492,7 +4492,7 @@
         let playing = false;
 
         // 1. Hàm đồng bộ giao diện (UI) với trạng thái nhạc
-        function updateMusicUI() {
+        const updateMusicUI = function() {
           if (playing) {
             iPlay.style.display = 'none';
             iPause.style.display = '';
@@ -4525,7 +4525,7 @@
         //    Bỏ qua nếu chạm ngay vào nút nhạc — nút đã tự xử lý ở trên; nếu không bỏ qua, hai đoạn
         //    code cùng gọi play()/đổi trạng thái cho CÙNG một lần chạm sẽ đua nhau và có thể khiến
         //    nhạc đang phát bị bật/tắt lộn xộn, icon hiển thị sai theo trạng thái cuối cùng ai thắng.
-        function playOnFirstInteraction(e) {
+        const playOnFirstInteraction = function(e) {
           if (e.target && e.target.closest && e.target.closest('#music-btn')) return;
           if (!playing) {
             playing = true;
@@ -4544,7 +4544,7 @@
         // Nên đăng ký thêm cả "touchend"/"click" — { once: true } đảm bảo chỉ có ĐÚNG MỘT trong ba
         // sự kiện này thực sự chạy hàm (sự kiện nào tới trước sẽ huỷ đăng ký của cả ba), tránh gọi
         // play()/pause() lặp lại nhiều lần cho cùng một cử chỉ.
-        function unlockOnce(e) {
+        const unlockOnce = function(e) {
           document.removeEventListener('click', unlockOnce);
           document.removeEventListener('touchstart', unlockOnce);
           document.removeEventListener('touchend', unlockOnce);
@@ -4587,8 +4587,8 @@
       let lbIdx = 0;
       const lb = document.getElementById('lightbox'), lbImg = document.getElementById('lb-img'), lbCap = document.getElementById('lb-cap'), lbDots = document.getElementById('lb-dots');
       if (lb && lbImg) {
-        function buildDots() { lbDots.innerHTML = ''; galleryData.forEach((_, i) => { const d = document.createElement('div'); d.className = 'lb-dot' + (i === lbIdx ? ' active' : ''); d.onclick = () => showLB(i); lbDots.appendChild(d); }); }
-        function showLB(i) {
+        const buildDots = function() { lbDots.innerHTML = ''; galleryData.forEach((_, i) => { const d = document.createElement('div'); d.className = 'lb-dot' + (i === lbIdx ? ' active' : ''); d.onclick = () => showLB(i); lbDots.appendChild(d); }); }
+        const showLB = function(i) {
           lbIdx = (i + galleryData.length) % galleryData.length;
           lbImg.classList.remove('show');
           setTimeout(() => { lbImg.src = galleryData[lbIdx].src; lbCap.textContent = galleryData[lbIdx].cap + ' · ' + (lbIdx + 1) + ' / ' + galleryData.length; lbImg.onload = () => lbImg.classList.add('show'); }, 160);
@@ -4628,7 +4628,7 @@
       const closeBtn = document.getElementById('gift-modal-close');
       if (!fab || !modal || !closeBtn) return;
       let dragging = false, moved = false, startX = 0, startY = 0, origX = 0, origY = 0;
-      function pointerDown(e) {
+      const pointerDown = function(e) {
         dragging = true; moved = false;
         const r = fab.getBoundingClientRect();
         fab.style.left = r.left + 'px'; fab.style.top = r.top + 'px';
@@ -4642,7 +4642,7 @@
         document.addEventListener('touchmove', pointerMove, { passive: false });
         document.addEventListener('touchend', pointerUp);
       }
-      function pointerMove(e) {
+      const pointerMove = function(e) {
         if (!dragging) return;
         const cx = (e.touches ? e.touches[0].clientX : e.clientX);
         const cy = (e.touches ? e.touches[0].clientY : e.clientY);
@@ -4654,7 +4654,7 @@
         nx = Math.max(6, Math.min(maxX, nx)); ny = Math.max(6, Math.min(maxY, ny));
         fab.style.left = nx + 'px'; fab.style.top = ny + 'px';
       }
-      function pointerUp() {
+      const pointerUp = function() {
         dragging = false;
         fab.classList.remove('dragging');
         document.removeEventListener('mousemove', pointerMove);
@@ -4665,8 +4665,8 @@
       }
       fab.addEventListener('mousedown', pointerDown);
       fab.addEventListener('touchstart', pointerDown, { passive: true });
-      function openGiftModal() { modal.classList.add('open'); }
-      function closeGiftModal() { modal.classList.remove('open'); }
+      const openGiftModal = function() { modal.classList.add('open'); }
+      const closeGiftModal = function() { modal.classList.remove('open'); }
       closeBtn.addEventListener('click', closeGiftModal);
       modal.addEventListener('click', e => { if (e.target === modal) closeGiftModal(); });
       document.addEventListener('keydown', e => { if (e.key === 'Escape') closeGiftModal(); });
@@ -4717,7 +4717,7 @@
     // FLIP helper: measure item positions before a DOM mutation, then after the
     // mutation nudge each surviving item back from its old spot to its new one
     // via a transform, so the browser animates the move instead of snapping.
-    function flipTicker(mutate) {
+    const flipTicker = function(mutate) {
       const before = new Map();
       [...tickerEl.children].forEach(el => before.set(el, el.getBoundingClientRect()));
       mutate();
@@ -4737,7 +4737,7 @@
         }
       });
     }
-    function pushTicker(w) {
+    const pushTicker = function(w) {
       const item = document.createElement('div'); item.className = 'ticker-item';
       item.innerHTML = `<div class="ticker-av">${w.name.charAt(0).toUpperCase()}</div><div class="ticker-body"><div class="ticker-name">${w.name}<span class="tk-heart">❤</span></div><div class="ticker-text">${w.text}</div></div>`;
       flipTicker(() => {
@@ -4770,7 +4770,7 @@
     const tickerQueue = [...initWishes];
     let tickerQIdx = 0;
     let tickerStarted = false;
-    function dripTicker() {
+    const dripTicker = function() {
       if (tickerQIdx === 0) {
         document.querySelectorAll('.static-item').forEach(el => {
           el.classList.add('fade-out');
@@ -4783,7 +4783,7 @@
       tickerQIdx++;
       setTimeout(dripTicker, 1700 + Math.random() * 1500);
     }
-    function startTickerOnce() {
+    const startTickerOnce = function() {
       if (tickerStarted) return;
       tickerStarted = true;
       setTimeout(dripTicker, 400);
@@ -4825,7 +4825,7 @@
     // Cooldown phía trình duyệt: chỉ để tránh bấm nhầm nhiều lần, không thay
     // cho việc chống spam thật (việc đó xử lý ở server).
     let lastLocalSubmit = 0;
-    function localCooldownOk() {
+    const localCooldownOk = function() {
       const now = Date.now();
       if (now - lastLocalSubmit < 4000) return false;
       lastLocalSubmit = now;
@@ -4838,7 +4838,7 @@
     let isSendingGB = false;
     let isSendingLive = false;
 
-    function appendEmoji(e) { const ta = document.getElementById('gb-text'); ta.value += e; ta.focus(); }
+    const appendEmoji = function(e) { const ta = document.getElementById('gb-text'); ta.value += e; ta.focus(); }
     async function sendWish() {
       if (isSendingGB) return;
       const name = document.getElementById('gb-name').value.trim();
@@ -4935,7 +4935,7 @@
       const pool = [];
       kinds.forEach(k => { for (let i = 0; i < Math.round(k.weight * 4); i++)pool.push(k); });
 
-      function spawn() {
+      const spawn = function() {
         const k = pool[Math.floor(Math.random() * pool.length)];
         const el = document.createElement('span');
         el.className = 'fx-piece';
@@ -4962,7 +4962,7 @@
         ], { duration: dur * 1000, easing: 'ease-in-out' });
         anim.onfinish = () => el.remove();
       }
-      function loop() {
+      const loop = function() {
         const burst = 1 + (Math.random() < 0.35 ? 1 : 0);   // occasionally spawn two at once for a fuller feel
         for (let i = 0; i < burst; i++)spawn();
         const next = 380 + Math.random() * 520;
@@ -5146,7 +5146,7 @@
   <script>
     // Hàm thông báo dùng chung trong toàn trang, thay cho alert().
     // type: 'error' | 'success' | 'info'
-    function showToast(message, type = 'info', duration = 3600) {
+    const showToast = function(message, type = 'info', duration = 3600) {
       const stack = document.getElementById('toast-stack');
       if (!stack) { console.log(message); return; }
       const icons = { success: '✓', error: '✕', info: '❤' };
@@ -5158,7 +5158,7 @@
       requestAnimationFrame(() => requestAnimationFrame(() => el.classList.add('show')));
 
       let hideTimer;
-      function dismiss() {
+      const dismiss = function() {
         clearTimeout(hideTimer);
         el.classList.remove('show');
         el.classList.add('leaving');
@@ -5183,7 +5183,7 @@
 
       // ── Lấy tên khách từ URL, hỗ trợ vài kiểu tham số thường dùng ──
       // Ví dụ: ?to=Nguyen+Van+A  hoặc  ?ten=Nguyễn Văn A  hoặc ?name=... / ?guest=...
-      function getGuestName() {
+      const getGuestName = function() {
         try {
           const params = new URLSearchParams(window.location.search);
           const raw = params.get('to') || params.get('ten') || params.get('name') || params.get('guest') || params.get('n');
@@ -5206,11 +5206,11 @@
       let opened = false;
       let shown = false;
 
-      function lockScroll(lock) {
+      const lockScroll = function(lock) {
         document.documentElement.style.overflow = lock ? 'hidden' : '';
       }
 
-      function showPopup() {
+      const showPopup = function() {
         if (shown) return;
         shown = true;
         overlay.classList.add('show');
@@ -5219,13 +5219,13 @@
         requestAnimationFrame(() => requestAnimationFrame(() => overlay.classList.add('visible')));
       }
 
-      function hidePopup() {
+      const hidePopup = function() {
         overlay.classList.remove('visible');
         lockScroll(false);
         setTimeout(() => overlay.classList.remove('show'), 550);
       }
 
-      function openEnvelope() {
+      const openEnvelope = function() {
         if (opened) return;
         opened = true;
         envelope.classList.add('opened');
