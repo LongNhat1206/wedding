@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Long Nhật & Ngọc Minh · Thiệp Cưới · 18.10.2026</title>
+  <title>Long Nhật & Ngọc Minh · Thiệp Cưới Online · 18.10.2026</title>
 
   <!-- ══ SEO CƠ BẢN ══ -->
   <!-- ⚠️ Thay THE_DOMAIN bên dưới bằng tên miền thật nơi bạn host trang này (vd: https://thiepcuoi-longnhat-ngocminh.com/) -->
@@ -2344,8 +2344,15 @@
 
     .live-card {
       pointer-events: auto;
-      background: transparent;
       position: relative;
+      background: rgba(255, 255, 255, .82);
+      backdrop-filter: blur(16px) saturate(1.4);
+      -webkit-backdrop-filter: blur(16px) saturate(1.4);
+      border: 1px solid rgba(255, 255, 255, .6);
+      border-radius: 16px;
+      padding: 8px 9px 7px;
+      box-shadow: 0 14px 34px rgba(30, 20, 10, .18), 0 2px 10px rgba(30, 20, 10, .08);
+      transition: box-shadow .3s ease;
     }
 
     .live-header {
@@ -4236,9 +4243,7 @@
                     <path
                       d="M512 1012.8c-253.6 0-511.2-54.4-511.2-158.4 0-92.8 198.4-131.2 283.2-143.2h3.2c12 0 22.4 8.8 24 20.8 0.8 6.4-0.8 12.8-4.8 17.6-4 4.8-9.6 8.8-16 9.6-176.8 25.6-242.4 72-242.4 96 0 44.8 180.8 110.4 463.2 110.4s463.2-65.6 463.2-110.4c0-24-66.4-70.4-244.8-96-6.4-0.8-12-4-16-9.6-4-4.8-5.6-11.2-4.8-17.6 1.6-12 12-20.8 24-20.8h3.2c85.6 12 285.6 50.4 285.6 143.2 0.8 103.2-256 158.4-509.6 158.4z m-16.8-169.6c-12-11.2-288.8-272.8-288.8-529.6 0-168 136.8-304.8 304.8-304.8S816 145.6 816 313.6c0 249.6-276.8 517.6-288.8 528.8l-16 16-16-15.2zM512 56.8c-141.6 0-256.8 115.2-256.8 256.8 0 200.8 196 416 256.8 477.6 61.6-63.2 257.6-282.4 257.6-477.6C768.8 172.8 653.6 56.8 512 56.8z m0 392.8c-80 0-144.8-64.8-144.8-144.8S432 160 512 160c80 0 144.8 64.8 144.8 144.8 0 80-64.8 144.8-144.8 144.8zM512 208c-53.6 0-96.8 43.2-96.8 96.8S458.4 401.6 512 401.6c53.6 0 96.8-43.2 96.8-96.8S564.8 208 512 208z"
                       fill="" />
-                  </svg></div>
-              <div>
-                <div class="detail-label">Địa chỉ</div>
+                  </svg></span></div>
                 <div class="detail-value">Ngọc Hòa, Ninh Giang<br>Hải Phòng</div>
               </div>
             </div>
@@ -4316,12 +4321,55 @@
         tình yêu thương, sự đồng hành và những lời chúc phúc từ mọi người. Cảm ơn bạn vì đã luôn là một phần thật đẹp
         trong chương mới ý nghĩa này của cuộc đời chúng tôi."</div>
       <div class="thanks-names" data-reveal="up">Long Nhật &amp; Ngọc Minh</div>
-      <div class="thanks-footer" data-reveal="up">Thiệp cưới trực tuyến Long Nhật · Hà Nội, Việt Nam · v202609101000
+       <div class="thanks-footer" data-reveal="up">Thiệp cưới trực tuyến Long Nhật · Hà Nội, Việt Nam · v202609100930
       </div>
     </div>
   </section>
 
   <script>
+    // ══════════════════════════════════════════════════════════════════════
+    // BẢNG DEBUG LỖI TẠM THỜI — chỉ để tìm lỗi trên điện thoại thật, sẽ gỡ bỏ
+    // sau khi xác định xong nguyên nhân. Hiện một chấm đỏ nhỏ góc trên-trái nếu
+    // có lỗi JS xảy ra ở bất cứ đâu trên trang; chạm vào để xem chi tiết và
+    // chụp màn hình gửi lại. Không ảnh hưởng gì đến giao diện/chức năng bình
+    // thường của thiệp nếu không có lỗi.
+    // ══════════════════════════════════════════════════════════════════════
+    (function () {
+      const logs = [];
+      let badge, panel;
+      function ensureUI() {
+        if (badge) return;
+        badge = document.createElement('div');
+        badge.textContent = '⚠';
+        badge.setAttribute('style', 'position:fixed;top:8px;left:8px;z-index:999999;width:26px;height:26px;border-radius:50%;background:#c0392b;color:#fff;font-size:14px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 8px rgba(0,0,0,.4);cursor:pointer;font-family:sans-serif;');
+        panel = document.createElement('div');
+        panel.setAttribute('style', 'position:fixed;top:40px;left:8px;right:8px;z-index:999999;max-height:60vh;overflow:auto;background:#1c1c1c;color:#eee;font:12px/1.5 monospace;padding:10px;border-radius:8px;display:none;white-space:pre-wrap;word-break:break-word;box-shadow:0 8px 24px rgba(0,0,0,.5);');
+        badge.onclick = () => { panel.style.display = panel.style.display === 'none' ? 'block' : 'none'; };
+        document.body.appendChild(badge);
+        document.body.appendChild(panel);
+      }
+      function report(msg) {
+        try {
+          logs.push(msg);
+          ensureUI();
+          panel.textContent = logs.join('\n\n---\n\n');
+          badge.style.display = 'flex';
+        } catch (e) { /* im lặng, đây chỉ là công cụ debug phụ trợ */ }
+      }
+      window.addEventListener('error', (e) => {
+        report('LỖI JS: ' + (e.message || '?') + '\nFile: ' + (e.filename || '?') + ':' + (e.lineno || '?') + ':' + (e.colno || '?'));
+      });
+      window.addEventListener('unhandledrejection', (e) => {
+        report('PROMISE LỖI: ' + (e.reason && e.reason.message ? e.reason.message : String(e.reason)));
+      });
+      const origConsoleError = console.error.bind(console);
+      console.error = function (...args) {
+        report('console.error: ' + args.map(a => (a && a.message) ? a.message : String(a)).join(' '));
+        origConsoleError(...args);
+      };
+      window.__wcDebugReport = report;
+    })();
+
     // ══ AN TOÀN CHO REVEAL: chạy TRƯỚC TIÊN, tách try/catch riêng ══
     // Nếu bất kỳ tính năng nào bên dưới lỗi, phần chữ/ảnh vẫn LUÔN hiện ra,
     // không bao giờ bị kẹt ở opacity:0 (đây là nguyên nhân "mất giao diện" trên 1 số máy).
@@ -4456,40 +4504,55 @@
           }
         }
 
-        // 2. Xử lý khi click TRỰC TIẾP vào nút bật/tắt nhạc
-        //    Cập nhật icon theo kết quả THẬT của play()/pause() — không đoán trước —
-        //    để icon không bao giờ hiển thị sai trạng thái nếu trình duyệt từ chối phát.
+        // 2. Xử lý khi bấm TRỰC TIẾP vào nút bật/tắt nhạc.
+        //    Cập nhật icon NGAY LẬP TỨC khi khách bấm (phản hồi tức thời, không đợi audio thật
+        //    sự bắt đầu phát — trên mạng chậm việc này có thể mất một nhịp), rồi chỉnh lại đúng
+        //    trạng thái thật nếu trình duyệt từ chối phát (rất hiếm khi bấm tay trực tiếp).
         musicBtn.addEventListener('click', (event) => {
           event.stopPropagation();
           if (!playing) {
-            aud.play().then(() => { playing = true; updateMusicUI(); }).catch(() => { });
+            playing = true;
+            updateMusicUI();
+            aud.play().catch(() => { playing = false; updateMusicUI(); });
           } else {
-            aud.pause();
             playing = false;
             updateMusicUI();
+            aud.pause();
           }
         });
 
-        // 3. Xử lý khi chạm/click BẤT KỲ ĐÂU trên trang lần đầu tiên, để "mở khoá" tự phát nhạc
-        function playOnFirstInteraction() {
+        // 3. Xử lý khi chạm/click BẤT KỲ ĐÂU khác trên trang lần đầu tiên, để "mở khoá" tự phát nhạc.
+        //    Bỏ qua nếu chạm ngay vào nút nhạc — nút đã tự xử lý ở trên; nếu không bỏ qua, hai đoạn
+        //    code cùng gọi play()/đổi trạng thái cho CÙNG một lần chạm sẽ đua nhau và có thể khiến
+        //    nhạc đang phát bị bật/tắt lộn xộn, icon hiển thị sai theo trạng thái cuối cùng ai thắng.
+        function playOnFirstInteraction(e) {
+          if (e.target && e.target.closest && e.target.closest('#music-btn')) return;
           if (!playing) {
-            aud.play().then(() => {
-              playing = true;
+            playing = true;
+            updateMusicUI();
+            aud.play().catch(() => {
+              // Bị chặn (chính sách autoplay của trình duyệt/app đang mở link) — trả icon về trạng thái
+              // tắt, khách vẫn có thể bấm nút nhạc thủ công (luôn được coi là cử chỉ hợp lệ) để phát.
+              playing = false;
               updateMusicUI();
-            }).catch(() => {
-              // Bị chặn (chính sách autoplay của trình duyệt/app đang mở link) — im lặng bỏ qua,
-              // khách vẫn có thể bấm nút nhạc thủ công để phát.
             });
           }
         }
 
         // Safari/WebKit trên iPhone không phải lúc nào cũng chấp nhận "touchstart" là cử chỉ
         // hợp lệ để tự phát audio (vì chạm xuống có thể là bắt đầu thao tác cuộn/vuốt, chưa chắc là "tap").
-        // Nên đăng ký thêm cả "touchend" — mỗi listener tự huỷ sau khi chạy 1 lần,
-        // nhưng chỉ cái đầu tiên thực sự thành công mới đặt playing = true.
-        document.addEventListener('click', playOnFirstInteraction, { once: true });
-        document.addEventListener('touchstart', playOnFirstInteraction, { once: true, passive: true });
-        document.addEventListener('touchend', playOnFirstInteraction, { once: true });
+        // Nên đăng ký thêm cả "touchend"/"click" — { once: true } đảm bảo chỉ có ĐÚNG MỘT trong ba
+        // sự kiện này thực sự chạy hàm (sự kiện nào tới trước sẽ huỷ đăng ký của cả ba), tránh gọi
+        // play()/pause() lặp lại nhiều lần cho cùng một cử chỉ.
+        function unlockOnce(e) {
+          document.removeEventListener('click', unlockOnce);
+          document.removeEventListener('touchstart', unlockOnce);
+          document.removeEventListener('touchend', unlockOnce);
+          playOnFirstInteraction(e);
+        }
+        document.addEventListener('click', unlockOnce);
+        document.addEventListener('touchstart', unlockOnce, { passive: true });
+        document.addEventListener('touchend', unlockOnce);
       }
     } catch (err) { console.error('Music init error (non-fatal):', err); }
 
