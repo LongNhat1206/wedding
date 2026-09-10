@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Long Nhật & Ngọc Minh · Thiệp Cưới Online · 18.10.2026</title>
+  <title>Long Nhật & Ngọc Minh · Thiệp Cưới · 18.10.2026</title>
 
   <!-- ══ SEO CƠ BẢN ══ -->
   <!-- ⚠️ Thay THE_DOMAIN bên dưới bằng tên miền thật nơi bạn host trang này (vd: https://thiepcuoi-longnhat-ngocminh.com/) -->
@@ -4075,56 +4075,56 @@
         <div class="g-brick" data-idx="0">
           <picture>
             <source media="(max-width:760px)" srcset="assets/img/gallery/img-01-small.jpg"><img
-              src="assets/img/gallery/img-01-original.jpg">
+              src="assets/img/gallery/img-01-original.jpg" loading="lazy" decoding="async">
           </picture>
           <div class="g-overlay"><span>Duyên phận</span></div>
         </div>
         <div class="g-brick" data-idx="1">
           <picture>
             <source media="(max-width:760px)" srcset="assets/img/gallery/img-02-small.jpg"><img
-              src="assets/img/gallery/img-02-original.jpg">
+              src="assets/img/gallery/img-02-original.jpg" loading="lazy" decoding="async">
           </picture>
           <div class="g-overlay"><span>Cùng nhau đến cuối con đường</span></div>
         </div>
         <div class="g-brick" data-idx="2">
           <picture>
             <source media="(max-width:760px)" srcset="assets/img/gallery/img-03-small.jpg"><img
-              src="assets/img/gallery/img-03-original.jpg">
+              src="assets/img/gallery/img-03-original.jpg" loading="lazy" decoding="async">
           </picture>
           <div class="g-overlay"><span>Vui hay buồn</span></div>
         </div>
         <div class="g-brick" data-idx="3">
           <picture>
             <source media="(max-width:760px)" srcset="assets/img/gallery/img-04-small.jpg"><img
-              src="assets/img/gallery/img-04-original.jpg">
+              src="assets/img/gallery/img-04-original.jpg" loading="lazy" decoding="async">
           </picture>
           <div class="g-overlay"><span>Thịnh vượng như lúc gian nan</span></div>
         </div>
         <div class="g-brick" data-idx="4">
           <picture>
             <source media="(max-width:760px)" srcset="assets/img/gallery/img-05-small.jpg"><img
-              src="assets/img/gallery/img-05-original.jpg">
+              src="assets/img/gallery/img-05-original.jpg" loading="lazy" decoding="async">
           </picture>
           <div class="g-overlay"><span>Ốm đau như lúc mạnh khỏe</span></div>
         </div>
         <div class="g-brick" data-idx="5">
           <picture>
             <source media="(max-width:760px)" srcset="assets/img/gallery/img-06-small.jpg"><img
-              src="assets/img/gallery/img-06-original.jpg">
+              src="assets/img/gallery/img-06-original.jpg" loading="lazy" decoding="async">
           </picture>
           <div class="g-overlay"><span>Tôn trọng với nhau</span></div>
         </div>
         <div class="g-brick" data-idx="6">
           <picture>
             <source media="(max-width:760px)" srcset="assets/img/gallery/img-07-small.jpg"><img
-              src="assets/img/gallery/img-07-original.jpg">
+              src="assets/img/gallery/img-07-original.jpg" loading="lazy" decoding="async">
           </picture>
           <div class="g-overlay"><span>Giữ trọn lời thề</span></div>
         </div>
         <div class="g-brick" data-idx="7">
           <picture>
             <source media="(max-width:760px)" srcset="assets/img/gallery/img-08-small.jpg"><img
-              src="assets/img/gallery/img-08-original.jpg">
+              src="assets/img/gallery/img-08-original.jpg" loading="lazy" decoding="async">
           </picture>
           <div class="g-overlay"><span>Đời đời kiếp kiếp bên nhau</span></div>
         </div>
@@ -4316,7 +4316,7 @@
         tình yêu thương, sự đồng hành và những lời chúc phúc từ mọi người. Cảm ơn bạn vì đã luôn là một phần thật đẹp
         trong chương mới ý nghĩa này của cuộc đời chúng tôi."</div>
       <div class="thanks-names" data-reveal="up">Long Nhật &amp; Ngọc Minh</div>
-      <div class="thanks-footer" data-reveal="up">Thiệp cưới trực tuyến Long Nhật · 18 · 10 · 2026 · Hà Nội, Việt Nam
+      <div class="thanks-footer" data-reveal="up">Thiệp cưới trực tuyến Long Nhật · Hà Nội, Việt Nam · v202609101000
       </div>
     </div>
   </section>
@@ -4359,7 +4359,21 @@
 
     // ── LOADER ──
     try {
-      window.addEventListener('load', () => { setTimeout(() => { const l = document.getElementById('loader'); if (l) { l.classList.add('done'); setTimeout(() => l.remove(), 1050); } }, 2000); });
+      // KHÔNG chờ sự kiện 'load' của window nữa — sự kiện đó chỉ bắn ra sau khi TẤT CẢ ảnh
+      // (kể cả các ảnh gallery "-original.jpg" dung lượng lớn) tải xong. Trên wifi/PC thì rất
+      // nhanh nên không để ý, nhưng trên mạng di động thật (3G/4G) có thể mất rất lâu, khiến màn
+      // hình loading (phủ kín, chặn mọi thao tác chạm) treo lâu — người dùng tưởng trang bị đứng/lỗi.
+      // Script này đã chạy tới gần cuối <body> nên DOM đã sẵn sàng — ẩn loader theo một mốc thời
+      // gian ngắn, cố định, không phụ thuộc tốc độ mạng.
+      function hideLoader() {
+        const l = document.getElementById('loader');
+        if (!l || l.classList.contains('done')) return;
+        l.classList.add('done');
+        setTimeout(() => l.remove(), 1050);
+      }
+      setTimeout(hideLoader, 1400);
+      // Lưới an toàn tuyệt đối: dù bất kỳ điều gì xảy ra, loader không bao giờ được che màn hình quá 4s.
+      setTimeout(hideLoader, 4000);
     } catch (err) { console.error('Loader init error (non-fatal):', err); }
 
     try {
@@ -4401,8 +4415,12 @@
           prevCd[key] = val;
         }
       }
+      // Dùng constructor dạng số (năm, tháng-1, ngày, giờ, phút, giây) thay vì chuỗi ISO —
+      // một số trình duyệt di động thật (Safari/WebKit, WebView trong Zalo/Messenger...) phân tích
+      // chuỗi ngày-giờ không có "Z"/múi giờ không nhất quán, có máy trả Invalid Date → đếm ngược ra NaN.
+      const WEDDING_DATE = new Date(2026, 9, 18, 18, 0, 0); // Tháng 9 = Tháng 10 (0-indexed)
       function tick() {
-        const diff = new Date('2026-10-18T18:00:00') - new Date();
+        const diff = WEDDING_DATE - new Date();
         if (diff <= 0) { ['cd-d', 'cd-h', 'cd-m', 'cd-s'].forEach(id => { const el = document.getElementById(id); if (el) el.textContent = '0'; }); return; }
         setCd('cd-d', Math.floor(diff / 86400000), 'd');
         setCd('cd-h', Math.floor(diff % 86400000 / 3600000), 'h');
@@ -4410,6 +4428,9 @@
         setCd('cd-s', Math.floor(diff % 60000 / 1000), 's');
       }
       tick(); setInterval(tick, 1000);
+      // Nếu tab bị trình duyệt di động tạm dừng ngầm (chuyển app, khoá màn hình...) rồi quay lại,
+      // cập nhật ngay lập tức thay vì đợi tối đa 1 giây.
+      document.addEventListener('visibilitychange', () => { if (!document.hidden) tick(); });
     } catch (err) { console.error('Countdown init error (non-fatal):', err); }
 
     try {
@@ -4436,36 +4457,39 @@
         }
 
         // 2. Xử lý khi click TRỰC TIẾP vào nút bật/tắt nhạc
+        //    Cập nhật icon theo kết quả THẬT của play()/pause() — không đoán trước —
+        //    để icon không bao giờ hiển thị sai trạng thái nếu trình duyệt từ chối phát.
         musicBtn.addEventListener('click', (event) => {
-          // Ngăn chặn sự kiện click này lan ra ngoài toàn trang (tránh xung đột với hàm bên dưới)
           event.stopPropagation();
-
-          playing = !playing;
-          if (playing) {
-            aud.play().catch(() => { });
+          if (!playing) {
+            aud.play().then(() => { playing = true; updateMusicUI(); }).catch(() => { });
           } else {
             aud.pause();
+            playing = false;
+            updateMusicUI();
           }
-          updateMusicUI();
         });
 
-        // 3. Xử lý khi click/chạm BẤT KỲ ĐÂU trên trang (Chỉ gọi 1 lần duy nhất)
+        // 3. Xử lý khi chạm/click BẤT KỲ ĐÂU trên trang lần đầu tiên, để "mở khoá" tự phát nhạc
         function playOnFirstInteraction() {
-          // Chỉ phát nếu nhạc chưa được bật
           if (!playing) {
             aud.play().then(() => {
               playing = true;
-              updateMusicUI(); // Cập nhật icon sang trạng thái đang phát
-            }).catch((error) => {
-              console.warn('Lỗi phát nhạc:', error);
+              updateMusicUI();
+            }).catch(() => {
+              // Bị chặn (chính sách autoplay của trình duyệt/app đang mở link) — im lặng bỏ qua,
+              // khách vẫn có thể bấm nút nhạc thủ công để phát.
             });
           }
         }
 
-        // Lắng nghe sự kiện click (máy tính) và touchstart (điện thoại) trên toàn bộ tài liệu
-        // { once: true } đảm bảo nó chỉ chạy đúng 1 lần rồi tự hủy, không gây gánh nặng cho web
+        // Safari/WebKit trên iPhone không phải lúc nào cũng chấp nhận "touchstart" là cử chỉ
+        // hợp lệ để tự phát audio (vì chạm xuống có thể là bắt đầu thao tác cuộn/vuốt, chưa chắc là "tap").
+        // Nên đăng ký thêm cả "touchend" — mỗi listener tự huỷ sau khi chạy 1 lần,
+        // nhưng chỉ cái đầu tiên thực sự thành công mới đặt playing = true.
         document.addEventListener('click', playOnFirstInteraction, { once: true });
-        document.addEventListener('touchstart', playOnFirstInteraction, { once: true });
+        document.addEventListener('touchstart', playOnFirstInteraction, { once: true, passive: true });
+        document.addEventListener('touchend', playOnFirstInteraction, { once: true });
       }
     } catch (err) { console.error('Music init error (non-fatal):', err); }
 
