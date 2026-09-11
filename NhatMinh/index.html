@@ -2195,7 +2195,7 @@
       border-radius: 9px;
       color: var(--ink);
       font-family: var(--ff-body);
-      font-size: 16px;
+      font-size: 13px;
       outline: none;
       margin-bottom: 10px;
     }
@@ -2217,7 +2217,7 @@
       border-radius: 9px;
       color: var(--ink);
       font-family: var(--ff-body);
-      font-size: 16px;
+      font-size: 13px;
       outline: none;
       margin-bottom: 10px;
       resize: vertical;
@@ -2571,7 +2571,7 @@
       border-radius: 0;
       padding: 7px 30px 7px 2px;
       font-family: var(--ff-body);
-      font-size: 8.5px;
+      font-size: 10.5px;
       color: var(--ink);
       outline: none;
       transition: border-color .25s, box-shadow .25s;
@@ -2678,7 +2678,7 @@
       }
 
       .live-input {
-        font-size: 16px;
+        font-size: 11px;
         padding: 7px 30px 7px 2px;
       }
 
@@ -3579,6 +3579,7 @@
       <a class="nav-link" href="#gallery">Ảnh cưới</a>
       <a class="nav-link" href="#invite">Sự kiện</a>
       <a class="nav-link" href="#guestbook">Lời chúc</a>
+      <a class="nav-link" href="javascript:void(0)" onclick="reopenInviteCard()">Thiệp mời</a>
     </div>
     <button class="nav-burger" id="menu-open" aria-label="Mở menu"><span></span><span></span><span></span></button>
   </nav>
@@ -3593,6 +3594,8 @@
       <li class="mi" style="--i:4"><a href="#gallery" onclick="closeMenu()">Ảnh cưới</a></li>
       <li class="mi" style="--i:5"><a href="#invite" onclick="closeMenu()">Sự kiện</a></li>
       <li class="mi" style="--i:7"><a href="#guestbook" onclick="closeMenu()">Lời chúc</a></li>
+      <li class="mi" style="--i:8"><a href="javascript:void(0)" onclick="closeMenu(); reopenInviteCard();">Thiệp mời</a>
+      </li>
     </ul>
   </div>
 
@@ -4191,7 +4194,7 @@
                 </svg></div>
               <div>
                 <div class="detail-label">Địa chỉ</div>
-                <div class="detail-value">Mộ Trạch, Bình Giang<br>Hải Phòng</div>
+                <div class="detail-value">Tân Hồng, Đường An<br>Hải Phòng</div>
               </div>
             </div>
             <div class="detail-item">
@@ -4210,7 +4213,7 @@
                 </svg></div>
               <div>
                 <div class="detail-label">Trang phục</div>
-                <div class="detail-value">Quần áo, váy lịch sự<br>Tùy ý</div>
+                <div class="detail-value">Quần áo, váy lịch sự<br></div>
               </div>
             </div>
             <div class="detail-item">
@@ -4253,6 +4256,7 @@
                   </svg></span></div>
               <div class="detail-value">Ngọc Hòa, Ninh Giang<br>Hải Phòng</div>
             </div>
+
             <div class="detail-item">
               <div class="detail-ico"><svg fill="#000000" width="20px" height="20px" viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg">
@@ -4269,7 +4273,7 @@
                 </svg></div>
               <div>
                 <div class="detail-label">Trang phục</div>
-                <div class="detail-value">Quần áo, váy lịch sự<br>Tùy thích</div>
+                <div class="detail-value">Quần áo, váy lịch sự<br></div>
               </div>
             </div>
             <div class="detail-item">
@@ -4298,8 +4302,7 @@
       <div class="sec-head center" data-reveal="up">
         <div class="eyebrow" style="justify-content:center"><span class="dot"></span>Sổ lưu bút</div>
         <h2 class="sec-title">Gửi Lời Chúc</h2>
-        <p class="sec-desc" style="margin:0 auto">Lời chúc của bạn sẽ hiện ngay lên màn hình trực tiếp ở góc trái, giống
-          như một khách mời đang chúc mừng ngay lúc này</p>
+        <p class="sec-desc" style="margin:0 auto">Lời chúc của bạn sẽ xuất hiện trực tiếp trên màn hình, như một lời nhắn gửi yêu thương gửi đến cô dâu chú rể ngay lúc này.</p>
       </div>
       <div class="gb-form gb-single" data-reveal="up">
         <input class="gb-in" id="gb-name" placeholder="Tên của bạn *" type="text">
@@ -4328,8 +4331,7 @@
         tình yêu thương, sự đồng hành và những lời chúc phúc từ mọi người. Cảm ơn bạn vì đã luôn là một phần thật đẹp
         trong chương mới ý nghĩa này của cuộc đời chúng tôi."</div>
       <div class="thanks-names" data-reveal="up">Long Nhật &amp; Ngọc Minh</div>
-      <div class="thanks-footer" data-reveal="up">Thiệp cưới trực tuyến Minh Nhật · 18 · 10 · 2026 · Hà Nội, Việt Nam ·
-        202609101730
+      <div class="thanks-footer" data-reveal="up">Thiệp cưới trực tuyến Long Nhật · Hà Nội, Việt Nam · v202609111000
       </div>
     </div>
   </section>
@@ -4447,8 +4449,13 @@
       window.addEventListener('scroll', () => { if (!ticking) { requestAnimationFrame(onScroll); ticking = true; } }, { passive: true });
 
       // ── MOBILE MENU ──
-      const openMenu = function () { const m = document.getElementById('mmenu'); if (m) m.classList.add('open'); document.body.style.overflow = 'hidden'; }
-      const closeMenu = function () { const m = document.getElementById('mmenu'); if (m) m.classList.remove('open'); document.body.style.overflow = ''; }
+      // window.X (không phải const) vì các thuộc tính onclick="" trong HTML cần gọi được
+      // hàm này từ phạm vi toàn cục — const khai báo trong khối try{} này bị giới hạn
+      // phạm vi trong chính khối try, HTML bên ngoài không "nhìn thấy" được.
+      window.openMenu = function () { const m = document.getElementById('mmenu'); if (m) m.classList.add('open'); document.body.style.overflow = 'hidden'; }
+      window.closeMenu = function () { const m = document.getElementById('mmenu'); if (m) m.classList.remove('open'); document.body.style.overflow = ''; }
+      const openMenu = window.openMenu;
+      const closeMenu = window.closeMenu;
       const menuOpenBtn = document.getElementById('menu-open');
       const menuCloseBtn = document.getElementById('menu-close');
       const mmenuEl = document.getElementById('mmenu');
@@ -4492,6 +4499,7 @@
     try {
       // ── MUSIC ──
       const aud = document.getElementById('audio');
+      if (aud) aud.volume = 0.5; // giảm âm lượng nhạc nền còn 50%
       const musicBtn = document.getElementById('music-btn');
       const iPlay = document.getElementById('ico-play');
       const iPause = document.getElementById('ico-pause');
@@ -4847,8 +4855,9 @@
     let isSendingGB = false;
     let isSendingLive = false;
 
-    const appendEmoji = function (e) { const ta = document.getElementById('gb-text'); ta.value += e; ta.focus(); }
-    async function sendWish() {
+    window.appendEmoji = function (e) { const ta = document.getElementById('gb-text'); ta.value += e; ta.focus(); }
+    const appendEmoji = window.appendEmoji;
+    window.sendWish = async function () {
       if (isSendingGB) return;
       const name = document.getElementById('gb-name').value.trim();
       const text = document.getElementById('gb-text').value.trim();
@@ -5185,6 +5194,7 @@
         const envelope = document.getElementById('invite-envelope');
         const seal = document.getElementById('invite-seal');
         const flap = document.getElementById('invite-flap');
+        const closeBtn = document.getElementById('invite-modal-close');
         const ctaBtn = document.getElementById('invite-cta-btn');
         const nameEl = document.getElementById('invite-guest-name');
         if (!overlay || !envelope) return;
@@ -5193,8 +5203,15 @@
         // Ví dụ: ?to=Nguyen+Van+A  hoặc  ?ten=Nguyễn Văn A  hoặc ?name=... / ?guest=...
         const getGuestName = function () {
           try {
-            const params = new URLSearchParams(window.location.search);
-            const raw = params.get('to') || params.get('ten') || params.get('name') || params.get('guest') || params.get('n');
+            // Dùng "#to=..." (URL fragment) thay vì "?to=..." (query string) làm cách chính:
+            // trình duyệt KHÔNG gửi phần sau dấu # lên server, nên Facebook/Zalo/Messenger khi
+            // quét link để tạo banner luôn thấy đây là CÙNG MỘT URL gốc (đã có sẵn banner từ lần
+            // quét đầu), dù bạn đổi tên khách khác nhau cho từng người — không bị mất banner nữa.
+            // Vẫn đọc thêm "?to=..." để không phá các link cũ đã gửi trước đó theo kiểu query string.
+            const hashParams = new URLSearchParams(window.location.hash.replace(/^#/, ''));
+            const searchParams = new URLSearchParams(window.location.search);
+            const raw = hashParams.get('to') || hashParams.get('ten') || hashParams.get('name') || hashParams.get('guest') || hashParams.get('n')
+              || searchParams.get('to') || searchParams.get('ten') || searchParams.get('name') || searchParams.get('guest') || searchParams.get('n');
             if (!raw) return '';
             let val = decodeURIComponent(raw.replace(/\+/g, ' ')).trim();
             // Viết hoa chữ cái đầu mỗi từ cho đẹp, nếu khách gõ chữ thường
@@ -5239,8 +5256,20 @@
           envelope.classList.add('opened');
         }
 
+        // Cho phép mở lại popup thiệp mời bất cứ lúc nào từ menu — đặt lại về trạng thái phong bì
+        // ĐÓNG để khách được xem trọn vẹn hiệu ứng mở thiệp một lần nữa, không chỉ hiện thẳng ra thiệp.
+        window.reopenInviteCard = function () {
+          opened = false;
+          shown = false;
+          envelope.classList.remove('opened');
+          overlay.classList.remove('show', 'visible');
+          // đợi 1 nhịp để trình duyệt "reset" trước khi hiện lại, tránh giật hình
+          requestAnimationFrame(() => requestAnimationFrame(showPopup));
+        }
+
         seal && seal.addEventListener('click', openEnvelope);
         flap && flap.addEventListener('click', (e) => { if (e.target === flap) openEnvelope(); });
+        closeBtn && closeBtn.addEventListener('click', hidePopup);
         ctaBtn && ctaBtn.addEventListener('click', hidePopup);
         overlay.addEventListener('click', (e) => { if (e.target === overlay) hidePopup(); });
         document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && overlay.classList.contains('show')) hidePopup(); });
