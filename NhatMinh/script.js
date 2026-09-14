@@ -30,12 +30,11 @@
 const SHEET_NAME = "LoiChuc";
 
 // ── Danh sách từ khoá cấm — tự thêm/bớt tuỳ ý ──
-const BANNED_WORDS = [
-  "dm", "vl", "vcl", "clgt", "cc", "djt", "dit me", "dit con me",
-  "loz", "lon", "cac", "buoi", "deo", "vailon", "sml", "ngu nhu cho",
-  "thang cho", "con cho", "sex", "xxx", "porn",
-  // 👉 thêm từ bạn muốn chặn vào đây
-];
+// const BANNED_WORDS = [
+//   "dm", "vl", "vcl", "clgt", "cc", "djt",
+//   "loz", "lon", "cac", "buoi", "deo", "vailon", "sml", "con cho",
+// ];
+const BANNED_WORDS = [];
 
 function normalize(str) {
   return str
@@ -94,9 +93,9 @@ function doPost(e) {
     if (!name || !text) {
       return jsonOut({ ok: false, error: "Vui lòng nhập đầy đủ tên và lời chúc." });
     }
-    if (containsBannedWord(name) || containsBannedWord(text)) {
-      return jsonOut({ ok: false, error: "Lời chúc chứa từ ngữ không phù hợp, vui lòng chỉnh lại." });
-    }
+    // if (containsBannedWord(name) || containsBannedWord(text)) {
+    //   return jsonOut({ ok: false, error: "Lời chúc chứa từ ngữ không phù hợp, vui lòng chỉnh lại." });
+    // }
 
     const props = PropertiesService.getScriptProperties();
     const now = Date.now();
